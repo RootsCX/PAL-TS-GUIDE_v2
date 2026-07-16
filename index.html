@@ -1035,7 +1035,9 @@ const DATA = [
           { label: "Jandy WaterColors LED Install Manual", url: "https://images.inyopools.com/cloud/documents/watercolors-install-manual.pdf" },
           { label: "Jandy Infinite WaterColors Controller Manual", url: "https://clarksonpools.com/wp-content/uploads/2024/07/Jandy-IWC-Watercolor-Infinite-Controller-Installation-and-Operation-Manual.pdf" },
           { label: "Hayward Universal ColorLogic/CrystaLogic Manual", url: "https://hayward.com/media/akeneo_connector/asset_files/U/n/UniversalColorlogic_ENG_e105.pdf" },
-          { label: "ColorLogic Light Controller Manual", url: "https://images.inyopools.com/cloud/documents/colorlogic-light-controller.pdf" }
+          { label: "ColorLogic Light Controller Manual", url: "https://images.inyopools.com/cloud/documents/colorlogic-light-controller.pdf" },
+          { label: "Hayward OmniLogic Installation Manual (2023+) — panel-side relay/light wizard", url: "source-manuals/Competitors/Hayward/OmniLogic Installation Manual (2023+).pdf" },
+          { label: "Hayward Omni Smart Pool & Spa Control Configuration Guide", url: "source-manuals/Competitors/Hayward/Omni Smart Pool & Spa Control Configuration Guide.pdf" }
         ],
         table: {
           caption: "Quick Reference by Competitor",
@@ -1043,7 +1045,7 @@ const DATA = [
           rows: [
             ["Pentair", "IntelliTouch, EasyTouch, IntelliCenter", "IntelliBrite", "Reference: IntelliBrite Architectural Series Install & User's Guide (provided in project files)."],
             ["Jandy", "AquaLink RS/PDA, iAquaLink", "LED", "Panel light type must be programmed as \"WaterColors LED\" (short code JL) — the similar short code JC does not have the correct color palette. Manuals linked above."],
-            ["Hayward", "OmniLogic, OmniHub, ProLogic", "Universal Color Logic (UCL) — labeled \"ColorLogic\" on older driver menus", "Manuals linked above."]
+            ["Hayward", "OmniLogic, OmniHub, OmniPL, ProLogic", "Universal Color Logic (UCL) — labeled \"ColorLogic\" on older driver menus", "The OmniLogic light wizard has no \"PAL\" entry — a cloned PAL light gets wired to a standard relay and configured as light type \"Other\" (generic power-interrupt color light), not UCL/CL4.0/CL2.5/P-Color/Z-Color. See OmniLogic Installation Manual, pg. 36/38 (\"Do You Want to Configure Any Lights?\") linked above."]
           ]
         }
       },
@@ -3462,6 +3464,10 @@ const DATA = [
             detail: "Power the driver, then press Z1 within 5 seconds — three white flashes confirms it. Older board revisions: press the Code Setting button inside the box, then press Z1 three times."
           },
           {
+            text: "Pairing not taking? Watch LED-3, not the flashes.",
+            detail: "LED-3 off is the actual ready-to-pair signal — the driver only accepts a new remote while it's off. Press and hold the Code Setting button: LED-3 turns off. Release it and LED-3 turns back on, opening a 5-second pairing window. A power cycle (off, then back on) triggers the same LED-3 off-then-on sequence and opens the same window. Either way, tap Z1 three times on the remote after LED-3 turns back on to complete pairing."
+          },
+          {
             text: "Paired to the wrong driver, or a spare remote needs disconnecting? Clear it first (Clearing Code).",
             detail: "With the driver powered, hold Z1 for 3 seconds — six flashes confirms it cleared. Re-pair using step 4."
           },
@@ -4481,6 +4487,10 @@ const DATA = [
           {
             text: "Re-pair the remote to the driver (Matching Code).",
             detail: "Power the driver, then press Z1 within 5 seconds. Three white flashes = paired. Older boards: press the Code Setting button inside the driver box, then press Z1 three times."
+          },
+          {
+            text: "Pairing not taking? Watch LED-3 on the driver, not the flashes.",
+            detail: "LED-3 off is the real ready-to-pair signal — the driver only accepts a new remote while it's off. Press and hold the driver's Code Setting button: LED-3 turns off. Release it and LED-3 turns back on, opening a 5-second pairing window. Cycling the driver's power off and back on triggers the same LED-3 off-then-on sequence and opens the same window. Either way, tap Z1 on the remote three times after LED-3 turns back on to complete pairing."
           },
           {
             text: "Paired to the wrong driver? Clear it first (Clearing Code).",
