@@ -3415,16 +3415,23 @@ const DATA = [
         name: "2-Wire Drivers (Legacy)",
         tags: ["Driver", "Legacy"],
         blurb: "PAL's older 2-wire driver family.",
-        summary: "64-PCR-2T-65 has no remote and drives white light only; it's documented on the Aqualumin Replacement retrofit card. 64-PCR-3T-120 and -500 have no documentation on file.",
+        summary: "64-PCR-2T-65 has no remote and drives white light only; it's documented on the Aqualumin Replacement retrofit card. 64-PCR-3T-120 has no documentation on file. 64-PCR-3T-500 has no install manual either, but board photos below show its incoming voltage wiring.",
         table: {
           caption: "2-Wire Drivers",
           headers: ["SKU", "Notes", "Documented On"],
           rows: [
             ["64-PCR-2T-65", "No remote — white light only", "Aqualumin Replacement (retrofit page)"],
             ["64-PCR-3T-120", "—", "Not yet documented"],
-            ["64-PCR-3T-500", "—", "Not yet documented"]
+            ["64-PCR-3T-500", "No install manual — see incoming voltage wiring photos below", "Photos only, this card"]
           ]
-        }
+        },
+        notes: [
+          "64-PCR-3T-500: we do not currently have an install manual for this driver, but the photos below show how incoming voltage should be wired — helpful if an electrician asks. Incoming black voltage cable connects to the brown cable in the photo; incoming white voltage cable connects to the blue cable in the photo."
+        ],
+        images: [
+          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-1.jpeg", alt: "64-PCR-3T-500 driver board incoming voltage terminal, close-up", caption: "64-PCR-3T-500 — incoming voltage terminal (close-up): black connects to brown, white connects to blue" },
+          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-2.jpeg", alt: "64-PCR-3T-500 driver board full interior view showing incoming voltage wiring", caption: "64-PCR-3T-500 — full board view, same incoming voltage connection" }
+        ]
       },
       {
         name: "PCR-1Z/2Z Cloning, Pairing & Zone Reference",
