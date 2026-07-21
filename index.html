@@ -970,6 +970,9 @@ const DATA = [
           {
             text: "Most common cause of shorts: water intrusion."
           }
+        ],
+        notes: [
+          "Every PAL light has a soldered connection inside it. Even once water has gotten into the light itself, there's no path from there to the cable connection pins — so water intrusion inside the light and a fried cord are two separate failure modes, not one leading to the other. Customers who've had a light fail from water intrusion will often point to that as proof the cord fried too, but a fried cord is caused by the cable's securing nut not being tightened properly, not by water reaching the light."
         ]
       },
       {
@@ -1004,6 +1007,9 @@ const DATA = [
         name: "Cloning to Competitor Systems — Pentair / Jandy / Hayward",
         tags: ["Cloning", "Automation"],
         blurb: "Two settings both have to match the target brand, or the light misbehaves — the #1 cause of cloning calls, and almost never a hardware fault.",
+        facts: [
+          { label: "Power flow for a cloned install", value: "Breaker (120–240VAC) → competitor automation panel relay → PAL driver high-voltage input." }
+        ],
         flow: [
           {
             text: "Check 1 — Driver protocol setting.",
@@ -1011,8 +1017,11 @@ const DATA = [
           },
           {
             text: "Check 2 — DIP switch bank.",
-            detail: "The physical switches on the driver board that select the brand. See the DIP tables on the Drivers & Controllers reference cards (V2 4-switch and V3 PCR-1Z-SM 3-switch)."
+            detail: "The physical switches on the driver board that select the brand. Always confirm against the DIP switch chart in that driver's own install manual, or the DIP tables on the Drivers & Controllers reference cards in this guide (V2 4-switch and V3 PCR-1Z-SM 3-switch) — layouts differ across driver generations, so don't rely on memory or a previous job's settings."
           }
+        ],
+        notes: [
+          "Zone control lives at the relay, not the driver, during cloning. Any PAL driver in cloner mode is treated as a single zone for the duration of that operation — multi-zone behavior only comes back once it's returned to native PAL mode."
         ],
         table: {
           caption: "Common Cloning Faults",
@@ -1255,6 +1264,10 @@ const DATA = [
           "If the customer reports resistance backing the light out, or it won't budge by hand, stop — don't force it. Overtightened or corroded threads can crack the wall fitting. Escalate to a local installer.",
           "A first-time vinyl/fiberglass install is an irreversible structural change, not a simple parts swap. Don't walk a homeowner through drilling over the phone."
         ],
+        notes: [
+          "Identifying V1 vs. V2 on site: the legacy V1 lens is domed (rounded from a side profile); the current V2 lens is flatter and squared-off. The screws are another tell from directly above — they read differently between the two generations. See the comparison photos below.",
+          "The older domed V1 lens is the version prone to leaking. In photos of a failed V1 light, the screws often look larger than they actually are — that's usually rust built up around a normal-sized screw, not an oversized fastener or a screw-specific failure."
+        ],
         flow: [
           {
             text: "Check LED Light Diagnostics first if the complaint is \"not working\" or \"flashing.\"",
@@ -1306,7 +1319,34 @@ const DATA = [
           { src: "assets/image_44.jpg", alt: "Treo Max+ thread tape and wall fitting diagram", caption: "Thread tape / silicone seal at the wall fitting" },
           { src: "assets/image_40.jpg", alt: "Treo Max+ final installation cutaway diagram", caption: "Final installation — light seated flush against the wall" },
           { src: "assets/image_42.jpg", alt: "Treo Max+ gunite installation setup diagram", caption: "New install — gunite/concrete setup, conduit run and wall fitting placement" },
-          { src: "assets/image_43.jpg", alt: "Treo Max+ drilling hole diagram", caption: "New install — drilling the 2½\" hole for vinyl/fiberglass pools" }
+          { src: "assets/image_43.jpg", alt: "Treo Max+ drilling hole diagram", caption: "New install — drilling the 2½\" hole for vinyl/fiberglass pools" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-side-profile.jpeg", alt: "TreoMax+ V1 domed lens next to V2 square lens, side profile comparison", caption: "V1 domed lens (left) vs. V2 square lens (right) — side profile" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-screws-top-down.jpeg", alt: "TreoMax+ V1 and V2 lens screws, top-down comparison", caption: "Same two lights from directly above — V1 (left) vs. V2 (right) screws" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-rusted-screws-closeup.png", alt: "Close-up of a failed V1 TreoMax+ light with rusted screws", caption: "Failed V1 light — the screws only look oversized because of rust buildup" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-1.jpeg", alt: "V1 domed-lens TreoMax+ light installed in a pool wall, underwater side view", caption: "V1 domed lens as installed — underwater side view" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-2.jpg", alt: "V1 domed-lens TreoMax+ light installed in a pool wall, wider view", caption: "V1 domed lens as installed — wider reference view" }
+        ]
+      },
+      {
+        name: "Treo Max (V1) — Known Issue: Domed Lens Leak",
+        hero: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-side-profile.jpeg",
+        status: "Active — Legacy",
+        blurb: "Legacy Treo Max, superseded by Treo Max+ (V2). The V1's domed lens has a known leaking issue — use the comparison photos to confirm which generation is on site.",
+        tags: ["Light", "Nicheless", "Legacy", "Known Issue"],
+        facts: [
+          { label: "Superseded by", value: "Treo Max+ (V2) — same driver platform and install method; current install/troubleshooting steps live on that card" },
+          { label: "Known issue", value: "Domed lens is prone to water leaking into the fixture" }
+        ],
+        notes: [
+          "Identifying V1 vs. V2 on site: the V1 lens is domed (rounded from a side profile); the current V2 lens is flatter and squared-off. The screws are another tell from directly above — they read differently between the two generations.",
+          "The domed V1 lens is the version prone to leaking. In photos of a failed V1 light, the screws often look larger than they actually are — that's usually rust built up around a normal-sized screw, not an oversized fastener or a screw-specific failure."
+        ],
+        images: [
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-side-profile.jpeg", alt: "TreoMax V1 domed lens next to V2 square lens, side profile comparison", caption: "V1 domed lens (left) vs. V2 square lens (right) — side profile" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-screws-top-down.jpeg", alt: "TreoMax V1 and V2 lens screws, top-down comparison", caption: "Same two lights from directly above — V1 (left) vs. V2 (right) screws" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-rusted-screws-closeup.png", alt: "Close-up of a failed V1 TreoMax light with rusted screws", caption: "Failed V1 light — the screws only look oversized because of rust buildup" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-1.jpeg", alt: "V1 domed-lens TreoMax light installed in a pool wall, underwater side view", caption: "V1 domed lens as installed — underwater side view" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-2.jpg", alt: "V1 domed-lens TreoMax light installed in a pool wall, wider view", caption: "V1 domed lens as installed — wider reference view" }
         ]
       },
       {
@@ -2785,7 +2825,7 @@ const DATA = [
           "Vinyl/fiberglass side-entry conduit: the wing nut and cable seal must go on BEFORE feeding the cable through — a commonly missed step that means redoing the pull."
         ],
         notes: [
-          "PCZ-2 remote pairing: power the driver and press Z1 within 5 seconds — 3 white flashes confirms it. Clear pairing: hold Z1 for 3 seconds (6 flashes). One transmitter drives unlimited receivers; max 4 transmitters per receiver. The PCR-1Z-SM does not work with the PCZ-2.",
+          "PCZ-2 remote pairing: power the driver and press Z1 within 5 seconds — 3 white flashes confirms it. Clear pairing: hold Z1 for 3 seconds (6 flashes). One transmitter drives unlimited receivers; max 4 transmitters per receiver. The PCR-1Z-SM-65 (board-button-only) does not work with the PCZ-2 — but the PCR-1Z-SM-65-12 does. See that SKU's own card.",
           "Winterizing: keep the water level at least 4\" clear of the light — the full procedure is in the instructions manual linked above. The plug is detachable for winterizing/servicing.",
           "The sales brochure's 64-EGB-FVS-150 line is mislabeled \"80ft Supply Cable\" — it is the 150ft version. This Bubbler is explicitly rated for concrete, fiberglass, and vinyl pools, including sun shelves — a gunite/concrete-only restriction and a lens note appearing elsewhere in the install manual apply to the WaterSphere, not this product."
         ]
@@ -3387,7 +3427,7 @@ const DATA = [
         name: "Active Drivers — Comparison & Selector",
         tags: ["Driver", "Reference"],
         blurb: "Identify the driver platform on the wall, then open its dedicated card.",
-        summary: "13 active models across three platforms: PCR-1Z/2Z (remote), PCR-3D (high-power remote), and PCR-2DMX/PCR-3DMX (DMX). Shared DIP, pairing, and mounting steps live on each platform's own reference card, not repeated per SKU.",
+        summary: "14 active models across three platforms: PCR-1Z/2Z (remote), PCR-3D (high-power remote), and PCR-2DMX/PCR-3DMX (DMX). Shared DIP, pairing, and mounting steps live on each platform's own reference card, not repeated per SKU.",
         table: {
           caption: "Active Driver Comparison",
           headers: ["SKU", "Control", "Zones", "Wi-Fi", "Documented On"],
@@ -3395,6 +3435,7 @@ const DATA = [
             ["64-PCR-1Z-65", "Remote (PCZ-2)", "1", "No", "PCR-1Z-65"],
             ["64-PCR-1ZW-65", "Remote (PCZ-2)", "1", "Yes", "PCR-1ZW-65"],
             ["64-PCR-1Z-SM-65", "Switch mode (no remote)", "1", "No", "PCR-1Z-SM-65"],
+            ["64-PCR-1Z-SM-65-12", "Switch mode + Remote (PCZ-2)", "1", "No", "PCR-1Z-SM-65-12"],
             ["64-PCR-2Z-65", "Remote (PCZ-2)", "2", "No", "PCR-2Z-65"],
             ["64-PCR-2ZW-65", "Remote (PCZ-2)", "2", "Yes", "PCR-2ZW-65"],
             ["64-PCR-3D-120", "Remote (PCZ-2)", "2", "No", "PCR-3D-120"],
@@ -3684,6 +3725,45 @@ const DATA = [
         ],
         images: [
           { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z-family enclosure (left), PCR-2Z (right) for reference" }
+        ]
+      },
+      {
+        name: "PCR-1Z-SM-65-12 — Single-Zone Driver (Switch Mode + Remote)",
+        hero: "source-manuals/Drivers and Controllers/PCR-1Z-SM/slimherosingle.jpg",
+        status: "Active",
+        blurb: "Unlike the base PCR-1Z-SM-65, this variant does support PCZ-2 remote pairing — most often installed as a drop-in replacement for an older driver.",
+        links: [
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/PCR-1Z-SM1Z2Z-2.pdf" }
+        ],
+        sku: "64-PCR-1Z-SM-65-12",
+        tags: ["Driver"],
+        facts: [
+          { label: "Control", value: "Board button (8 preset color modes) AND PCZ-2 remote — the \"-12\" suffix is what sets it apart from the base 64-PCR-1Z-SM-65" },
+          { label: "Zones", value: "1 (single zone)" },
+          { label: "Typical use case", value: "Drop-in replacement for an older driver model — remote pairing during that swap is the most common reason this SKU gets called in" }
+        ],
+        notes: [
+          "Same physical platform as the base 64-PCR-1Z-SM-65, but this variant adds PCZ-2 remote pairing on top of the board button. The base -65 (no \"-12\" suffix) does not support a remote at all — if a customer points to PAL documentation saying the PCR-1Z-SM \"can't be remote controlled,\" confirm which SKU is actually on the wall before ruling pairing out.",
+          "Cloning to a competitor system: confirm the DIP switch chart in this driver's own install manual before assuming it matches either the standard 4-switch or the base PCR-1Z-SM's 3-switch table."
+        ],
+        flow: [
+          {
+            text: "Restore power — is the driver's LED lit?",
+            bad: "Not lit → check the breaker and incoming wiring before assuming a dead driver.",
+            good: "Lit → go to step 2."
+          },
+          {
+            text: "Confirm the label reads PCR-1Z-SM-65-12, not just PCR-1Z-SM-65.",
+            detail: "The base -65 has no remote capability at all — that's a different SKU, not a fault on this one."
+          },
+          {
+            text: "Pair the PCZ-2 remote.",
+            detail: "Power the driver and press Z1 within 5 seconds — 3 white flashes confirms it. One transmitter can drive unlimited receivers; a receiver accepts up to 4 transmitters."
+          },
+          {
+            text: "Replacing an older driver? Clear its old pairing first.",
+            detail: "Hold Z1 for 3 seconds — 6 flashes confirms the pairing is cleared. Then pair the new remote as in step 3."
+          }
         ]
       },
       {
