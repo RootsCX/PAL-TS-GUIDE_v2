@@ -2028,7 +2028,7 @@ const DATA = [
         name: "Custom Strip Lighting (Design-Build) — Overview & Selector",
         tags: ["Strip", "Reference"],
         blurb: "Design-build tier, not a stocked SKU — confirm the part number from the customer's PAL design quote before opening a variant card.",
-        summary: "Every design-build job goes through a free PAL lighting-design consultation and is built to the project's exact length. Covers 9 physical variants across three mounting categories — Side View, Top View, and Hardscape — including Mini cross-sections and two genuinely submersible Underwater variants (NFUS2/NFUT2). Each variant has its own card.",
+        summary: "Every design-build job goes through a free PAL lighting-design consultation and is built to the project's exact length. Covers 10 physical variants across three mounting categories — Side View, Top View, and Hardscape — including Mini cross-sections and two genuinely submersible Underwater variants (NFUS2/NFUT2). Each variant has its own card.",
         links: [
           { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Custom Strip/INSTALLATION_GUIDE.pdf" },
           { label: "Sales Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Custom-Strip-Sales-Sheet-USA-Jan-29-2026.pdf" },
@@ -2040,6 +2040,7 @@ const DATA = [
           headers: ["SKU", "Name", "Category", "Wattage", "IP Rating", "Colors"],
           rows: [
             ["NFWB8", "Flex Side View — Wide Beam", "Side View", "3W/ft (1\" increments)", "Non-Submersible", "RGB | 2200K-5000K"],
+            ["NFWB2", "Flex Side View — Wide Beam V.2", "Side View", "4.4W/ft", "Not specified — confirm with PAL", "RGB | 2200K-5000K"],
             ["NFLS8", "Flex Side View", "Side View", "—", "Non-Submersible", "RGB | 2300K-4000K"],
             ["NFMS2", "Mini Side View", "Side View", "—", "Non-Submersible", "RGB | 2700K-4000K"],
             ["NFUS2", "Flex Underwater — Side View", "Side View", "2W/ft (2\" increments)", "Submersible", "RGB | 2700K-6500K"],
@@ -2111,6 +2112,81 @@ const DATA = [
         ],
         images: [
           { src: "assets/image_176.jpg", alt: "NFWB8 Flex Side View Wide Beam mounting track and light diagram with dimensions", caption: "NFWB8 mounting track and light profile — IP68 Non-Submersible, RGB 2200K-5000K" },
+          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+        ]
+      },
+      {
+        name: "NFWB2 — Flex Side View, Wide Beam V.2 (Custom Strip)",
+        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/NFWB2-Prod.jpg",
+        status: "Active",
+        blurb: "Newer \"V.2\" Wide Beam Side View strip, higher power than NFWB8 — Custom Strip only, no Quick-Ship or kit equivalent. Confirm with PAL whether this supersedes or coexists with NFWB8 before quoting.",
+        tags: ["Strip", "LED"],
+        facts: [
+          { label: "Electrical", value: "24V DC — Multi-Color (RGB): 4.4W/ft (14.4W/m), max run 66' (20m). Single-Color (2200K-5000K white): 4.4W/ft (14.4W/m), max run 32' (10m) — shorter max run than the multi-color version despite the same wattage/ft." },
+          { label: "Cable entry", value: "4 styles: Side Entry (Left), Straight Entry, Side Entry (Right), Rear Entry" },
+          { label: "Fitting / cord", value: "Standard ½\" or ¾\" conduit fitting. Cord: 80' or 150', or custom length." },
+          { label: "Rating", value: "UL676 Pool & Spa Lighting, UL1838 Low Voltage Landscape Lighting, UL2108 Low Voltage Lighting Systems. No bonding/grounding required. Rated for gunite, fiberglass, and vinyl pools." }
+        ],
+        warnings: [
+          "The source spec sheet doesn't state an IP/submersion rating (unlike NFWB8/NFLS8, both confirmed IP68 Non-Submersible). Don't assume submersible or non-submersible — confirm with PAL before any installation where sustained submersion is possible."
+        ],
+        steps: [
+          "Confirm the exact SKU, color option, and target length against the customer's PAL design quote — this is a Custom Strip-only line (\"CUS\" in the SKU), not stocked.",
+          "Confirm which of the 4 cable entry configurations (Side-Left, Straight, Side-Right, Rear) was specified before connecting the driver cable.",
+          "Mount the PC mounting track (64-NFWB2-MT-E-6) into the rebate/channel first, then press the strip into the track by hand — 2-person job, never roll the strip out completely flat.",
+          "Min bending radius is 2⅜\" (60mm) — confirm the coping/rebate has adequate overhang clearance at every corner.",
+          "The spec sheet references \"required drivers\" on a page not included in our files — confirm the correct driver with PAL rather than assuming it matches NFWB8's PCR-1Z/PCR-3D family."
+        ],
+        tables: [
+          {
+            caption: "NFWB2 Quick Specs",
+            note: "Beam angle, lumen output, and cutting increment aren't given on the source spec sheet — confirm with PAL if needed rather than assuming NFWB8's numbers apply.",
+            headers: ["Spec", "Value"],
+            rows: [
+              ["Power (Multi-Color)", "4.4W/ft (14.4W/m)"],
+              ["Power (Single-Color)", "4.4W/ft (14.4W/m)"],
+              ["Max length (Multi-Color)", "66' (20m)"],
+              ["Max length (Single-Color)", "32' (10m)"],
+              ["Bending radius", "2⅜\" (60mm) min"],
+              ["Mounting track SKU", "64-NFWB2-MT-E-6"],
+              ["Fitting", "Standard ½\" or ¾\" conduit"],
+              ["Cord", "80' or 150', or custom length"],
+              ["Colors", "RGB (multi-color) | 2200K-5000K white"]
+            ]
+          },
+          {
+            caption: "SKUs",
+            headers: ["SKU", "Description"],
+            rows: [
+              ["64-PAL-NFWB2-RGB-CUS-XXX", "Multi Color Feature Strip Light"],
+              ["64-PAL-NFWB2-22K-CUS-XXX", "White 2200K Feature Strip Light"],
+              ["64-PAL-NFWB2-27K-CUS-XXX", "White 2700K Feature Strip Light"],
+              ["64-PAL-NFWB2-30K-CUS-XXX", "White 3000K Feature Strip Light"],
+              ["64-PAL-NFWB2-40K-CUS-XXX", "White 4000K Feature Strip Light"],
+              ["64-PAL-NFWB2-50K-CUS-XXX", "White 5000K Feature Strip Light"],
+              ["64-NFWB2-MT-E-6", "Mounting Track (6ft length)"]
+            ]
+          },
+          {
+            caption: "Common Call Scenarios",
+            headers: ["Situation", "What to Do"],
+            rows: [
+              ["Paperwork doesn't clearly confirm which side-view variant was installed", "Check the actual SKU on the driver/strip packaging or the PAL design quote — NFWB2, NFWB8, NFLS8, NFMS2, and NFUS2 have different specs. See the Custom Strip overview card's comparison table."],
+              ["Dark spot at a joint between two strip runs", "Check the entry-point placement — an entry point cut right at the gap between two segments leaves an unlit dead zone. Design/install-placement issue, not a defective strip."],
+              ["Section of strip dim or unlit, primaries otherwise fine", "Same head/cable/driver logic as any other PAL LED product — open LED Light Diagnostics and the Probability-Based Diagnostic Framework. Confirm actual driver output against the project's quoted wattage before assuming a bad strip segment."],
+              ["A connected automation system is causing the strip to behave incorrectly", "A real, expected scenario for this strip family — see the Competitor Cloning category and, if running Poolside Tech's DMX \"Attendant\" integration, the Attendant card (Automation category)."]
+            ]
+          }
+        ],
+        notes: [
+          "NFWB8's own card lists its mounting track and end cap SKUs under an \"NFWB2\" prefix (64-PAL-NFWB2-MT-E-6, 64-PAL-NFWB2-ENDCAP), and this SKU's own mounting track (64-NFWB2-MT-E-6) is nearly identical. Whether NFWB2 is a newer replacement for NFWB8, a higher-output sibling that coexists with it, or the two simply share hardware by design hasn't been confirmed — verify with PAL before assuming either one supersedes the other on a quote."
+        ],
+        images: [
+          { src: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/NFWB2-Specs.jpg", alt: "NFWB2 power, color, max length, and fitting/cord/certification specs", caption: "Specs — Multi-Color and Single-Color power/length, fitting, cord, pool type, certifications, and bending diagram" },
+          { src: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/NFWB2-SKUs-CableEntry.jpg", alt: "NFWB2 cable entry styles and SKU/description table", caption: "Cable entry styles (Side-Left, Straight, Side-Right, Rear) and full SKU list" },
           { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
           { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
           { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
@@ -2975,7 +3051,8 @@ const DATA = [
         ],
         notes: [
           "\"Touch 5\" branding covers two different pieces of hardware — confirm which one the customer has before assuming a fix carries over. One is a PCR-4 driver fitted with the Touch 5 Wi-Fi module (Part No. 42-PCTWF5), exposed in-app as a \"TOUCH-5\" sub-app with 4 channel on/off buttons plus a master CH5 color wheel — matching the PCT-5 handheld remote's layout. The other is the standalone PCR-5CU (\"PAL Touch 5\") 5-channel relay/equipment controller documented in the Automation category, which also controls pumps and valves. Both share the same app icon and near-identical color-wheel UI.",
-          "Touch 9 has no manual on file — treat any Touch 9 specifics as needing confirmation from PAL rather than assuming it mirrors Touch 5."
+          "Touch 9 has no manual on file — treat any Touch 9 specifics as needing confirmation from PAL rather than assuming it mirrors Touch 5.",
+          "The app needs Bluetooth and Local Network access to find and configure the Wi-Fi module during setup. If either permission was denied when first prompted — or the app can't find the module at all — have the customer check it manually: on iPhone, Settings → PAL Color Touch → toggle on Bluetooth and Local Network, then retry setup. Android has an equivalent per-app permissions screen under Settings → Apps."
         ],
         images: [
           { src: "assets/image_158.jpg", alt: "Color Touch App creating a new login and new account setup screens", caption: "New account setup — register, email verification code, password" },
