@@ -3023,6 +3023,7 @@ const DATA = [
       },
       {
         name: "Color Touch App",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/Color Touch/PAL-RemoteApp.png",
         status: "Active",
         blurb: "Account setup, driver linking, and day-to-day operation for the PAL Color Touch app.",
         tags: ["WiFi", "App"],
@@ -3058,6 +3059,7 @@ const DATA = [
           { src: "assets/image_158.jpg", alt: "Color Touch App creating a new login and new account setup screens", caption: "New account setup — register, email verification code, password" },
           { src: "assets/image_159.jpg", alt: "Color Touch App selecting country and logging in", caption: "Select country, enter password, log in" },
           { src: "assets/image_160.jpg", alt: "Color Touch App connecting to a new driver, allow permissions and add device", caption: "Starting the add-device flow — Device List '+' and permissions" },
+          { src: "assets/color-touch-app-permissions-screen.png", alt: "Color Touch App Bluetooth permission dialog — PAL Color Touch Would Like to Use Bluetooth, Don't Allow or Allow", caption: "The app permissions prompt — select Allow so the app can find and connect to the Wi-Fi module" },
           { src: "assets/image_161.jpg", alt: "Color Touch App connecting to the driver, reset button and wifi password screens", caption: "Reset button (module photo, Part No. 64-WIFI) and Router Connect / Start Configuration screens" },
           { src: "assets/image_162.jpg", alt: "Color Touch App configuring the device, being configured and added successfully screens", caption: "Being configured (~60 sec) → Configuring Done → device appears in Device List" },
           { src: "assets/image_163.jpg", alt: "Color Touch App updating the app and driver firmware screens", caption: "Selecting a driver and running a firmware update if prompted (e.g. MCU module update to add the music-rhythm function)" },
@@ -3607,8 +3609,12 @@ const DATA = [
             detail: "With the driver powered, hold Z1 for 3 seconds — six flashes confirms it cleared. Re-pair using step 4."
           },
           {
+            text: "Remote coding acting corrupted — won't clear or pair the normal way?",
+            detail: "Field-reported alternate sequence, not in the official manual: press the Code Setting button, then immediately press and hold Z1 on the remote for about 5 seconds — this force-clears any existing code. To re-pair afterward, press Code Setting again, then tap Z1 to complete matching. Reported to hold true across PAL remote/driver pairs generally, not just this platform."
+          },
+          {
             text: "Need a fast reset instead of waiting out a power cycle?",
-            detail: "A full reset otherwise means killing power and waiting 15-30 minutes for the internal capacitors to discharge. To skip the wait, with power still on, hold the Manual Operation button and the Code Setting button together for about 10 seconds — this drains the capacitors immediately."
+            detail: "A full reset otherwise means killing power and waiting 15-30 minutes for the internal capacitors to discharge. To skip the wait, with power still on, hold the Manual Operation button and the Code Setting button together for about 10 seconds — this drains the capacitors immediately. This is the go-to move after adjusting DIP switches, since a DIP change only takes effect after a power cycle."
           }
         ],
         flowImage: { src: "assets/image_66.jpg", alt: "Labeled PCR-1Z/PCR-1Z-SM driver board diagram", caption: "Manual Operation button, Code Setting button, LED indicator, Wi-Fi connector" },
@@ -3658,7 +3664,8 @@ const DATA = [
         ],
         notes: [
           "A multimeter check for 24V DC at the output terminals should only be walked through with a pool tech comfortable working inside a live enclosure. For homeowners, stop at the Manual Operation button test.",
-          "The Wi-Fi module isn't needed in clone mode — disconnect it if the driver is cloned to an automation system and not in use."
+          "The Wi-Fi module isn't needed in clone mode — disconnect it if the driver is cloned to an automation system and not in use.",
+          "Triple-tapping Z1 during pairing is a margin-of-safety habit, not a hard requirement — the remote gives no clear feedback for a single press (its only indicator is a small diode that's easy to miss in direct sunlight), so tapping three times just helps make sure at least one press actually registers with the driver."
         ],
         images: [
           { src: "assets/image_65.jpg", alt: "PCR-1Z/PCR-1Z-SM single-zone driver and PCR-2Z dual-zone driver enclosures side by side", caption: "PCR-1Z/PCR-1Z-SM (single-zone) and PCR-2Z (dual-zone) enclosures" },
