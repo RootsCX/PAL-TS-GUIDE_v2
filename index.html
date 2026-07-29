@@ -3533,22 +3533,32 @@ const DATA = [
         name: "2-Wire Drivers (Legacy)",
         tags: ["Driver", "Legacy"],
         blurb: "PAL's older 2-wire driver family.",
-        summary: "64-PCR-2T-65 has no remote and drives white light only; it's documented on the Aqualumin Replacement retrofit card. 64-PCR-3T-120 has no documentation on file. 64-PCR-3T-500 has no install manual either, but board photos below show its incoming voltage wiring.",
+        summary: "64-PCR-2T-65 has no remote and drives white light only; it's documented on the Aqualumin Replacement retrofit card. 64-PCR-3T-120 has no documentation on file. 64-PCR-3T-500 has no install manual either, but board photos on the Driver Photos card show its incoming voltage wiring.",
         table: {
           caption: "2-Wire Drivers",
           headers: ["SKU", "Notes", "Documented On"],
           rows: [
             ["64-PCR-2T-65", "No remote — white light only", "Aqualumin Replacement (retrofit page)"],
             ["64-PCR-3T-120", "—", "Not yet documented"],
-            ["64-PCR-3T-500", "No install manual — see incoming voltage wiring photos below", "Photos only, this card"]
+            ["64-PCR-3T-500", "No install manual — see incoming voltage wiring photos on the Driver Photos card", "Driver Photos card"]
           ]
         },
         notes: [
-          "64-PCR-3T-500: we do not currently have an install manual for this driver, but the photos below show how incoming voltage should be wired — helpful if an electrician asks. Incoming black voltage cable connects to the brown cable in the photo; incoming white voltage cable connects to the blue cable in the photo."
-        ],
+          "64-PCR-3T-500: we do not currently have an install manual for this driver, but the Driver Photos card has photos showing how incoming voltage should be wired — helpful if an electrician asks. Incoming black voltage cable connects to the brown cable in the photo; incoming white voltage cable connects to the blue cable in the photo."
+        ]
+      },
+      {
+        name: "Driver Photos",
+        tags: ["Driver", "Reference"],
+        blurb: "Reference photos of driver boards, organized by SKU.",
+        summary: "64-PCR-3T-500: incoming voltage wiring (no install manual exists for this driver). 64-PCR-3D-120/500 and 64-PCR-3DW-120/500: how to tell by sight whether a Wi-Fi module is fitted. 64-PCR-1Z-SM-65: the legacy black board vs. the current green board.",
         images: [
           { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-1.jpeg", alt: "64-PCR-3T-500 driver board incoming voltage terminal, close-up", caption: "64-PCR-3T-500 — incoming voltage terminal (close-up): black connects to brown, white connects to blue" },
-          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-2.jpeg", alt: "64-PCR-3T-500 driver board full interior view showing incoming voltage wiring", caption: "64-PCR-3T-500 — full board view, same incoming voltage connection" }
+          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-2.jpeg", alt: "64-PCR-3T-500 driver board full interior view showing incoming voltage wiring", caption: "64-PCR-3T-500 — full board view, same incoming voltage connection" },
+          { src: "source-manuals/Drivers and Controllers/PCR-3DW-500/PCR-3DW-120.jpeg", alt: "PCR-3D-family board with the PAL Color Touch Wi-Fi Module plugged in, plus the Wire Color to DMX Channel table", caption: "64-PCR-3DW-120 / 64-PCR-3DW-500 — with Wi-Fi: PAL Color Touch Wi-Fi Module plugged onto the board (Power On / WiFi Not Connected / WiFi Connected LEDs visible). Also shows the Wire Color → Channel table: Blue 3/6, Grey 2/5, Red 1/4, White +24V" },
+          { src: "source-manuals/Drivers and Controllers/PCR-3D-500/PCR-3D-120.jpeg", alt: "PCR-3D-family board with no Wi-Fi module fitted, plus the Wire Color to DMX Channel table", caption: "64-PCR-3D-120 / 64-PCR-3D-500 — without Wi-Fi: no module fitted at that connector. Same Wire Color → Channel table as the Wi-Fi board: Blue 3/6, Grey 2/5, Red 1/4, White +24V" },
+          { src: "source-manuals/Drivers and Controllers/64-1Z-SM-65/64-1Z-SM-65_legacy.jpeg", alt: "64-1Z-SM-65 older black board, board-marked 42PCR4U24", caption: "64-PCR-1Z-SM-65 — legacy board (black). Same Blue/Grey/Red/White per-zone wiring layout as the current board" },
+          { src: "source-manuals/Drivers and Controllers/64-1Z-SM-65/64-1Z-SM-65_new.jpeg", alt: "64-1Z-SM-65 present-day green board, board-marked 42PCR4DMX", caption: "64-PCR-1Z-SM-65 — current board (green). Same Blue/Grey/Red/White per-zone wiring layout as the legacy board" }
         ]
       },
       {
@@ -3798,7 +3808,8 @@ const DATA = [
           }
         ],
         notes: [
-          "Same physical platform as PCR-1Z-65, PCR-1ZW-65, PCR-2Z-65, and PCR-2ZW-65, but this board's cloning DIP layout is 3-switch, not 4-switch — see the \"V3 PCR-1Z-SM Cloning (3-Switch)\" table on the PCR-1Z/2Z Cloning, Pairing & Zone Reference card."
+          "Same physical platform as PCR-1Z-65, PCR-1ZW-65, PCR-2Z-65, and PCR-2ZW-65, but this board's cloning DIP layout is 3-switch, not 4-switch — see the \"V3 PCR-1Z-SM Cloning (3-Switch)\" table on the PCR-1Z/2Z Cloning, Pairing & Zone Reference card.",
+          "This SKU has shipped on two board designs — an older black board (legacy) and the current green board — see the comparison photos on the Driver Photos card. A board-color mismatch against an older photo isn't a sign of the wrong product."
         ],
         images: [
           { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z-family enclosure (left), PCR-2Z (right) for reference" }
@@ -4062,11 +4073,23 @@ const DATA = [
               ["Lights don't respond to remote after cloning to automation", "Confirm the handheld remote isn't also in use — disconnect the Wi-Fi module too, if fitted. Automation and PAL remote control aren't meant to run at the same time."],
               ["Fan is loud or the unit is running warm", "Check the fan filter for dirt buildup — unclip the bottom cover, clean with water if needed, and let it fully dry before replacing."]
             ]
+          },
+          {
+            caption: "4-Wire Light Cable — Wire Color to Channel",
+            note: "Printed directly on the board next to each zone's terminal block. Same mapping on both Zone 1 (channels 1-3) and Zone 2 (channels 4-6) — a customer describing \"wrong color\" or \"one channel out\" almost always traces back to this table.",
+            headers: ["Wire Color", "Function"],
+            rows: [
+              ["Blue", "Blue color channel"],
+              ["Grey", "Green color channel"],
+              ["Red", "Red color channel"],
+              ["White", "+24V power (not a color channel)"]
+            ]
           }
         ],
         notes: [
           "Confirm the nameplate rating on the physical unit before assuming wattage from the part number alone — 64-PCR-3D-120/PCR-3DW-120 and 64-PCR-3D-500/PCR-3DW-500 are the current active part numbers.",
-          "A newer V3 board (SKUs 64-PCR-3D / 64-PCR-3DW / 64-PCR-3DMX, not the 8Z variant) is mode-selected via dip switches A/B into 4 operating modes — Cloner, Module, PCR8-legacy, DMX — each with its own dip-switch meanings, different from the standard board this card covers. Confirm which board is installed before applying either scheme."
+          "A newer V3 board (SKUs 64-PCR-3D / 64-PCR-3DW / 64-PCR-3DMX, not the 8Z variant) is mode-selected via dip switches A/B into 4 operating modes — Cloner, Module, PCR8-legacy, DMX — each with its own dip-switch meanings, different from the standard board this card covers. Confirm which board is installed before applying either scheme.",
+          "The Wi-Fi variant has a physical PAL Color Touch Wi-Fi Module (Power On / WiFi Not Connected / WiFi Connected LEDs) plugged onto the board — see the comparison photos on the Driver Photos card. No module means no Wi-Fi, regardless of the SKU label."
         ],
         images: [
           { src: "assets/image_78.jpg", alt: "PCR-3D dimension diagram", caption: "Dimensions — 11½\" x 4¾\" x 6⅝\" (293 x 119 x 173mm)" },
