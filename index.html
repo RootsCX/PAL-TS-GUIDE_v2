@@ -1017,7 +1017,7 @@ const DATA = [
           },
           {
             text: "Check 2 — DIP switch bank.",
-            detail: "The physical switches on the driver board that select the brand. Always confirm against the DIP switch chart in that driver's own install manual, or the DIP tables on the Drivers & Controllers reference cards in this guide (V2 4-switch and V3 PCR-1Z-SM 3-switch) — layouts differ across driver generations, so don't rely on memory or a previous job's settings."
+            detail: "The physical switches on the driver board that select the brand. Always confirm against the DIP switch chart in that driver's own install manual, or the DIP tables on the Drivers & Controllers reference cards in this guide (V2 4-switch and V3 PCR-1Z-SM 3-switch) — layouts differ across driver generations, so don't rely on memory or a previous job's settings. See the DIP Switch Location Reference card (below) for where the bank physically sits on each platform's board."
           }
         ],
         notes: [
@@ -1034,6 +1034,21 @@ const DATA = [
             ["Brightness control missing or greyed out", "Expected — brightness is only adjustable in native PAL mode, not once cloned/synced to a competitor system."]
           ]
         }
+      },
+      {
+        name: "DIP Switch Location Reference — Cloning (All Platforms)",
+        hero: "assets/image_66.jpg",
+        tags: ["Cloning", "Automation", "Reference", "DIP Switch"],
+        blurb: "Where the physical DIP bank sits on each cloning-capable driver's board, so it's not a blind hunt inside the enclosure. Switch-position tables per brand live on each platform's own card — this is for finding the bank itself.",
+        summary: "Covers every platform that supports Pentair/Jandy/Hayward/Astral cloning: PCR-1Z/2Z (V2 4-switch and V3 PCR-1Z-SM 3-switch), PCR-3D, and the legacy Evenglow PCR-4/PCR-2D. The DMX driver family (PCR-2DMX/PCR-3DMX) is not included here — its DIP banks set signal addressing, a different function from automation-brand cloning.",
+        notes: [
+          "These are manufacturer install-manual diagrams, not photographs of an opened driver. Use them to find the DIP bank's general location, then confirm the live switch positions against the physical board once it's open."
+        ],
+        images: [
+          { src: "assets/image_66.jpg", alt: "PCR-1Z/PCR-1Z-SM V2 driver board diagram with Module DIP Sw location circled", caption: "PCR-1Z / PCR-1Z-SM (V2 platform, 4-switch) — Module DIP Sw location. Manufacturer diagram, not a photo." },
+          { src: "assets/image_80.jpg", alt: "PCR-3D driver board diagram with Code Setting DIP switches location and cloning table", caption: "PCR-3D — Code Setting switches location, with the cloning table. Manufacturer diagram, not a photo." },
+          { src: "assets/image_02.jpg", alt: "Legacy Evenglow PCR-4 and PCR-2D drivers with 2-switch cloning table", caption: "Legacy Evenglow PCR-4 / PCR-2D — 2-switch cloning table (no Astral option on this older platform). Product photos + diagram table, not an opened-board photo." }
+        ]
       },
       {
         name: "Competitor Quick Reference — Automation Systems & Manuals",
@@ -1095,7 +1110,7 @@ const DATA = [
         hero: "assets/image_01.png",
         status: "Active",
         blurb: "Niche-mounted RGB pool light — check which driver generation is on site before troubleshooting voltage.",
-        tags: ["Light", "Niche"],
+        tags: ["Light", "Niche", "DIP Switch"],
         links: [
           { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/64-EGL Light Install Guide.pdf" },
           { label: "Spec Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/64-EGL Light Spec Sheet.pdf" },
@@ -1168,7 +1183,7 @@ const DATA = [
         hero: "assets/image_32.jpg",
         status: "Active",
         blurb: "Twists into a 1.5\" wall fitting — no niche required.",
-        tags: ["Light", "Nicheless"],
+        tags: ["Light", "Nicheless", "DIP Switch"],
         links: [
           { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow Nichless/EvenglowNicheless-3.pdf" },
           { label: "Sell Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Nichless/PALNichelessEvenglow-2.pdf" },
@@ -1258,7 +1273,8 @@ const DATA = [
         facts: [
           { label: "Driver", value: "PAL remote driver (PCR-1Z/PCR-2Z platform), 24V AC, sold separately" },
           { label: "V2 vs. legacy", value: "Treo Max+ (V2) replaced the legacy Treo Max — 33% brighter, black/white body, 7W" },
-          { label: "First-time vinyl/fiberglass install", value: "Requires drilling a 2½\" hole for the 1.5\" wall fitting — an irreversible structural change" }
+          { label: "First-time vinyl/fiberglass install", value: "Requires drilling a 2½\" hole for the 1.5\" wall fitting — an irreversible structural change" },
+          { label: "Beam angle", value: "120° wide beam via triple RGB LED chipsets per module. Also used as PAL's fountain light — same fixture, quoted as a 24' beam radius in that application" }
         ],
         warnings: [
           "If the customer reports resistance backing the light out, or it won't budge by hand, stop — don't force it. Overtightened or corroded threads can crack the wall fitting. Escalate to a local installer.",
@@ -1354,7 +1370,7 @@ const DATA = [
         hero: "assets/image_45.jpg",
         status: "Active",
         blurb: "Retrofit RGB light — fits standard Pentair GLoBrite-style niches plus gunite/fiberglass/vinyl nicheless variants.",
-        tags: ["Light", "Niche", "Nicheless"],
+        tags: ["Light", "Niche", "Nicheless", "DIP Switch"],
         links: [
           { label: "Video: GLoBrite Treo Retro Fit", url: "https://youtu.be/iyptiOMdRGQ" }
         ],
@@ -1615,7 +1631,7 @@ const DATA = [
           { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow FIbergless Niche/64-EGF-Install-Guide-2.pdf" },
           { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Evenglow FIbergless Niche/PALWetNiche-2.pdf" }
         ],
-        tags: ["Light", "Niche"],
+        tags: ["Light", "Niche", "DIP Switch"],
         facts: [
           { label: "Driver", value: "PCR-4 (50W) or PCR-2D (16/35/55W) with a PCT-1 remote, 12V DC. A newer 24V PCR-1Z/PCR-2Z generation also exists for this product" },
           { label: "First-time fiberglass install", value: "Requires drilling a new hole and setting a permanent fibreglass nut / wall fitting assembly — an irreversible structural change" }
@@ -1687,7 +1703,7 @@ const DATA = [
           { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/TreoMicro Nicheless/TreoMicro.pdf" },
           { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/TreoMicro Nicheless/PALTreoMicro-2.pdf" }
         ],
-        tags: ["Light", "Nicheless"],
+        tags: ["Light", "Nicheless", "DIP Switch"],
         facts: [
           { label: "Driver", value: "PCR-1Z (up to 14 lights with J box) or PCR-2Z (up to 60 lights with J box) with the PCZ-2 remote, 24V DC" },
           { label: "Higher count than Treo Retro's driver figures", value: "Treo Micro is lower-wattage than the standard 4-wire lights, so more fit within the same driver wattage budget — don't cross-apply the two products' capacity numbers" },
@@ -2818,7 +2834,7 @@ const DATA = [
         sku: "64-EGB-CGS-80/-150 · 64-EGB-FVS-80/-150",
         status: "Active",
         blurb: "Multi-color LED bubbler for sun shelves and tanning ledges.",
-        tags: ["Water Feature", "LED"],
+        tags: ["Water Feature", "LED", "DIP Switch"],
         links: [
           { label: "Install & Troubleshooting Manual (PDF)", url: "source-manuals/Water Features/Bubblers/PAL-Bubbler-ConcreteVinyl-InstructionsR00-2.pdf" },
           { label: "Water Pressure / Plume Height Guide (PDF)", url: "source-manuals/Water Features/Bubblers/BubblerWaterPressureGuide.pdf" },
@@ -2904,6 +2920,10 @@ const DATA = [
           "PCZ-2 remote pairing: power the driver and press Z1 within 5 seconds — 3 white flashes confirms it. Clear pairing: hold Z1 for 3 seconds (6 flashes). One transmitter drives unlimited receivers; max 4 transmitters per receiver. The PCR-1Z-SM-65 (board-button-only) does not work with the PCZ-2 — but the PCR-1Z-SM-65-12 does. See that SKU's own card.",
           "Winterizing: keep the water level at least 4\" clear of the light — the full procedure is in the instructions manual linked above. The plug is detachable for winterizing/servicing.",
           "The sales brochure's 64-EGB-FVS-150 line is mislabeled \"80ft Supply Cable\" — it is the 150ft version. This Bubbler is explicitly rated for concrete, fiberglass, and vinyl pools, including sun shelves — a gunite/concrete-only restriction and a lens note appearing elsewhere in the install manual apply to the WaterSphere, not this product."
+        ],
+        images: [
+          { src: "source-manuals/Water Features/Bubblers/64-EGB-CGS-exploded-parts.png", alt: "64-EGB-CGS-80 and 64-EGB-CGS-150 exploded parts diagram, gunite/concrete bubbler", caption: "64-EGB-CGS-80 / -150 (gunite/concrete) — exploded parts diagram with individual part numbers" },
+          { src: "source-manuals/Water Features/Bubblers/64-EGB-V2-exploded-parts-FVS-CGS.png", alt: "64-EGB-FVS-V2 and 64-EGB-CGS-V2 exploded parts diagram, fiberglass/vinyl and gunite/concrete bubbler side by side", caption: "V2 bubbler — 64-EGB-FVS-V2 (fiberglass/vinyl, left) and 64-EGB-CGS-V2 (gunite/concrete, right) side by side, with individual part numbers" }
         ]
       },
       {
@@ -3043,6 +3063,7 @@ const DATA = [
           "Connecting a new driver to Wi-Fi: in the Device List, tap '+' to add a device and allow the requested permissions.",
           "On the Wi-Fi module itself: select Allow for location access, then hold the module's Reset button for 3 seconds until the pilot lamp starts flashing. Back in the app: select Allow, enter the 2.4GHz Wi-Fi password (the app explicitly rejects 5GHz networks), then select Start Configuration.",
           "Configuration takes about 60 seconds (\"Being configured\" → \"Configuring Done\") — the device then appears in the Device List.",
+          "If the Wi-Fi module's status LED is showing WIFI CONNECTED (green) but the app still isn't controlling the driver, link them manually: in the Device List select the driver — the model determines which option to pick next (e.g. 64-PCR-1ZW-65 = Touch 1) — then tap LINK in the top-right of the remote interface screen. A green LINK button appears at the bottom of the screen. On the driver, press and release Code Setting, then tap that green LINK button 1-3 times within 5 seconds — the driver blinks 3 times to confirm, the same pattern as remote pairing.",
           "Run a firmware update if prompted: select the driver and update its firmware (e.g. the MCU module update that adds the music-rhythm function).",
           "Setting up a new driver: select the driver type from the list above. Confirm which physical hardware the customer has before picking Touch 5 or Touch 9 — see the notes below.",
           "Operating the app: On/Off, per-zone control (e.g. Pool/Spa), fully selectable RGB color wheel, integrated music sync, brightness, show selection, and scheduling — all from one screen.",
@@ -3254,7 +3275,7 @@ const DATA = [
         links: [
           { label: "Poolside Tech Info (PDF)", url: "source-manuals/Automation/Poolside Tech/Poolside Tech PDF.pdf" }
         ],
-        tags: ["Automation", "DMX"],
+        tags: ["Automation", "DMX", "DIP Switch"],
         facts: [
           { label: "Driver compatibility", value: "Only PCR-2DMX and PCR-3DMX communicate with The Attendant. Any other PAL driver must instead be cloned into Pentair/Hayward/Jandy mode (Competitor Cloning category) — it can't wire to The Attendant directly" },
           { label: "Wiring requirement", value: "PAL drivers must be wired directly from the power supply, never through a relay — The Attendant needs constant power to maintain DMX communication" },
@@ -3565,7 +3586,7 @@ const DATA = [
       },
       {
         name: "PCR-1Z/2Z Cloning, Pairing & Zone Reference",
-        tags: ["Driver", "Reference"],
+        tags: ["Driver", "Reference", "DIP Switch"],
         blurb: "Shared triage script, cloning DIP tables, and zone config for the whole PCR-1Z/2Z platform.",
         summary: "Covers 64-PCR-1Z-65/-16, PCR-1ZW-65/-16, PCR-1Z-SM-65/-16, PCR-2Z-65, and PCR-2ZW-65 — one physical platform, 24V DC. The driver reads color and mode commands from a paired PCZ-2 remote (or the Color Touch App on \"W\" models) over its own short-range link; it is not DMX and needs no separate controller. DIP switches can instead clone it to a Jandy, Pentair, Hayward, or Astral automation system in place of the PAL remote. For part numbers and wattage, open the SKU's own card.",
         links: [
@@ -3665,7 +3686,8 @@ const DATA = [
         notes: [
           "A multimeter check for 24V DC at the output terminals should only be walked through with a pool tech comfortable working inside a live enclosure. For homeowners, stop at the Manual Operation button test.",
           "The Wi-Fi module isn't needed in clone mode — disconnect it if the driver is cloned to an automation system and not in use.",
-          "Triple-tapping Z1 during pairing is a margin-of-safety habit, not a hard requirement — the remote gives no clear feedback for a single press (its only indicator is a small diode that's easy to miss in direct sunlight), so tapping three times just helps make sure at least one press actually registers with the driver."
+          "Triple-tapping Z1 during pairing is a margin-of-safety habit, not a hard requirement — the remote gives no clear feedback for a single press (its only indicator is a small diode that's easy to miss in direct sunlight), so tapping three times just helps make sure at least one press actually registers with the driver.",
+          "Pressing Code Setting means a quick press-and-release — like ringing a doorbell — not a held press. Holding it does something different: it's how the LED-3 pairing window is opened, and it's part of the two-button 10-second reset. Don't hold it for a step that just says \"press.\""
         ],
         images: [
           { src: "assets/image_65.jpg", alt: "PCR-1Z/PCR-1Z-SM single-zone driver and PCR-2Z dual-zone driver enclosures side by side", caption: "PCR-1Z/PCR-1Z-SM (single-zone) and PCR-2Z (dual-zone) enclosures" },
@@ -3968,7 +3990,7 @@ const DATA = [
           { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2DMX/PCR4-Switch-Mode-And-2DMX-Updates-August-September-2025.pdf" }
         ],
         sku: "64-PCR-2DMX",
-        tags: ["Driver", "DMX"],
+        tags: ["Driver", "DMX", "DIP Switch"],
         facts: [
           { label: "Signal path", value: "Home Automation System → DMX Controller → PAL DMX Driver (PAL drivers receive DMX, they don't originate it)" },
           { label: "Zones", value: "2 (Z1 + Z2 terminal blocks)" },
@@ -4030,7 +4052,7 @@ const DATA = [
           { label: "PCR-3D Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR-3D-Instructions-USA-2.pdf" },
           { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR4-3DAnd3DMX-Updates-August-September-2025-2.pdf" }
         ],
-        tags: ["Driver", "Reference"],
+        tags: ["Driver", "Reference", "DIP Switch"],
         blurb: "Shared mounting, cloning, and zone config for the whole PCR-3D high-power platform.",
         summary: "Covers 64-PCR-3D-120, PCR-3DW-120, PCR-3D-500, and PCR-3DW-500 — a higher-wattage driver for larger 4-wire RGB light runs than the 1Z/2Z platform supports. Base SKUs are remote only (PCZ-2 handheld); \"W\" models add Wi-Fi/app control. For part numbers and wattage, open the SKU's own card.",
         facts: [
@@ -4292,7 +4314,7 @@ const DATA = [
           { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3DMX/PCR4-3DAnd3DMX-Updates-August-September-2025-2.pdf" }
         ],
         sku: "64-PCR-3DMX-8Z",
-        tags: ["Driver", "DMX"],
+        tags: ["Driver", "DMX", "DIP Switch"],
         facts: [
           { label: "Signal path", value: "Home Automation System → DMX Controller → PAL DMX Driver (PAL drivers receive DMX, they don't originate it)" },
           { label: "Zones / channels", value: "8 zones, 24 total DMX channels (3 per zone — R/G/B). Multiple drivers chain by giving each a different starting channel" },
@@ -4374,7 +4396,7 @@ const DATA = [
           { label: "Sell Sheet (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 2/PALPCR-2D-24.pdf" }
         ],
         sku: "42-PCR-2D",
-        tags: ["Driver", "Legacy"],
+        tags: ["Driver", "Legacy", "DIP Switch"],
         facts: [
           { label: "SKU pattern", value: "42-PCR-2D-16/35/60-24 (remote only), 42-PCR-2DW-16/35/60-24 (built-in Wi-Fi)" },
           { label: "Control", value: "PCT-1 handheld remote, or the Color Touch app on \"W\" models" },
@@ -4483,7 +4505,7 @@ const DATA = [
           { label: "PCR-4 & Touch 5 WiFi (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/PCR-4 and Touch 5 WiFi.pdf" }
         ],
         sku: "PCR-4",
-        tags: ["Driver", "Legacy"],
+        tags: ["Driver", "Legacy", "DIP Switch"],
         status: "Active — Legacy",
         blurb: "Color Touch/EvenGlow driver — the other of the two drivers used with the Evenglow (Niche/Nicheless) lights, alongside PCR-2D.",
         facts: [
