@@ -3553,6 +3553,20 @@ const DATA = [
         ]
       },
       {
+        name: "Driver Compatibility Chart — Max Quantity per Driver",
+        tags: ["Driver", "Reference"],
+        blurb: "PAL's official chart for how many lights (or how much strip) each driver series and wattage can run, by control type.",
+        summary: "Rows are light products, grouped into Multi Color and 3-IN-1 Multi Color/Cool & Warm White. Columns are driver series, zone count, and power rating. Each cell is the max quantity of that light the driver can run at that wattage — or max feet for strip and linear products (Strip Lighting, Waterblade Lit/Rain & Lit, Water Feature Light). A blank cell means that light isn't compatible with that driver.",
+        notes: [
+          "Sonar-brand lights (Sonar Pool Light, Sonar Spa Light, Sonar Surface Mount, Sonar Retro Bulb, Sonar Canadian Retro Light) and the 3-IN-1 Cool & Warm White lineup only run on the On/Off drivers — 64-PCR-1Z-SM-, 64-PCR-2T-, 64-PCR-3T-. They're not compatible with the standard Remote, Remote & WiFi, or DMX driver series.",
+          "Source: PAL product catalog, Driver Compatibility Chart (pages 112-113)."
+        ],
+        images: [
+          { src: "source-manuals/Drivers and Controllers/Driver Compatibility Chart/driver-compatibility-chart-remote-wifi.png", alt: "Driver compatibility chart, Remote Control and Remote & WiFi Control columns", caption: "Remote Control / Remote & WiFi Control — 64-PCR-1Z-/2Z-/3D- and 64-PCR-1ZW-/2ZW-/3DW- series" },
+          { src: "source-manuals/Drivers and Controllers/Driver Compatibility Chart/driver-compatibility-chart-dmx-onoff.png", alt: "Driver compatibility chart, DMX Control and On/Off columns", caption: "DMX Control / On/Off — 64-PCR-2DMX-/3DMX- and 64-PCR-1Z-SM-/2T-/3T- series" }
+        ]
+      },
+      {
         name: "2-Wire Drivers (Legacy)",
         tags: ["Driver", "Legacy"],
         blurb: "PAL's older 2-wire driver family.",
