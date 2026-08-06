@@ -21,6 +21,7 @@ Inside the folder, only two things matter to you:
 | `index.html` | The entire guide — every card, every note. **Claude edits this, you never do.** |
 | `source-manuals/` | The library of PDFs, manuals, and photos, organized in folders by product category. **This is the only place you'll add files yourself.** |
 | `NAMING-CONVENTION.md` | How every file in `source-manuals/` and `assets/` is named — e.g. `treo-max-plus-v2_product-photo.jpg`. Skim it once; Claude follows it automatically when adding files, so you mostly just need to know it exists. |
+| `FILE-INDEX.md` | One-line description of every file already in the repo — what it is, not just what it's named. Useful when you're not sure whether a document already exists before asking Claude to find or add one. |
 
 You will never open or edit `index.html` directly. You describe changes to Claude in plain English, review screenshots, and approve. That's the whole job.
 
