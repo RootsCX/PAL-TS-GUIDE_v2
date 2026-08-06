@@ -893,7 +893,7 @@
          images:   [                   (optional — diagram/photo grid; images
                                         live in the assets folder next to this
                                         file, click opens full size)
-           { src: "assets/image_01.png", alt: "…", caption: "…" }
+           { src: "assets/evenglow-niche-64-egl_product-photo.png", alt: "…", caption: "…" }
          ]
        }
      ]
@@ -1037,7 +1037,7 @@ const DATA = [
       },
       {
         name: "DIP Switch Location Reference — Cloning (All Platforms)",
-        hero: "assets/image_66.jpg",
+        hero: "assets/pcr-1z-sm_labeled-board-diagram.jpg",
         tags: ["Cloning", "Automation", "Reference", "DIP Switch"],
         blurb: "Where the physical DIP bank sits on each cloning-capable driver's board, so it's not a blind hunt inside the enclosure. Switch-position tables per brand live on each platform's own card — this is for finding the bank itself.",
         summary: "Covers every platform that supports Pentair/Jandy/Hayward/Astral cloning: PCR-1Z/2Z (V2 4-switch and V3 PCR-1Z-SM 3-switch), PCR-3D, and the legacy Evenglow PCR-4/PCR-2D. The DMX driver family (PCR-2DMX/PCR-3DMX) is not included here — its DIP banks set signal addressing, a different function from automation-brand cloning.",
@@ -1045,9 +1045,9 @@ const DATA = [
           "These are manufacturer install-manual diagrams, not photographs of an opened driver. Use them to find the DIP bank's general location, then confirm the live switch positions against the physical board once it's open."
         ],
         images: [
-          { src: "assets/image_66.jpg", alt: "PCR-1Z/PCR-1Z-SM V2 driver board diagram with Module DIP Sw location circled", caption: "PCR-1Z / PCR-1Z-SM (V2 platform, 4-switch) — Module DIP Sw location. Manufacturer diagram, not a photo." },
-          { src: "assets/image_80.jpg", alt: "PCR-3D driver board diagram with Code Setting DIP switches location and cloning table", caption: "PCR-3D — Code Setting switches location, with the cloning table. Manufacturer diagram, not a photo." },
-          { src: "assets/image_02.jpg", alt: "Legacy Evenglow PCR-4 and PCR-2D drivers with 2-switch cloning table", caption: "Legacy Evenglow PCR-4 / PCR-2D — 2-switch cloning table (no Astral option on this older platform). Product photos + diagram table, not an opened-board photo." }
+          { src: "assets/pcr-1z-sm_labeled-board-diagram.jpg", alt: "PCR-1Z/PCR-1Z-SM V2 driver board diagram with Module DIP Sw location circled", caption: "PCR-1Z / PCR-1Z-SM (V2 platform, 4-switch) — Module DIP Sw location. Manufacturer diagram, not a photo." },
+          { src: "assets/pcr-3d_cloning-dip-table-diagram.jpg", alt: "PCR-3D driver board diagram with Code Setting DIP switches location and cloning table", caption: "PCR-3D — Code Setting switches location, with the cloning table. Manufacturer diagram, not a photo." },
+          { src: "assets/evenglow-pcr4-pcr2d_drivers-cloning-dip-table.jpg", alt: "Legacy Evenglow PCR-4 and PCR-2D drivers with 2-switch cloning table", caption: "Legacy Evenglow PCR-4 / PCR-2D — 2-switch cloning table (no Astral option on this older platform). Product photos + diagram table, not an opened-board photo." }
         ]
       },
       {
@@ -1055,13 +1055,13 @@ const DATA = [
         tags: ["Cloning", "Reference"],
         blurb: "Per-brand cheat sheet for cloning calls — confirm linked manuals against the current version on the manufacturer's site, since these get revised.",
         links: [
-          { label: "Pentair GloBrite Manual (PDF)", url: "source-manuals/Competitors/Pentair/globrite-color-changing-led-light-manual-english-spanish-french.pdf" },
+          { label: "Pentair GloBrite Manual (PDF)", url: "source-manuals/Competitors/Pentair/pentair-globrite_install-manual.pdf" },
           { label: "Jandy WaterColors LED Install Manual", url: "https://images.inyopools.com/cloud/documents/watercolors-install-manual.pdf" },
           { label: "Jandy Infinite WaterColors Controller Manual", url: "https://clarksonpools.com/wp-content/uploads/2024/07/Jandy-IWC-Watercolor-Infinite-Controller-Installation-and-Operation-Manual.pdf" },
           { label: "Hayward Universal ColorLogic/CrystaLogic Manual", url: "https://hayward.com/media/akeneo_connector/asset_files/U/n/UniversalColorlogic_ENG_e105.pdf" },
           { label: "ColorLogic Light Controller Manual", url: "https://images.inyopools.com/cloud/documents/colorlogic-light-controller.pdf" },
-          { label: "Hayward OmniLogic Installation Manual (2023+) — panel-side relay/light wizard", url: "source-manuals/Competitors/Hayward/OmniLogic Installation Manual (2023+).pdf" },
-          { label: "Hayward Omni Smart Pool & Spa Control Configuration Guide", url: "source-manuals/Competitors/Hayward/Omni Smart Pool & Spa Control Configuration Guide.pdf" }
+          { label: "Hayward OmniLogic Installation Manual (2023+) — panel-side relay/light wizard", url: "source-manuals/Competitors/Hayward/hayward-omnilogic_install-manual-2023.pdf" },
+          { label: "Hayward Omni Smart Pool & Spa Control Configuration Guide", url: "source-manuals/Competitors/Hayward/hayward-omni-smart_configuration-guide.pdf" }
         ],
         table: {
           caption: "Quick Reference by Competitor",
@@ -1107,14 +1107,14 @@ const DATA = [
       {
         name: "Evenglow (Niche)",
         sku: "64-EGL",
-        hero: "assets/image_01.png",
+        hero: "assets/evenglow-niche-64-egl_product-photo.png",
         status: "Active",
         blurb: "Niche-mounted RGB pool light — check which driver generation is on site before troubleshooting voltage.",
         tags: ["Light", "Niche", "DIP Switch"],
         links: [
-          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/64-EGL Light Install Guide.pdf" },
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/64-EGL Light Spec Sheet.pdf" },
-          { label: "Sell Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/64-EGL Sell Sheet.pdf" },
+          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/evenglow-niche-64-egl_install-guide.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/evenglow-niche-64-egl_spec-sheet.pdf" },
+          { label: "Sell Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Pool & Spa/evenglow-niche-64-egl_sell-sheet.pdf" },
           { label: "Driver Video: PCR-4 + PCT-1 Coding", url: "https://youtu.be/tiKvKwUdNQE" },
           { label: "Driver Video: PCR-2D + PCT-1 Coding", url: "https://youtu.be/TUDnVlOdwjU" },
           { label: "Driver Video: PCR-2D + PCT-1 Manual Check", url: "https://youtu.be/K9zOumkBbEA" }
@@ -1172,21 +1172,21 @@ const DATA = [
           "Confirm the actual driver output voltage on site rather than assuming from either the spec sheet or the install guide — sources on this product disagree between 12V DC (older PCR-4/PCR-2D generation) and 24V DC (newer PCR-1Z/PCR-2Z generation)."
         ],
         images: [
-          { src: "assets/image_02.jpg", alt: "Evenglow PCR-4/PCR-2D driver and cloning DIP table", caption: "PCR-4/PCR-2D drivers and cloning DIP table" },
-          { src: "assets/image_03.jpg", alt: "Evenglow niche screw and hook diagram", caption: "Screw + hook locations for removing the light from the niche" },
-          { src: "assets/image_30.jpg", alt: "Evenglow niche cutaway dimensions diagram", caption: "Niche installation reference — standard niche depth, conduit height, and water-line clearances" },
-          { src: "assets/image_31.jpg", alt: "Evenglow 24V PCR-1Z wiring overview diagram", caption: "24V PCR-1Z driver wiring overview — Blue/Grey/Red/White light leads, E/A/N power terminals, 3-switch cloning DIP" }
+          { src: "assets/evenglow-pcr4-pcr2d_drivers-cloning-dip-table.jpg", alt: "Evenglow PCR-4/PCR-2D driver and cloning DIP table", caption: "PCR-4/PCR-2D drivers and cloning DIP table" },
+          { src: "assets/evenglow-niche_screw-hook-diagram.jpg", alt: "Evenglow niche screw and hook diagram", caption: "Screw + hook locations for removing the light from the niche" },
+          { src: "assets/evenglow-niche_cutaway-dimensions-diagram.jpg", alt: "Evenglow niche cutaway dimensions diagram", caption: "Niche installation reference — standard niche depth, conduit height, and water-line clearances" },
+          { src: "assets/pcr-1z_24v-wiring-overview-diagram.jpg", alt: "Evenglow 24V PCR-1Z wiring overview diagram", caption: "24V PCR-1Z driver wiring overview — Blue/Grey/Red/White light leads, E/A/N power terminals, 3-switch cloning DIP" }
         ]
       },
       {
         name: "Evenglow (Nicheless)",
-        hero: "assets/image_32.jpg",
+        hero: "assets/evenglow-nicheless_mounting-ring-photo.jpg",
         status: "Active",
         blurb: "Twists into a 1.5\" wall fitting — no niche required.",
         tags: ["Light", "Nicheless", "DIP Switch"],
         links: [
-          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow Nichless/EvenglowNicheless-3.pdf" },
-          { label: "Sell Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Nichless/PALNichelessEvenglow-2.pdf" },
+          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow Nichless/evenglow-nicheless_install-guide.pdf" },
+          { label: "Sell Sheet (PDF)", url: "source-manuals/Pool Lighting/Evenglow Nichless/evenglow-nicheless_product-guide.pdf" },
           { label: "Driver Video: PCR-4 + PCT-1 Coding", url: "https://youtu.be/tiKvKwUdNQE" },
           { label: "Driver Video: PCR-2D + PCT-1 Coding", url: "https://youtu.be/TUDnVlOdwjU" },
           { label: "Driver Video: PCR-2D + PCT-1 Manual Check", url: "https://youtu.be/K9zOumkBbEA" }
@@ -1249,25 +1249,25 @@ const DATA = [
           "Confirm the actual driver and voltage on site — this product's own install guide is inconsistent about generation (page 2 documents 12V DC PCR-4/PCR-2D; the driver diagram and troubleshooting table elsewhere reference the newer 24V PCR-1Z/PCR-2Z platform). Don't assume a reading is wrong before checking which board is installed."
         ],
         images: [
-          { src: "assets/image_02.jpg", alt: "Evenglow PCR-4/PCR-2D driver and cloning DIP table", caption: "PCR-4/PCR-2D drivers and cloning DIP table" },
-          { src: "assets/image_35.jpg", alt: "Evenglow nicheless twist to remove/install diagram", caption: "Twist anti-clockwise to remove, clockwise to install" },
-          { src: "assets/image_37.jpg", alt: "Evenglow nicheless connecting to light plug diagram", caption: "Connecting to light — plug and cap sequence" },
-          { src: "assets/image_33.jpg", alt: "Evenglow nicheless drilling and sealing diagram", caption: "New install — drilling the 1⅞\" hole (fibreglass/vinyl) and sealing the light into the 1.5\" wall fitting" },
-          { src: "assets/image_34.jpg", alt: "Evenglow nicheless gunite installation setup diagram", caption: "New install — gunite installation setup, conduit run and wall fitting placement" },
-          { src: "assets/image_36.jpg", alt: "Evenglow nicheless final installation cutaway diagram", caption: "Final installation — light seated in the wall fitting" },
-          { src: "assets/image_31.jpg", alt: "Evenglow 24V PCR-1Z wiring overview diagram", caption: "24V PCR-1Z driver wiring overview — Blue/Grey/Red/White light leads, E/A/N power terminals, 3-switch cloning DIP" }
+          { src: "assets/evenglow-pcr4-pcr2d_drivers-cloning-dip-table.jpg", alt: "Evenglow PCR-4/PCR-2D driver and cloning DIP table", caption: "PCR-4/PCR-2D drivers and cloning DIP table" },
+          { src: "assets/evenglow-nicheless_twist-remove-install-diagram.jpg", alt: "Evenglow nicheless twist to remove/install diagram", caption: "Twist anti-clockwise to remove, clockwise to install" },
+          { src: "assets/evenglow-nicheless_connecting-plug-diagram.jpg", alt: "Evenglow nicheless connecting to light plug diagram", caption: "Connecting to light — plug and cap sequence" },
+          { src: "assets/evenglow-nicheless_drilling-sealing-diagram.jpg", alt: "Evenglow nicheless drilling and sealing diagram", caption: "New install — drilling the 1⅞\" hole (fibreglass/vinyl) and sealing the light into the 1.5\" wall fitting" },
+          { src: "assets/evenglow-nicheless_gunite-install-diagram.jpg", alt: "Evenglow nicheless gunite installation setup diagram", caption: "New install — gunite installation setup, conduit run and wall fitting placement" },
+          { src: "assets/evenglow-nicheless_final-install-cutaway-diagram.jpg", alt: "Evenglow nicheless final installation cutaway diagram", caption: "Final installation — light seated in the wall fitting" },
+          { src: "assets/pcr-1z_24v-wiring-overview-diagram.jpg", alt: "Evenglow 24V PCR-1Z wiring overview diagram", caption: "24V PCR-1Z driver wiring overview — Blue/Grey/Red/White light leads, E/A/N power terminals, 3-switch cloning DIP" }
         ]
       },
       {
         name: "Treo Max+ (V2)",
-        hero: "assets/image_38.jpg",
+        hero: "assets/treo-max-plus-v2_product-photo.jpg",
         status: "Active",
         blurb: "Nicheless twist-in RGB light for gunite/concrete and vinyl/fiberglass pools. Confirm the customer has V2, not the legacy Treo Max.",
         tags: ["Light", "Nicheless"],
         links: [
-          { label: "Owner's Manual (PDF)", url: "source-manuals/Pool Lighting/TreoMax+/TREO-MAX.OWNERS-MANUAL-2.pdf" },
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Pool Lighting/TreoMax+/TREOMAX-PLUS-POOL-Spec-SheetV25.02.pdf" },
-          { label: "Sales Sheet (PDF)", url: "source-manuals/Pool Lighting/TreoMax+/PAL-Treo-Max-Plus-Sales-Sheet-V2-6.26-2.pdf" },
+          { label: "Owner's Manual (PDF)", url: "source-manuals/Pool Lighting/TreoMax+/treo-max-plus_owners-manual.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Pool Lighting/TreoMax+/treo-max-plus_spec-sheet.pdf" },
+          { label: "Sales Sheet (PDF)", url: "source-manuals/Pool Lighting/TreoMax+/treo-max-plus_sales-sheet.pdf" },
           { label: "Video: Concrete Treo Max Install", url: "https://youtu.be/z7e21HO3RFg" }
         ],
         facts: [
@@ -1329,23 +1329,23 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_31.jpg", alt: "Treo Max+ 24V PCR-1Z wiring overview diagram", caption: "Same 24V PCR-1Z remote driver platform used across current-gen PAL lights" },
-          { src: "assets/image_39.jpg", alt: "Treo Max+ twist to remove/install diagram", caption: "Twist counter-clockwise to remove, clockwise to install" },
-          { src: "assets/image_41.jpg", alt: "Treo Max+ connecting to light plug diagram", caption: "Connecting to light — plug and cap sequence" },
-          { src: "assets/image_44.jpg", alt: "Treo Max+ thread tape and wall fitting diagram", caption: "Thread tape / silicone seal at the wall fitting" },
-          { src: "assets/image_40.jpg", alt: "Treo Max+ final installation cutaway diagram", caption: "Final installation — light seated flush against the wall" },
-          { src: "assets/image_42.jpg", alt: "Treo Max+ gunite installation setup diagram", caption: "New install — gunite/concrete setup, conduit run and wall fitting placement" },
-          { src: "assets/image_43.jpg", alt: "Treo Max+ drilling hole diagram", caption: "New install — drilling the 2½\" hole for vinyl/fiberglass pools" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-side-profile.jpeg", alt: "TreoMax+ V1 domed lens next to V2 square lens, side profile comparison", caption: "V1 domed lens (left) vs. V2 square lens (right) — side profile" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-screws-top-down.jpeg", alt: "TreoMax+ V1 and V2 lens screws, top-down comparison", caption: "Same two lights from directly above — V1 (left) vs. V2 (right) screws" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-rusted-screws-closeup.png", alt: "Close-up of a failed V1 TreoMax+ light with rusted screws", caption: "Failed V1 light — the screws only look oversized because of rust buildup" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-1.jpeg", alt: "V1 domed-lens TreoMax+ light installed in a pool wall, underwater side view", caption: "V1 domed lens as installed — underwater side view" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-2.jpg", alt: "V1 domed-lens TreoMax+ light installed in a pool wall, wider view", caption: "V1 domed lens as installed — wider reference view" }
+          { src: "assets/pcr-1z_24v-wiring-overview-diagram.jpg", alt: "Treo Max+ 24V PCR-1Z wiring overview diagram", caption: "Same 24V PCR-1Z remote driver platform used across current-gen PAL lights" },
+          { src: "assets/treo-max-plus-v2_twist-remove-install-diagram.jpg", alt: "Treo Max+ twist to remove/install diagram", caption: "Twist counter-clockwise to remove, clockwise to install" },
+          { src: "assets/treo-max-plus-v2_connecting-plug-diagram.jpg", alt: "Treo Max+ connecting to light plug diagram", caption: "Connecting to light — plug and cap sequence" },
+          { src: "assets/treo-max-plus-v2_thread-tape-wall-fitting-diagram.jpg", alt: "Treo Max+ thread tape and wall fitting diagram", caption: "Thread tape / silicone seal at the wall fitting" },
+          { src: "assets/treo-max-plus-v2_final-install-cutaway-diagram.jpg", alt: "Treo Max+ final installation cutaway diagram", caption: "Final installation — light seated flush against the wall" },
+          { src: "assets/treo-max-plus-v2_gunite-install-diagram.jpg", alt: "Treo Max+ gunite installation setup diagram", caption: "New install — gunite/concrete setup, conduit run and wall fitting placement" },
+          { src: "assets/treo-max-plus-v2_drilling-hole-diagram.jpg", alt: "Treo Max+ drilling hole diagram", caption: "New install — drilling the 2½\" hole for vinyl/fiberglass pools" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1-vs-v2_side-profile-photo.jpeg", alt: "TreoMax+ V1 domed lens next to V2 square lens, side profile comparison", caption: "V1 domed lens (left) vs. V2 square lens (right) — side profile" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1-vs-v2_screws-top-down-photo.jpeg", alt: "TreoMax+ V1 and V2 lens screws, top-down comparison", caption: "Same two lights from directly above — V1 (left) vs. V2 (right) screws" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1_rusted-screws-closeup-photo.png", alt: "Close-up of a failed V1 TreoMax+ light with rusted screws", caption: "Failed V1 light — the screws only look oversized because of rust buildup" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1_domed-lens-installed-photo-1.jpeg", alt: "V1 domed-lens TreoMax+ light installed in a pool wall, underwater side view", caption: "V1 domed lens as installed — underwater side view" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1_domed-lens-installed-photo-2.jpg", alt: "V1 domed-lens TreoMax+ light installed in a pool wall, wider view", caption: "V1 domed lens as installed — wider reference view" }
         ]
       },
       {
         name: "Treo Max (V1) — Known Issue: Domed Lens Leak",
-        hero: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-side-profile.jpeg",
+        hero: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1-vs-v2_side-profile-photo.jpeg",
         status: "Active — Legacy",
         blurb: "Legacy Treo Max, superseded by Treo Max+ (V2). The V1's domed lens has a known leaking issue — use the comparison photos to confirm which generation is on site.",
         tags: ["Light", "Nicheless", "Legacy", "Known Issue"],
@@ -1358,16 +1358,16 @@ const DATA = [
           "The domed V1 lens is the version prone to leaking. In photos of a failed V1 light, the screws often look larger than they actually are — that's usually rust built up around a normal-sized screw, not an oversized fastener or a screw-specific failure."
         ],
         images: [
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-side-profile.jpeg", alt: "TreoMax V1 domed lens next to V2 square lens, side profile comparison", caption: "V1 domed lens (left) vs. V2 square lens (right) — side profile" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-vs-V2-screws-top-down.jpeg", alt: "TreoMax V1 and V2 lens screws, top-down comparison", caption: "Same two lights from directly above — V1 (left) vs. V2 (right) screws" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-rusted-screws-closeup.png", alt: "Close-up of a failed V1 TreoMax light with rusted screws", caption: "Failed V1 light — the screws only look oversized because of rust buildup" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-1.jpeg", alt: "V1 domed-lens TreoMax light installed in a pool wall, underwater side view", caption: "V1 domed lens as installed — underwater side view" },
-          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/TreoMax-V1-domed-lens-installed-2.jpg", alt: "V1 domed-lens TreoMax light installed in a pool wall, wider view", caption: "V1 domed lens as installed — wider reference view" }
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1-vs-v2_side-profile-photo.jpeg", alt: "TreoMax V1 domed lens next to V2 square lens, side profile comparison", caption: "V1 domed lens (left) vs. V2 square lens (right) — side profile" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1-vs-v2_screws-top-down-photo.jpeg", alt: "TreoMax V1 and V2 lens screws, top-down comparison", caption: "Same two lights from directly above — V1 (left) vs. V2 (right) screws" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1_rusted-screws-closeup-photo.png", alt: "Close-up of a failed V1 TreoMax light with rusted screws", caption: "Failed V1 light — the screws only look oversized because of rust buildup" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1_domed-lens-installed-photo-1.jpeg", alt: "V1 domed-lens TreoMax light installed in a pool wall, underwater side view", caption: "V1 domed lens as installed — underwater side view" },
+          { src: "source-manuals/Pool Lighting/TreoMax+/TreoMax V1 Known Issue/treo-max-v1_domed-lens-installed-photo-2.jpg", alt: "V1 domed-lens TreoMax light installed in a pool wall, wider view", caption: "V1 domed lens as installed — wider reference view" }
         ]
       },
       {
         name: "Treo Retro",
-        hero: "assets/image_45.jpg",
+        hero: "assets/treo-retro_product-line-drawing.jpg",
         status: "Active",
         blurb: "Retrofit RGB light — fits standard Pentair GLoBrite-style niches plus gunite/fiberglass/vinyl nicheless variants.",
         tags: ["Light", "Niche", "Nicheless", "DIP Switch"],
@@ -1429,22 +1429,22 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_48.jpg", alt: "Treo Retro PCR-1Z/PCR-2Z driver and cloning DIP switch table", caption: "PCR-2Z (up to 5 lights) / PCR-1Z (up to 2 lights) driver + PCZ-2 transmitter, with cloning DIP table" },
-          { src: "assets/image_46.jpg", alt: "Treo Retro tool twist removal and install diagram", caption: "Insert tool into slots, twist to remove (left) or install (right)" },
-          { src: "assets/image_47.jpg", alt: "Treo Retro connecting to light plug diagram", caption: "Connecting to light — remove caps, insert plug, secure with screw-on cap" },
-          { src: "assets/image_49.jpg", alt: "Treo Retro niche installation diagram — concrete, fiberglass, vinyl", caption: "Niche installation — concrete (Pentair GLoBrite niche), fiberglass, and vinyl variants" },
-          { src: "assets/image_50.jpg", alt: "Treo Retro gunite/concrete nicheless installation setup diagram", caption: "Gunite/concrete nicheless installation setup — conduit run and wall fitting placement" }
+          { src: "assets/treo-retro_cloning-dip-table.jpg", alt: "Treo Retro PCR-1Z/PCR-2Z driver and cloning DIP switch table", caption: "PCR-2Z (up to 5 lights) / PCR-1Z (up to 2 lights) driver + PCZ-2 transmitter, with cloning DIP table" },
+          { src: "assets/treo-retro_twist-remove-install-diagram.jpg", alt: "Treo Retro tool twist removal and install diagram", caption: "Insert tool into slots, twist to remove (left) or install (right)" },
+          { src: "assets/treo-retro_connecting-plug-diagram.jpg", alt: "Treo Retro connecting to light plug diagram", caption: "Connecting to light — remove caps, insert plug, secure with screw-on cap" },
+          { src: "assets/treo-retro_niche-install-diagram.jpg", alt: "Treo Retro niche installation diagram — concrete, fiberglass, vinyl", caption: "Niche installation — concrete (Pentair GLoBrite niche), fiberglass, and vinyl variants" },
+          { src: "assets/treo-retro_gunite-nicheless-install-diagram.jpg", alt: "Treo Retro gunite/concrete nicheless installation setup diagram", caption: "Gunite/concrete nicheless installation setup — conduit run and wall fitting placement" }
         ]
       },
       {
         name: "Treo Mini+ (V2)",
-        hero: "assets/image_51.jpg",
+        hero: "assets/treo-mini-plus-v2_product-photo.jpg",
         status: "Active",
         blurb: "Nicheless twist-in mini RGB light — requires the Treo Tool for install/removal, will not back out by hand.",
         tags: ["Light", "Nicheless"],
         links: [
-          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/TreoMini/TreoMiniPlus-2.pdf" },
-          { label: "Sales Sheet (PDF)", url: "source-manuals/Pool Lighting/TreoMini/TREO-MINI-US-V2-6.26-2.pdf" },
+          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/TreoMini/treo-mini-plus_product-guide.pdf" },
+          { label: "Sales Sheet (PDF)", url: "source-manuals/Pool Lighting/TreoMini/treo-mini-plus-v2_us-guide.pdf" },
           { label: "Video: Concrete Treo Mini Install", url: "https://youtu.be/fM76I39ncZM" }
         ],
         facts: [
@@ -1504,22 +1504,22 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_55.jpg", alt: "Treo Mini+ Treo Tool alignment diagram", caption: "Treo Tool notch alignment, twist direction" },
-          { src: "assets/image_54.jpg", alt: "Treo Mini+ plug attachment diagram", caption: "Remove caps, align/insert plug, hand-tighten" },
-          { src: "assets/image_53.jpg", alt: "Treo Mini+ gasket and plumber's tape diagram", caption: "Plumber's tape / gasket on the thread" },
-          { src: "assets/image_52.jpg", alt: "Treo Mini+ gunite/concrete installation setup diagram", caption: "Gunite/concrete installation setup — conduit run and wall fitting placement" },
-          { src: "assets/image_56.jpg", alt: "Treo Mini+ vinyl/fiberglass hole-cut installation diagram", caption: "Vinyl/fiberglass install: 2½\" hole saw, center positioned 12\" below water level or 18\" below deck (min. 4\" of water)" },
-          { src: "assets/image_57.jpg", alt: "Treo Mini+ winterization removal diagram", caption: "Treo Tool removal for winterization" }
+          { src: "assets/treo-mini-plus-v2_treo-tool-alignment-diagram.jpg", alt: "Treo Mini+ Treo Tool alignment diagram", caption: "Treo Tool notch alignment, twist direction" },
+          { src: "assets/treo-mini-plus-v2_plug-attachment-diagram.jpg", alt: "Treo Mini+ plug attachment diagram", caption: "Remove caps, align/insert plug, hand-tighten" },
+          { src: "assets/treo-mini-plus-v2_gasket-plumbers-tape-diagram.jpg", alt: "Treo Mini+ gasket and plumber's tape diagram", caption: "Plumber's tape / gasket on the thread" },
+          { src: "assets/treo-mini-plus-v2_gunite-install-diagram.jpg", alt: "Treo Mini+ gunite/concrete installation setup diagram", caption: "Gunite/concrete installation setup — conduit run and wall fitting placement" },
+          { src: "assets/treo-mini-plus-v2_vinyl-fiberglass-install-diagram.jpg", alt: "Treo Mini+ vinyl/fiberglass hole-cut installation diagram", caption: "Vinyl/fiberglass install: 2½\" hole saw, center positioned 12\" below water level or 18\" below deck (min. 4\" of water)" },
+          { src: "assets/treo-mini-plus-v2_winterization-removal-diagram.jpg", alt: "Treo Mini+ winterization removal diagram", caption: "Treo Tool removal for winterization" }
         ]
       },
       {
         name: "Aqualumin Replacement (Sonar Retro Fit)",
-        hero: "assets/image_58.jpg",
+        hero: "assets/sonar-retrofit_marketing-hero-photo.jpg",
         status: "Active",
         blurb: "Nicheless replacement for an old Pentair AquaLumin — new bracket and light head bolt into the existing niche/wall fitting.",
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/Aqualumin Replacement/AqualuminManual.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Aqualumin Replacement/PALSonarRetroAqualuminReplacementLight-2.pdf" }
+          { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/Aqualumin Replacement/aqualumin-replacement_manual.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Aqualumin Replacement/aqualumin-replacement_sonar-retrofit-guide.pdf" }
         ],
         tags: ["Light", "Retrofit", "Sonar"],
         facts: [
@@ -1561,23 +1561,23 @@ const DATA = [
           "The gel pack can only be installed once — once its screws are seated they must not be removed or reset, or the water-tight seal is compromised."
         ],
         images: [
-          { src: "assets/image_59.jpg", alt: "Old AquaLumin light in niche before removal", caption: "Old AquaLumin light seated in the niche, before removal" },
-          { src: "assets/image_60.jpg", alt: "Aqualumin gasket plate and light mount alignment against niche", caption: "Three machine screws secure the light mount through the gasket plate into the niche; the fourth pan-head screw secures only the gasket plate" },
-          { src: "assets/image_61.jpg", alt: "Aqualumin replacement light fully installed and flush with pool wall", caption: "Light seated flush in the mounting plate" },
-          { src: "assets/image_62.jpg", alt: "Aqualumin Sonar remote pairing, cloning, and unpairing reference diagram", caption: "Pairing to a zone (press channel's power button 3x), cloning (hold channel's power button — 1=PAL, 2=Jandy, 3=Hayward, 4=Pentair), and unpairing (press linked channel's power button 5x)" },
-          { src: "assets/image_64.jpg", alt: "Aqualumin gel pack prepping, wiring, and attaching diagram", caption: "Gel Pack Wiring (reusing existing cable): drill a 5/16\" hole in the top face for trapped air to escape, wire positive to the screw furthest from the cable entry and negative to the closest, and seat screws 1st/2nd/3rd as marked — seal confirmed when gel appears through the drilled hole" },
-          { src: "assets/image_63.jpg", alt: "Aqualumin replacement parts exploded diagram", caption: "Replacement parts — Wall Mounting Bracket (64-PAL-RAL-BRK), Wall Spacer/Gasket (64-PAL-RAL-GASKET), Gel Pack (64-PAL-RAL-GEL), Screw Bag (64-PAL-RAL-SCREW)" }
+          { src: "assets/aqualumin-replacement_before-removal-photo.jpg", alt: "Old AquaLumin light in niche before removal", caption: "Old AquaLumin light seated in the niche, before removal" },
+          { src: "assets/aqualumin-replacement_gasket-plate-alignment-diagram.jpg", alt: "Aqualumin gasket plate and light mount alignment against niche", caption: "Three machine screws secure the light mount through the gasket plate into the niche; the fourth pan-head screw secures only the gasket plate" },
+          { src: "assets/aqualumin-replacement_installed-photo.jpg", alt: "Aqualumin replacement light fully installed and flush with pool wall", caption: "Light seated flush in the mounting plate" },
+          { src: "assets/sonar-remote_pairing-cloning-unpairing-diagram.jpg", alt: "Aqualumin Sonar remote pairing, cloning, and unpairing reference diagram", caption: "Pairing to a zone (press channel's power button 3x), cloning (hold channel's power button — 1=PAL, 2=Jandy, 3=Hayward, 4=Pentair), and unpairing (press linked channel's power button 5x)" },
+          { src: "assets/aqualumin-replacement_gel-pack-wiring-diagram.jpg", alt: "Aqualumin gel pack prepping, wiring, and attaching diagram", caption: "Gel Pack Wiring (reusing existing cable): drill a 5/16\" hole in the top face for trapped air to escape, wire positive to the screw furthest from the cable entry and negative to the closest, and seat screws 1st/2nd/3rd as marked — seal confirmed when gel appears through the drilled hole" },
+          { src: "assets/aqualumin-replacement_exploded-parts-diagram.jpg", alt: "Aqualumin replacement parts exploded diagram", caption: "Replacement parts — Wall Mounting Bracket (64-PAL-RAL-BRK), Wall Spacer/Gasket (64-PAL-RAL-GASKET), Gel Pack (64-PAL-RAL-GEL), Screw Bag (64-PAL-RAL-SCREW)" }
         ]
       },
       {
         name: "Sonar Retro Bulb (Evenglow)",
-        hero: "assets/image_94.jpg",
+        hero: "assets/sonar-retro-bulb_product-photo.jpg",
         status: "Active",
         blurb: "Screw-in bulb retrofit for an existing PAR38-style fixture — housing, lens, and gasket stay in place, only the bulb swaps.",
         tags: ["Light", "Retrofit", "Sonar"],
         links: [
-          { label: "Lamp Instructions (PDF)", url: "source-manuals/Pool Lighting/Evenglow Sonar Retro/64-PAL-SRL-RGB-LAMP-INSTRUCTIONS.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Evenglow Sonar Retro/PALRetroLamp.pdf" },
+          { label: "Lamp Instructions (PDF)", url: "source-manuals/Pool Lighting/Evenglow Sonar Retro/sonar-retro-bulb-64-pal-srl_instructions.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Evenglow Sonar Retro/sonar-retro-bulb_lamp-guide.pdf" },
           { label: "Video: Sonar Remote Programming", url: "https://youtu.be/wXuuqXFJvwY" },
           { label: "Video: Sonar Remote Programming (No Cloning)", url: "https://youtu.be/8ape6dn3eac" },
           { label: "Video: Retro Lamp/Bulb Troubleshooting", url: "https://youtu.be/LAUh6TSKc0g" },
@@ -1616,20 +1616,20 @@ const DATA = [
           "The Aqualumin Replacement card's remote reference only goes up to channel 4 (no Astral); this product's remote adds a 5th (Astral) cloning channel. Same pairing/cloning/unpairing procedure shape on both, but don't assume the two remotes are interchangeable hardware."
         ],
         images: [
-          { src: "assets/image_96.jpg", alt: "Sonar Retro Bulb removal steps 1 and 2 diagram", caption: "Removing the existing fixture and old bulb" },
-          { src: "assets/image_97.jpg", alt: "Sonar Retro Bulb inspection steps 3 and 4 diagram", caption: "Inspecting the housing and drying it out" },
-          { src: "assets/image_98.jpg", alt: "Sonar Retro Bulb installation steps 5 and 6 diagram", caption: "Installing the new bulb and resealing the lens" },
-          { src: "assets/image_95.jpg", alt: "Sonar remote button layout and programming reference diagram", caption: "Sonar remote — button layout, zone linking/unlinking, and cloning channels" }
+          { src: "assets/sonar-retro-bulb_removal-steps-diagram.jpg", alt: "Sonar Retro Bulb removal steps 1 and 2 diagram", caption: "Removing the existing fixture and old bulb" },
+          { src: "assets/sonar-retro-bulb_inspection-steps-diagram.jpg", alt: "Sonar Retro Bulb inspection steps 3 and 4 diagram", caption: "Inspecting the housing and drying it out" },
+          { src: "assets/sonar-retro-bulb_installation-steps-diagram.jpg", alt: "Sonar Retro Bulb installation steps 5 and 6 diagram", caption: "Installing the new bulb and resealing the lens" },
+          { src: "assets/sonar-sr-remote_labeled-diagram.jpg", alt: "Sonar remote button layout and programming reference diagram", caption: "Sonar remote — button layout, zone linking/unlinking, and cloning channels" }
         ]
       },
       {
         name: "Evenglow Fiberglass (Wet Niche)",
-        hero: "assets/image_99.jpg",
+        hero: "assets/evenglow-fiberglass_product-photo.jpg",
         status: "Active",
         blurb: "Wet-niche light for fiberglass pools (EGF) — same driver platform as Evenglow (Niche/Nicheless).",
         links: [
-          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow FIbergless Niche/64-EGF-Install-Guide-2.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Evenglow FIbergless Niche/PALWetNiche-2.pdf" }
+          { label: "Install Guide (PDF)", url: "source-manuals/Pool Lighting/Evenglow FIbergless Niche/evenglow-fiberglass-64-egf_install-guide.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Evenglow FIbergless Niche/evenglow-fiberglass_wet-niche-guide.pdf" }
         ],
         tags: ["Light", "Niche", "DIP Switch"],
         facts: [
@@ -1686,22 +1686,22 @@ const DATA = [
           "Confirm the actual driver and voltage on site before assuming a reading is wrong — sources on this product describe both a 12V DC PCR-4/PCR-2D generation and a newer 24V DC PCR-1Z/PCR-2Z generation."
         ],
         images: [
-          { src: "assets/image_103.jpg", alt: "Evenglow Fiberglass PCR-4/PCR-2D driver, PCT-1 transmitter, and cloning DIP table", caption: "PCR-4/PCR-2D drivers, PCT-1 transmitter, and 2-switch cloning DIP table — no Astral option on this older table" },
-          { src: "assets/image_102.jpg", alt: "Evenglow Fiberglass removing and installing light diagram", caption: "Twist anti-clockwise to remove, clockwise to install" },
-          { src: "assets/image_104.jpg", alt: "Evenglow Fiberglass connecting to light plug diagram", caption: "Connecting to light — plug and cap sequence" },
-          { src: "assets/image_100.jpg", alt: "Evenglow Fiberglass drilling hole diagram", caption: "New install — drilling the hole; confirm size against the actual hardware in hand" },
-          { src: "assets/image_101.jpg", alt: "Evenglow Fiberglass installing light and sealing to pool shell diagram", caption: "New install — assembling the washer/nut over the cable and sealing the light to the pool shell with silicone on both sides" },
-          { src: "assets/image_31.jpg", alt: "Evenglow 24V PCR-1Z wiring overview diagram", caption: "24V PCR-1Z driver wiring overview — Blue/Grey/Red/White light leads, E/A/N power terminals, 3-switch cloning DIP" }
+          { src: "assets/evenglow-fiberglass_driver-cloning-dip-table.jpg", alt: "Evenglow Fiberglass PCR-4/PCR-2D driver, PCT-1 transmitter, and cloning DIP table", caption: "PCR-4/PCR-2D drivers, PCT-1 transmitter, and 2-switch cloning DIP table — no Astral option on this older table" },
+          { src: "assets/evenglow-fiberglass_removing-installing-diagram.jpg", alt: "Evenglow Fiberglass removing and installing light diagram", caption: "Twist anti-clockwise to remove, clockwise to install" },
+          { src: "assets/evenglow-fiberglass_connecting-plug-diagram.jpg", alt: "Evenglow Fiberglass connecting to light plug diagram", caption: "Connecting to light — plug and cap sequence" },
+          { src: "assets/evenglow-fiberglass_drilling-hole-diagram.jpg", alt: "Evenglow Fiberglass drilling hole diagram", caption: "New install — drilling the hole; confirm size against the actual hardware in hand" },
+          { src: "assets/evenglow-fiberglass_installing-sealing-diagram.jpg", alt: "Evenglow Fiberglass installing light and sealing to pool shell diagram", caption: "New install — assembling the washer/nut over the cable and sealing the light to the pool shell with silicone on both sides" },
+          { src: "assets/pcr-1z_24v-wiring-overview-diagram.jpg", alt: "Evenglow 24V PCR-1Z wiring overview diagram", caption: "24V PCR-1Z driver wiring overview — Blue/Grey/Red/White light leads, E/A/N power terminals, 3-switch cloning DIP" }
         ]
       },
       {
         name: "Treo Micro (Nicheless)",
-        hero: "assets/image_105.jpg",
+        hero: "assets/treo-micro-nicheless_product-photo.jpg",
         status: "Active",
         blurb: "Nicheless push-to-fit micro RGB light (also written TreoMicro / EGMIC in PAL docs).",
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/TreoMicro Nicheless/TreoMicro.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/TreoMicro Nicheless/PALTreoMicro-2.pdf" }
+          { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/TreoMicro Nicheless/treo-micro-nicheless_install-guide.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/TreoMicro Nicheless/treo-micro-nicheless_product-guide.pdf" }
         ],
         tags: ["Light", "Nicheless", "DIP Switch"],
         facts: [
@@ -1758,22 +1758,22 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_109.jpg", alt: "Treo Micro PCR-1Z/PCR-2Z drivers, PCZ-2 transmitter, and cloning DIP table", caption: "PCR-1Z/PCR-2Z drivers, PCZ-2 transmitter, and 2-switch cloning DIP table — no Astral option on this table" },
-          { src: "assets/image_108.jpg", alt: "Treo Micro removing and installing light diagram", caption: "Removing (screwdriver dislodge + pull) and installing (push to fit)" },
-          { src: "assets/image_110.jpg", alt: "Treo Micro connecting to light plug diagram", caption: "Connecting to light — cap removal and plug/sleeve sequence" },
-          { src: "assets/image_106.jpg", alt: "Treo Micro wall fitting diagrams for concrete, fiberglass, and vinyl pools", caption: "Wall fitting reference — concrete (gunite surround), fiberglass (64-EGMIC-NA adapter, 50mm hole), and vinyl (64-EGMIC-CG thread adapter) — all push-to-fit at the light itself" },
-          { src: "assets/image_107.jpg", alt: "Treo Micro gunite concrete nicheless installation setup diagram", caption: "Gunite/concrete installation setup — 48\" min from pool edge to transformer, 18\" min junction box/transformer to max water level, 4\" min to top of lens" }
+          { src: "assets/treo-micro-nicheless_driver-cloning-dip-table.jpg", alt: "Treo Micro PCR-1Z/PCR-2Z drivers, PCZ-2 transmitter, and cloning DIP table", caption: "PCR-1Z/PCR-2Z drivers, PCZ-2 transmitter, and 2-switch cloning DIP table — no Astral option on this table" },
+          { src: "assets/treo-micro-nicheless_removing-installing-diagram.jpg", alt: "Treo Micro removing and installing light diagram", caption: "Removing (screwdriver dislodge + pull) and installing (push to fit)" },
+          { src: "assets/treo-micro-nicheless_connecting-plug-diagram.jpg", alt: "Treo Micro connecting to light plug diagram", caption: "Connecting to light — cap removal and plug/sleeve sequence" },
+          { src: "assets/treo-micro-nicheless_wall-fitting-diagram.jpg", alt: "Treo Micro wall fitting diagrams for concrete, fiberglass, and vinyl pools", caption: "Wall fitting reference — concrete (gunite surround), fiberglass (64-EGMIC-NA adapter, 50mm hole), and vinyl (64-EGMIC-CG thread adapter) — all push-to-fit at the light itself" },
+          { src: "assets/treo-micro-nicheless_gunite-install-diagram.jpg", alt: "Treo Micro gunite concrete nicheless installation setup diagram", caption: "Gunite/concrete installation setup — 48\" min from pool edge to transformer, 18\" min junction box/transformer to max water level, 4\" min to top of lens" }
         ]
       },
       {
         name: "Canadian Retro (Sonar)",
-        hero: "assets/image_111.jpg",
+        hero: "assets/canadian-retro-sonar_product-photo.jpg",
         status: "Active",
         blurb: "Full retrofit built for AquaLamp® brand niches — reuses the existing niche's mounting tabs via a new adapter plate.",
         tags: ["Light", "Retrofit", "Sonar"],
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/Canadian Retro/SonarCanadianRetro.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Canadian Retro/PALCanadaRetro.pdf" },
+          { label: "Manual (PDF)", url: "source-manuals/Pool Lighting/Canadian Retro/canadian-retro-sonar_install-guide.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Pool Lighting/Canadian Retro/canadian-retro_install-guide.pdf" },
           { label: "Video: Canadian Sonar Light", url: "https://youtu.be/gc4m8RZpbVY" }
         ],
         facts: [
@@ -1804,11 +1804,11 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_116.jpg", alt: "Canadian Retro removing existing light and stripping cable diagram", caption: "Removing the old light (twist counter-clockwise) and stripping the cable to 10mm insulated end / 10mm bare wire" },
-          { src: "assets/image_112.jpg", alt: "Canadian Retro plug assembly wiring diagram", caption: "Plug nut / gland nut / gland internal grabber over the cable, then wiring white to B- and black to + on the plug block" },
-          { src: "assets/image_113.jpg", alt: "Canadian Retro plug housing assembly diagram", caption: "Plug housing wrap + 2-screw secure, then gland grabber and gland nut onto the cable" },
-          { src: "assets/image_114.jpg", alt: "Canadian Retro adapter plate and light installation diagram", caption: "Adapter plate onto existing mounting tabs, then plug into the light and hand-tighten" },
-          { src: "assets/image_115.jpg", alt: "Canadian Retro securing light and winterization diagram", caption: "Securing the light with 2 screws; winterization uses the same 2 screws in reverse" }
+          { src: "assets/canadian-retro-sonar_removing-stripping-cable-diagram.jpg", alt: "Canadian Retro removing existing light and stripping cable diagram", caption: "Removing the old light (twist counter-clockwise) and stripping the cable to 10mm insulated end / 10mm bare wire" },
+          { src: "assets/canadian-retro-sonar_plug-assembly-wiring-diagram.jpg", alt: "Canadian Retro plug assembly wiring diagram", caption: "Plug nut / gland nut / gland internal grabber over the cable, then wiring white to B- and black to + on the plug block" },
+          { src: "assets/canadian-retro-sonar_plug-housing-assembly-diagram.jpg", alt: "Canadian Retro plug housing assembly diagram", caption: "Plug housing wrap + 2-screw secure, then gland grabber and gland nut onto the cable" },
+          { src: "assets/canadian-retro-sonar_adapter-plate-install-diagram.jpg", alt: "Canadian Retro adapter plate and light installation diagram", caption: "Adapter plate onto existing mounting tabs, then plug into the light and hand-tighten" },
+          { src: "assets/canadian-retro-sonar_securing-winterization-diagram.jpg", alt: "Canadian Retro securing light and winterization diagram", caption: "Securing the light with 2 screws; winterization uses the same 2 screws in reverse" }
         ]
       },
       {
@@ -1818,7 +1818,7 @@ const DATA = [
         blurb: "Adapter kit for putting a new 4-pin PAL light on an old 2-wire installation — no new wire pull needed.",
         tags: ["Retrofit", "Accessory"],
         links: [
-          { label: "Retrofit Guide (PDF)", url: "source-manuals/Pool Lighting/Field Plug/64-EGCPB-SWH-2W/PAL-2-Wire-to-4-Pin-Pool-Light-Retrofit-V1-6.26.pdf" },
+          { label: "Retrofit Guide (PDF)", url: "source-manuals/Pool Lighting/Field Plug/64-EGCPB-SWH-2W/field-plug-64-egcpb-swh-2w_retrofit-guide.pdf" },
           { label: "Video: Field Plug Assembly with Araldite", url: "https://youtu.be/ZztiPepbR_0" },
           { label: "Video: Pool Spa Lamp Field Plug Assembly Process", url: "https://youtu.be/4na_wTK0zfM" }
         ],
@@ -1856,14 +1856,14 @@ const DATA = [
     products: [
       {
         name: "Quick-Ship Strip Lighting (Evenglow Flex NFWB8/NFLT8)",
-        hero: "assets/image_130.jpg",
+        hero: "assets/quick-ship-strip_product-photo.jpg",
         status: "Active",
         blurb: "Pre-assembled, factory-built stocked-length strip — the ready-to-ship tier of the Evenglow Strip family.",
         links: [
-          { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Quick Ship Strip /INSTALLATION_GUIDE.pdf" },
-          { label: "Brochure (PDF)", url: "source-manuals/Strip/Quick Ship Strip /Quick-Ship-Strip-Lighting-Brochure-USA-V2.pdf" },
-          { label: "NFWB8 Spec Sheet (PDF)", url: "source-manuals/Strip/Quick Ship Strip /PAL-NFWB8-Spec-Sheet.V26.2.pdf" },
-          { label: "NFLT8 Spec Sheet (PDF)", url: "source-manuals/Strip/Quick Ship Strip /PAL-NFLT8-Spec-Sheet.V26.2.pdf" }
+          { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Quick Ship Strip /quick-ship-strip_install-guide.pdf" },
+          { label: "Brochure (PDF)", url: "source-manuals/Strip/Quick Ship Strip /quick-ship-strip_brochure.pdf" },
+          { label: "NFWB8 Spec Sheet (PDF)", url: "source-manuals/Strip/Quick Ship Strip /nfwb8-quick-ship-strip_spec-sheet.pdf" },
+          { label: "NFLT8 Spec Sheet (PDF)", url: "source-manuals/Strip/Quick Ship Strip /nflt8-quick-ship-strip_spec-sheet.pdf" }
         ],
         tags: ["Strip", "LED"],
         facts: [
@@ -1941,23 +1941,23 @@ const DATA = [
           "Confirm actual driver wattage off the physical unit's label before sizing a run near a driver's rated capacity — some PAL documents show the SKU number suffix not matching the stated wattage."
         ],
         images: [
-          { src: "assets/image_131.jpg", alt: "NFWB8 Side View Strip vs NFLT8 Top View Strip comparison diagram", caption: "NFWB8 (Side View) vs NFLT8 (Top View) — mounting track profiles, bend direction, and mounting styles" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_132.jpg", alt: "Strip lighting general product wiring diagram, driver to LED strip", caption: "General product wiring — driver board (Module Config DIP bank, Wi-Fi connector) to LED Strip, junction box optional per local code" }
+          { src: "assets/quick-ship-strip_side-vs-top-view-comparison-diagram.jpg", alt: "NFWB8 Side View Strip vs NFLT8 Top View Strip comparison diagram", caption: "NFWB8 (Side View) vs NFLT8 (Top View) — mounting track profiles, bend direction, and mounting styles" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_driver-wiring-diagram.jpg", alt: "Strip lighting general product wiring diagram, driver to LED strip", caption: "General product wiring — driver board (Module Config DIP bank, Wi-Fi connector) to LED Strip, junction box optional per local code" }
         ]
       },
       {
         name: "Perimeter Strip Kits (Evenglow Flex NFWB8/NFLT8)",
-        hero: "assets/image_135.jpg",
+        hero: "assets/perimeter-strip-kit_contents-diagram.jpg",
         status: "Active",
         blurb: "All-in-one kit containing everything for an 85', 100', or 115' pool perimeter run.",
         links: [
-          { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/Perimeter-Strip-Kit-US-InstallationGuide-Print.pdf" },
-          { label: "Kit Brochure (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/Pool-Perimeter-Strip-Lighting-Kits-USA-Jan29-2026.pdf" },
-          { label: "Infield Cutting Instructions (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/PAL-Lighting-Infield-Strip-Cutting-Instructions-with-warranty-VFeb-26.pdf" },
-          { label: "NFWB8 Spec Sheet (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/PAL-NFWB8-Spec-Sheet.V26.2.pdf" },
-          { label: "NFLT8 Spec Sheet (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/PAL-NFLT8-Spec-Sheet.V26.2.pdf" }
+          { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/perimeter-strip-kit_install-guide.pdf" },
+          { label: "Kit Brochure (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/perimeter-strip-kit_brochure.pdf" },
+          { label: "Infield Cutting Instructions (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/perimeter-strip-kit_cutting-instructions-warranty.pdf" },
+          { label: "NFWB8 Spec Sheet (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/nfwb8-perimeter-strip-kit_spec-sheet.pdf" },
+          { label: "NFLT8 Spec Sheet (PDF)", url: "source-manuals/Strip/Perimeter Strip Kits/nflt8-perimeter-strip-kit_spec-sheet.pdf" }
         ],
         tags: ["Strip", "LED"],
         facts: [
@@ -2032,12 +2032,12 @@ const DATA = [
           "See the Drivers & Controllers cards for the Cloning DIP switch table (Jandy/Pentair/Hayward/PAL/Astral) if this kit is being cloned into a competitor automation system."
         ],
         images: [
-          { src: "assets/image_136.jpg", alt: "Pool perimeter channel and conduit planning diagram", caption: "Example pool — conduit-to-channel routing, channel opening, and LED strip path around the full perimeter" },
-          { src: "assets/image_137.jpg", alt: "Mounting track corner bend radius and curve spacing diagram", caption: "Corner bend radius (38.1mm/1.5\") and curve section spacing (100mm/4\" min – 250mm/10\" max)" },
-          { src: "assets/image_138.jpg", alt: "Two-person strip installation technique, do not push with screwdriver warning", caption: "2-person minimum install — press-fit by hand only, no screwdriver or similar tool" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" },
-          { src: "assets/image_141.jpg", alt: "Remote driver wiring diagram, AC line in and 24V DC out terminals", caption: "Remote driver — AC LINE IN (Brown/Blue) and 24V DC OUT (Z1/Z2 terminal blocks)" }
+          { src: "assets/perimeter-strip-kit_channel-conduit-planning-diagram.jpg", alt: "Pool perimeter channel and conduit planning diagram", caption: "Example pool — conduit-to-channel routing, channel opening, and LED strip path around the full perimeter" },
+          { src: "assets/perimeter-strip-kit_track-corner-bend-diagram.jpg", alt: "Mounting track corner bend radius and curve spacing diagram", caption: "Corner bend radius (38.1mm/1.5\") and curve section spacing (100mm/4\" min – 250mm/10\" max)" },
+          { src: "assets/perimeter-strip-kit_two-person-install-technique-diagram.jpg", alt: "Two-person strip installation technique, do not push with screwdriver warning", caption: "2-person minimum install — press-fit by hand only, no screwdriver or similar tool" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" },
+          { src: "assets/perimeter-strip-kit_driver-wiring-diagram.jpg", alt: "Remote driver wiring diagram, AC line in and 24V DC out terminals", caption: "Remote driver — AC LINE IN (Brown/Blue) and 24V DC OUT (Z1/Z2 terminal blocks)" }
         ]
       },
       {
@@ -2046,8 +2046,8 @@ const DATA = [
         blurb: "Design-build tier, not a stocked SKU — confirm the part number from the customer's PAL design quote before opening a variant card.",
         summary: "Every design-build job goes through a free PAL lighting-design consultation and is built to the project's exact length. Covers 10 physical variants across three mounting categories — Side View, Top View, and Hardscape — including Mini cross-sections and two genuinely submersible Underwater variants (NFUS2/NFUT2). Each variant has its own card.",
         links: [
-          { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Custom Strip/INSTALLATION_GUIDE.pdf" },
-          { label: "Sales Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Custom-Strip-Sales-Sheet-USA-Jan-29-2026.pdf" },
+          { label: "Installation Guide (PDF)", url: "source-manuals/Strip/Custom Strip/custom-strip_install-guide.pdf" },
+          { label: "Sales Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/custom-strip_sales-sheet.pdf" },
           { label: "Strip Lighting Installation Guide (PDF)", url: "https://pallighting.com/manuals/strips/INSTALLATION_GUIDE.pdf" }
         ],
         table: {
@@ -2070,12 +2070,12 @@ const DATA = [
       },
       {
         name: "NFWB8 — Flex Side View, Wide Beam (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB8/NFWB-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB8/nfwb8-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Wide Beam Side View strip, project-quoted through Custom Strip — same physical strip as the Quick-Ship/Perimeter Strip Kit NFWB8.",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB8/PAL-NFWB8-Spec-Sheet.V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB8/nfwb8-custom-strip_spec-sheet.pdf" },
           { label: "NFWB8 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-NFWB8-Spec-Sheet.V26.2.pdf" }
         ],
         facts: [
@@ -2127,16 +2127,16 @@ const DATA = [
           "Same SKU, driver family, and DIP cloning table as the Quick-Ship Strip and Perimeter Strip Kits cards — the only difference is purchase path. See those cards for driver wattage options and the Drivers & Controllers cards for the Cloning DIP switch table."
         ],
         images: [
-          { src: "assets/image_176.jpg", alt: "NFWB8 Flex Side View Wide Beam mounting track and light diagram with dimensions", caption: "NFWB8 mounting track and light profile — IP68 Non-Submersible, RGB 2200K-5000K" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nfwb8-custom-strip_mounting-track-dimensions-diagram.jpg", alt: "NFWB8 Flex Side View Wide Beam mounting track and light diagram with dimensions", caption: "NFWB8 mounting track and light profile — IP68 Non-Submersible, RGB 2200K-5000K" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFWB2 — Flex Side View, Wide Beam V.2 (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/NFWB2-Prod.jpg",
+        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/nfwb2-custom-strip_product-photo.jpg",
         status: "Active",
         blurb: "Newer \"V.2\" Wide Beam Side View strip, higher power than NFWB8 — Custom Strip only, no Quick-Ship or kit equivalent. Confirm with PAL whether this supersedes or coexists with NFWB8 before quoting.",
         tags: ["Strip", "LED"],
@@ -2201,22 +2201,22 @@ const DATA = [
           "NFWB8's own card lists its mounting track and end cap SKUs under an \"NFWB2\" prefix (64-PAL-NFWB2-MT-E-6, 64-PAL-NFWB2-ENDCAP), and this SKU's own mounting track (64-NFWB2-MT-E-6) is nearly identical. Whether NFWB2 is a newer replacement for NFWB8, a higher-output sibling that coexists with it, or the two simply share hardware by design hasn't been confirmed — verify with PAL before assuming either one supersedes the other on a quote."
         ],
         images: [
-          { src: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/NFWB2-Specs.jpg", alt: "NFWB2 power, color, max length, and fitting/cord/certification specs", caption: "Specs — Multi-Color and Single-Color power/length, fitting, cord, pool type, certifications, and bending diagram" },
-          { src: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/NFWB2-SKUs-CableEntry.jpg", alt: "NFWB2 cable entry styles and SKU/description table", caption: "Cable entry styles (Side-Left, Straight, Side-Right, Rear) and full SKU list" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/nfwb2-custom-strip_specs-diagram.jpg", alt: "NFWB2 power, color, max length, and fitting/cord/certification specs", caption: "Specs — Multi-Color and Single-Color power/length, fitting, cord, pool type, certifications, and bending diagram" },
+          { src: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFWB2/nfwb2-custom-strip_skus-cable-entry-diagram.jpg", alt: "NFWB2 cable entry styles and SKU/description table", caption: "Cable entry styles (Side-Left, Straight, Side-Right, Rear) and full SKU list" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFLS8 — Flex Side View (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFLS8/NFLS-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFLS8/nfls8-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Standard-beam Side View strip — Custom Strip is the only way to order this SKU (no Quick-Ship or kit equivalent).",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFLS8/PAL-NFLS8-Spec-Sheet-V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFLS8/nfls8-custom-strip_spec-sheet.pdf" },
           { label: "NFLS8 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-NFLS8-Spec-Sheet-V26.2.pdf" }
         ],
         facts: [
@@ -2271,21 +2271,21 @@ const DATA = [
           "No end cap SKU is published on this SKU's own spec sheet — confirm with PAL directly rather than assuming a shared part number. See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_180.jpg", alt: "NFLS8 cable entry options diagram - rear, straight, side-left, side-right entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right) — no front entry on this SKU" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nfls8-custom-strip_cable-entry-options-diagram.jpg", alt: "NFLS8 cable entry options diagram - rear, straight, side-left, side-right entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right) — no front entry on this SKU" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFMS2 — Mini Side View (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFMS2/NFMS-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFMS2/nfms2-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Mini cross-section Side View strip — genuinely smaller physical part than NFWB8/NFLS8, not just a naming variant.",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFMS2/PAL-NFMS2-Spec-Sheet.V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFMS2/nfms2-custom-strip_spec-sheet.pdf" },
           { label: "NFMS2 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-NFMS2-Spec-Sheet.V26.2.pdf" }
         ],
         facts: [
@@ -2340,21 +2340,21 @@ const DATA = [
           "No end cap SKU is published on this SKU's own spec sheet — confirm with PAL directly rather than assuming a shared part number. See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_188.jpg", alt: "NFMS2 cable entry options diagram - rear, straight, side-left, side-right entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right) — no front entry on this SKU" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nfms2-custom-strip_cable-entry-options-diagram.jpg", alt: "NFMS2 cable entry options diagram - rear, straight, side-left, side-right entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right) — no front entry on this SKU" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFUS2 — Flex Underwater, Side View (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFUS2/NFUS-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFUS2/nfus2-custom-strip_product-photo.png",
         status: "Active",
         blurb: "One of only two genuinely submersible Custom Strip variants (with NFUT2) — every other Side View SKU is non-submersible.",
         tags: ["Strip", "LED", "Submersible"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFUS2/PAL-NFUS-V2-Spec-Sheet-5-26.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Downward Facing_Side Bending/NFUS2/nfus2-custom-strip_spec-sheet.pdf" },
           { label: "NFUS2 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/05/PAL-NFUS-V2-Spec-Sheet-5-26.pdf" }
         ],
         facts: [
@@ -2408,21 +2408,21 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_190.jpg", alt: "NFUS2 cable entry options diagram - rear, straight, side-left, side-right entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right) — no front entry on this SKU" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nfus2-custom-strip_cable-entry-options-diagram.jpg", alt: "NFUS2 cable entry options diagram - rear, straight, side-left, side-right entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right) — no front entry on this SKU" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFLT8 — Flex Top View (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFLT8/NFLT-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFLT8/nflt8-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Top View strip, project-quoted through Custom Strip — same physical strip as the Quick-Ship/Perimeter Strip Kit NFLT8.",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFLT8/PAL-NFLT8-Spec-Sheet.V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFLT8/nflt8-custom-strip_spec-sheet.pdf" },
           { label: "NFLT8 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-NFLT8-Spec-Sheet.V26.2.pdf" }
         ],
         facts: [
@@ -2478,21 +2478,21 @@ const DATA = [
           "Same SKU, driver family, and DIP cloning table as the Quick-Ship Strip and Perimeter Strip Kits cards — the only difference is purchase path. See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_179.jpg", alt: "NFLT8 cable entry options diagram - rear, straight, side-left, side-right, front entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right), Front" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nflt8-custom-strip_cable-entry-options-diagram.jpg", alt: "NFLT8 cable entry options diagram - rear, straight, side-left, side-right, front entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right), Front" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFMT8 — Mini Top View (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFMT8/NFMT-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFMT8/nfmt8-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Smaller cross-section counterpart to NFLT8 — Custom Strip is the only way to order this SKU.",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFMT8/PAL-NFMT8-Spec-Sheet.V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFMT8/nfmt8-custom-strip_spec-sheet.pdf" },
           { label: "NFMT8 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-NFMT8-Spec-Sheet.V26.2.pdf" }
         ],
         facts: [
@@ -2547,21 +2547,21 @@ const DATA = [
           "See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_189.jpg", alt: "NFMT8 cable entry options diagram - rear, straight, side-left, side-right, front entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right), Front" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nfmt8-custom-strip_cable-entry-options-diagram.jpg", alt: "NFMT8 cable entry options diagram - rear, straight, side-left, side-right, front entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right), Front" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "NFUT2 — Flex Underwater, Top View (Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFUT2/NFUT-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFUT2/nfut2-custom-strip_product-photo.png",
         status: "Active",
         blurb: "One of only two genuinely submersible Custom Strip variants (with NFUS2) — every other Top View SKU is non-submersible.",
         tags: ["Strip", "LED", "Submersible"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFUT2/PAL-NFUT-V2-Spec-Sheet-5-26.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Outward Facing_Top Bending/NFUT2/nfut2-custom-strip_spec-sheet.pdf" },
           { label: "NFUT2 Spec Sheet (PDF)", url: "https://pallighting.com/wp-content/uploads/2026/05/PAL-NFUT-V2-Spec-Sheet-5-26.pdf" }
         ],
         facts: [
@@ -2615,21 +2615,21 @@ const DATA = [
           "Mounting track SKU not confirmed for this specific SKU — confirm with PAL directly rather than guessing. See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_191.jpg", alt: "NFUT2 cable entry options diagram - rear, straight, side-left, side-right, front entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right), Front" },
-          { src: "assets/image_134.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
-          { src: "assets/image_133.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
-          { src: "assets/image_139.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
-          { src: "assets/image_140.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
+          { src: "assets/nfut2-custom-strip_cable-entry-options-diagram.jpg", alt: "NFUT2 cable entry options diagram - rear, straight, side-left, side-right, front entry", caption: "Cable entry options — Rear, Straight, Side (Left/Right), Front" },
+          { src: "assets/custom-strip_corner-bend-radius-overhang-diagram.jpg", alt: "Strip lighting corner minimum bend radius and overhang diagram", caption: "External and internal corner mounting — 38.1mm (1.5\") bend radius, R50mm (2\") min coping overhang" },
+          { src: "assets/custom-strip_entry-point-dark-spot-diagram.jpg", alt: "Strip lighting entry point wrong setting versus correct setting dark spot diagram", caption: "Wrong setting (entry points meet at the gap, creates a dark spot) vs correct setting (entry points offset, diffused light covers the gap)" },
+          { src: "assets/custom-strip_safe-cut-point-diagram.jpg", alt: "Safe-to-cut point diagram on LED strip", caption: "Cut point — dark line between copper pads, side view and top view" },
+          { src: "assets/custom-strip_end-cap-resealing-diagram.jpg", alt: "Resealing the strip end cap with silicone sealant, step by step", caption: "Resealing sequence — sealant into the cut end, end cap filled and seated, excess smoothed out" }
         ]
       },
       {
         name: "PLO2-F — Feature, Side View (Rigid Track, Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-F/PLOF-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-F/plo2-f-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Wider-track member of the rigid Hardscape Feature Strip line — mitred corners, not a bendable track.",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-F/PAL-PLO2-Spec-Sheet.V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-F/plo2-f-custom-strip_spec-sheet.pdf" },
           { label: "PLO2 Spec Sheet (PDF, covers both PLO2-F and PLO2-W)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-PLO2-Spec-Sheet.V26.2.pdf" }
         ],
         facts: [
@@ -2682,17 +2682,17 @@ const DATA = [
           "This line supports straight entry only — no rear/side/front cable entry options like the flexible strips. See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_186.jpg", alt: "PLO2-F Feature rigid track LED strip and track cross-section dimension diagram, side by side", caption: "Track cross-section and light profile" }
+          { src: "assets/plo2-f-custom-strip_cross-section-dimensions-diagram.jpg", alt: "PLO2-F Feature rigid track LED strip and track cross-section dimension diagram, side by side", caption: "Track cross-section and light profile" }
         ]
       },
       {
         name: "PLO2-W — Feature, Side View (Rigid Track, Custom Strip)",
-        hero: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-W/PLOW-Prod.png",
+        hero: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-W/plo2-w-custom-strip_product-photo.png",
         status: "Active",
         blurb: "Narrower-track member of the rigid Hardscape Feature Strip line — mitred corners, not a bendable track.",
         tags: ["Strip", "LED"],
         links: [
-          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-W/PAL-PLO2-Spec-Sheet.V26.2.pdf" },
+          { label: "Spec Sheet (PDF)", url: "source-manuals/Strip/Custom Strip/Hardscape_Outward Facing/PLO2-W/plo2-w-custom-strip_spec-sheet.pdf" },
           { label: "PLO2 Spec Sheet (PDF, covers both PLO2-F and PLO2-W)", url: "https://pallighting.com/wp-content/uploads/2026/02/PAL-PLO2-Spec-Sheet.V26.2.pdf" }
         ],
         facts: [
@@ -2745,7 +2745,7 @@ const DATA = [
           "This line supports straight entry only — no rear/side/front cable entry options like the flexible strips. See the Drivers & Controllers cards for the Cloning DIP switch tables."
         ],
         images: [
-          { src: "assets/image_187.jpg", alt: "PLO2-W Feature rigid track LED strip and track cross-section dimension diagram, side by side", caption: "Track cross-section and light profile" }
+          { src: "assets/plo2-w-custom-strip_cross-section-dimensions-diagram.jpg", alt: "PLO2-W Feature rigid track LED strip and track cross-section dimension diagram, side by side", caption: "Track cross-section and light profile" }
         ]
       }
     ]
@@ -2762,9 +2762,9 @@ const DATA = [
         blurb: "Acrylic sheet-waterfall feature — no serviceable parts, a failed unit is replaced whole.",
         tags: ["Water Feature", "LED"],
         links: [
-          { label: "Install Instructions (PDF)", url: "source-manuals/Water Features/Waterblade/Water-Blade-Instructions-3.pdf" },
-          { label: "Features Overview (PDF)", url: "source-manuals/Water Features/Waterblade/PAL-WaterBlade-Features-US-V2-2.pdf" },
-          { label: "Sales Sheet (PDF)", url: "source-manuals/Water Features/Waterblade/PAL-Waterblade-Sales-Sheet-US-Mar-2026-2.pdf" },
+          { label: "Install Instructions (PDF)", url: "source-manuals/Water Features/Waterblade/waterblade_install-instructions.pdf" },
+          { label: "Features Overview (PDF)", url: "source-manuals/Water Features/Waterblade/waterblade_features-sheet.pdf" },
+          { label: "Sales Sheet (PDF)", url: "source-manuals/Water Features/Waterblade/waterblade_sales-sheet.pdf" },
           { label: "Video: Waterblade Installation", url: "https://youtu.be/eatP5fRQuSo" }
         ],
         facts: [
@@ -2836,9 +2836,9 @@ const DATA = [
         blurb: "Multi-color LED bubbler for sun shelves and tanning ledges.",
         tags: ["Water Feature", "LED", "DIP Switch"],
         links: [
-          { label: "Install & Troubleshooting Manual (PDF)", url: "source-manuals/Water Features/Bubblers/PAL-Bubbler-ConcreteVinyl-InstructionsR00-2.pdf" },
-          { label: "Water Pressure / Plume Height Guide (PDF)", url: "source-manuals/Water Features/Bubblers/BubblerWaterPressureGuide.pdf" },
-          { label: "Sales Brochure (PDF)", url: "source-manuals/Water Features/Bubblers/PALBubbler-2.pdf" }
+          { label: "Install & Troubleshooting Manual (PDF)", url: "source-manuals/Water Features/Bubblers/bubbler_concrete-vinyl-install-guide.pdf" },
+          { label: "Water Pressure / Plume Height Guide (PDF)", url: "source-manuals/Water Features/Bubblers/bubbler_water-pressure-guide.pdf" },
+          { label: "Sales Brochure (PDF)", url: "source-manuals/Water Features/Bubblers/bubbler_sales-brochure.pdf" }
         ],
         facts: [
           { label: "SKUs", value: "64-EGB-CGS-80/-150 (gunite/concrete), 64-EGB-FVS-80/-150 (vinyl/fiberglass)" },
@@ -2922,8 +2922,8 @@ const DATA = [
           "The sales brochure's 64-EGB-FVS-150 line is mislabeled \"80ft Supply Cable\" — it is the 150ft version. This Bubbler is explicitly rated for concrete, fiberglass, and vinyl pools, including sun shelves — a gunite/concrete-only restriction and a lens note appearing elsewhere in the install manual apply to the WaterSphere, not this product."
         ],
         images: [
-          { src: "source-manuals/Water Features/Bubblers/64-EGB-CGS-exploded-parts.png", alt: "64-EGB-CGS-80 and 64-EGB-CGS-150 exploded parts diagram, gunite/concrete bubbler", caption: "64-EGB-CGS-80 / -150 (gunite/concrete) — exploded parts diagram with individual part numbers" },
-          { src: "source-manuals/Water Features/Bubblers/64-EGB-V2-exploded-parts-FVS-CGS.png", alt: "64-EGB-FVS-V2 and 64-EGB-CGS-V2 exploded parts diagram, fiberglass/vinyl and gunite/concrete bubbler side by side", caption: "V2 bubbler — 64-EGB-FVS-V2 (fiberglass/vinyl, left) and 64-EGB-CGS-V2 (gunite/concrete, right) side by side, with individual part numbers" }
+          { src: "source-manuals/Water Features/Bubblers/bubbler-64-egb-cgs_exploded-parts-diagram.png", alt: "64-EGB-CGS-80 and 64-EGB-CGS-150 exploded parts diagram, gunite/concrete bubbler", caption: "64-EGB-CGS-80 / -150 (gunite/concrete) — exploded parts diagram with individual part numbers" },
+          { src: "source-manuals/Water Features/Bubblers/bubbler-64-egb-v2_exploded-parts-diagram.png", alt: "64-EGB-FVS-V2 and 64-EGB-CGS-V2 exploded parts diagram, fiberglass/vinyl and gunite/concrete bubbler side by side", caption: "V2 bubbler — 64-EGB-FVS-V2 (fiberglass/vinyl, left) and 64-EGB-CGS-V2 (gunite/concrete, right) side by side, with individual part numbers" }
         ]
       },
       {
@@ -2933,8 +2933,8 @@ const DATA = [
         status: "Active",
         blurb: "Acrylic sphere that mounts over an Evenglow Bubbler — water sheets over the globe while the light illuminates it from below. Gunite/concrete pools only.",
         links: [
-          { label: "Install & Operations Manual (PDF)", url: "source-manuals/Water Features/WaterSphere/PALWatersphereInstructions-24-32inch.pdf" },
-          { label: "Brochure & Spec Sheet (PDF)", url: "source-manuals/Water Features/WaterSphere/WATERSPHERE-Brochure-24-32inch-2.pdf" }
+          { label: "Install & Operations Manual (PDF)", url: "source-manuals/Water Features/WaterSphere/watersphere_install-guide-24-32in.pdf" },
+          { label: "Brochure & Spec Sheet (PDF)", url: "source-manuals/Water Features/WaterSphere/watersphere_brochure-24-32in.pdf" }
         ],
         facts: [
           { label: "SKUs", value: "Sphere + adapter only: 64-EGBSP-24 (24\"), 64-EGBSP-32 (32\"). Complete kits with light and cable: 64-EGBSP-CGS-080/-150-24/-32" },
@@ -2996,7 +2996,7 @@ const DATA = [
       {
         name: "Wi-Fi Modules (64-WIFI, PCTWF series, Sonar)",
         sku: "64-WIFI & variants",
-        hero: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/42-PCTWF00/42-PCTWF00.png",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/42-PCTWF00/wifi-module-42-pctwf00_product-photo.png",
         status: "Active",
         blurb: "Check the module's status LEDs first on any \"app won't connect\" call — before assuming a pairing failure.",
         tags: ["WiFi"],
@@ -3034,16 +3034,16 @@ const DATA = [
           "The 64-PCTWF03 source folder is labeled \"64-PCTF03\" (no W) while the module's own faceplate reads 64-PCTWF03 — expect either spelling on work orders."
         ],
         images: [
-          { src: "assets/image_169.jpg", alt: "PAL Color Touch Wi-Fi Module (64-WIFI) with Power/WiFi Not Connected/WiFi Connected status LEDs and Reset button", caption: "64-WIFI module — Power On / WiFi Not Connected / WiFi Connected status LEDs and Reset button" },
-          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/42-PCTWF00/42-PCTWF00.png", alt: "42-PCTWF00 slide-in Wi-Fi module with 3 status LEDs and Reset button", caption: "42-PCTWF00 — slide-in module" },
-          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/42-PCTWF5/42-PCTWF5.png", alt: "42-PCTWF5 Touch 5 Wi-Fi module, external box with mounting tab", caption: "42-PCTWF5 — Touch 5 external module" },
-          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/64-PCTF03/64-PCTWF03.png", alt: "64-PCTWF03 external Wi-Fi module with 3 status LEDs and Reset button", caption: "64-PCTWF03 — external-box module (folder labeled 64-PCTF03)" },
-          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/64-PAL-SW/64-PAL-SW.png", alt: "64-PAL-SW Sonar Wi-Fi module with DMX512 input, antenna, Status and Link buttons", caption: "64-PAL-SW — Sonar Wi-Fi module (DMX512 input, Alexa/Google Assistant)" }
+          { src: "assets/wifi-module-64-wifi_labeled-photo.jpg", alt: "PAL Color Touch Wi-Fi Module (64-WIFI) with Power/WiFi Not Connected/WiFi Connected status LEDs and Reset button", caption: "64-WIFI module — Power On / WiFi Not Connected / WiFi Connected status LEDs and Reset button" },
+          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/42-PCTWF00/wifi-module-42-pctwf00_product-photo.png", alt: "42-PCTWF00 slide-in Wi-Fi module with 3 status LEDs and Reset button", caption: "42-PCTWF00 — slide-in module" },
+          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/42-PCTWF5/wifi-module-42-pctwf5-touch5_product-photo.png", alt: "42-PCTWF5 Touch 5 Wi-Fi module, external box with mounting tab", caption: "42-PCTWF5 — Touch 5 external module" },
+          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/64-PCTF03/wifi-module-64-pctwf03_product-photo.png", alt: "64-PCTWF03 external Wi-Fi module with 3 status LEDs and Reset button", caption: "64-PCTWF03 — external-box module (folder labeled 64-PCTF03)" },
+          { src: "source-manuals/WiFi, Color Touch App, Remotes/WiFi Module/64-PAL-SW/wifi-module-64-pal-sw-sonar_product-photo.png", alt: "64-PAL-SW Sonar Wi-Fi module with DMX512 input, antenna, Status and Link buttons", caption: "64-PAL-SW — Sonar Wi-Fi module (DMX512 input, Alexa/Google Assistant)" }
         ]
       },
       {
         name: "Color Touch App",
-        hero: "source-manuals/WiFi, Color Touch App, Remotes/Color Touch/PAL-RemoteApp.png",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/Color Touch/color-touch-app_hero-photo.png",
         status: "Active",
         blurb: "Account setup, driver linking, and day-to-day operation for the PAL Color Touch app.",
         tags: ["WiFi", "App"],
@@ -3053,7 +3053,7 @@ const DATA = [
           { label: "Wi-Fi module troubleshooting", value: "Status LEDs, 2.4GHz requirement, Reset button — covered on the Wi-Fi Modules card, not repeated here" }
         ],
         links: [
-          { label: "App Guide (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Color Touch/ColorTouchApp.pdf" },
+          { label: "App Guide (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Color Touch/color-touch-app_guide.pdf" },
           { label: "Video: PAL APP Setup and Network", url: "https://youtu.be/Faomey2YMcY" },
           { label: "Video: PAL Color Touch", url: "https://youtu.be/flc9xZYUdqw" },
           { label: "Video: PAL APP Timing Operation", url: "https://youtu.be/84HXlESbDjs" }
@@ -3077,18 +3077,18 @@ const DATA = [
           "The app needs Bluetooth and Local Network access to find and configure the Wi-Fi module during setup. If either permission was denied when first prompted — or the app can't find the module at all — have the customer check it manually: on iPhone, Settings → PAL Color Touch → toggle on Bluetooth and Local Network, then retry setup. Android has an equivalent per-app permissions screen under Settings → Apps."
         ],
         images: [
-          { src: "assets/image_158.jpg", alt: "Color Touch App creating a new login and new account setup screens", caption: "New account setup — register, email verification code, password" },
-          { src: "assets/image_159.jpg", alt: "Color Touch App selecting country and logging in", caption: "Select country, enter password, log in" },
-          { src: "assets/image_160.jpg", alt: "Color Touch App connecting to a new driver, allow permissions and add device", caption: "Starting the add-device flow — Device List '+' and permissions" },
-          { src: "assets/color-touch-app-permissions-screen.png", alt: "Color Touch App Bluetooth permission dialog — PAL Color Touch Would Like to Use Bluetooth, Don't Allow or Allow", caption: "The app permissions prompt — select Allow so the app can find and connect to the Wi-Fi module" },
-          { src: "assets/image_161.jpg", alt: "Color Touch App connecting to the driver, reset button and wifi password screens", caption: "Reset button (module photo, Part No. 64-WIFI) and Router Connect / Start Configuration screens" },
-          { src: "assets/image_162.jpg", alt: "Color Touch App configuring the device, being configured and added successfully screens", caption: "Being configured (~60 sec) → Configuring Done → device appears in Device List" },
-          { src: "assets/image_163.jpg", alt: "Color Touch App updating the app and driver firmware screens", caption: "Selecting a driver and running a firmware update if prompted (e.g. MCU module update to add the music-rhythm function)" },
-          { src: "assets/image_164.jpg", alt: "Color Touch App selecting driver type — 1ZW, 2ZW, Touch 5, Touch 9", caption: "Driver type selection: Color Touch 1 = 1ZW, Color Touch 2 = 2ZW, Color Touch 5 = Touch 5, Color Touch 9 = Touch 9" },
-          { src: "assets/image_165.jpg", alt: "Color Touch App operating screen — on/off, zone control, RGB color wheel, music sync, brightness, show selection, scheduling", caption: "Operating screen — On/Off, per-zone control (e.g. Pool/Spa), RGB color wheel, music sync, brightness, show selection, and scheduling" },
-          { src: "assets/image_166.jpg", alt: "Color Touch App renaming a zone", caption: "Changing zone names — Rename → select zone → enter new name → OK" },
-          { src: "assets/image_167.jpg", alt: "Color Touch App creating turn-on and turn-off schedules", caption: "Creating schedules — add a timer → ON or OFF → repeat days → time" },
-          { src: "assets/image_168.jpg", alt: "Color Touch App using music sync", caption: "Music Sync — icon at the center of the color wheel; lights react to audio played on the phone" }
+          { src: "assets/color-touch-app_new-account-setup-screens.jpg", alt: "Color Touch App creating a new login and new account setup screens", caption: "New account setup — register, email verification code, password" },
+          { src: "assets/color-touch-app_country-login-screens.jpg", alt: "Color Touch App selecting country and logging in", caption: "Select country, enter password, log in" },
+          { src: "assets/color-touch-app_new-driver-permissions-screens.jpg", alt: "Color Touch App connecting to a new driver, allow permissions and add device", caption: "Starting the add-device flow — Device List '+' and permissions" },
+          { src: "assets/color-touch-app_bluetooth-permission-dialog.png", alt: "Color Touch App Bluetooth permission dialog — PAL Color Touch Would Like to Use Bluetooth, Don't Allow or Allow", caption: "The app permissions prompt — select Allow so the app can find and connect to the Wi-Fi module" },
+          { src: "assets/color-touch-app_reset-wifi-password-screens.jpg", alt: "Color Touch App connecting to the driver, reset button and wifi password screens", caption: "Reset button (module photo, Part No. 64-WIFI) and Router Connect / Start Configuration screens" },
+          { src: "assets/color-touch-app_configuring-device-screens.jpg", alt: "Color Touch App configuring the device, being configured and added successfully screens", caption: "Being configured (~60 sec) → Configuring Done → device appears in Device List" },
+          { src: "assets/color-touch-app_firmware-update-screens.jpg", alt: "Color Touch App updating the app and driver firmware screens", caption: "Selecting a driver and running a firmware update if prompted (e.g. MCU module update to add the music-rhythm function)" },
+          { src: "assets/color-touch-app_select-driver-type-screen.jpg", alt: "Color Touch App selecting driver type — 1ZW, 2ZW, Touch 5, Touch 9", caption: "Driver type selection: Color Touch 1 = 1ZW, Color Touch 2 = 2ZW, Color Touch 5 = Touch 5, Color Touch 9 = Touch 9" },
+          { src: "assets/color-touch-app_operating-screen.jpg", alt: "Color Touch App operating screen — on/off, zone control, RGB color wheel, music sync, brightness, show selection, scheduling", caption: "Operating screen — On/Off, per-zone control (e.g. Pool/Spa), RGB color wheel, music sync, brightness, show selection, and scheduling" },
+          { src: "assets/color-touch-app_rename-zone-screen.jpg", alt: "Color Touch App renaming a zone", caption: "Changing zone names — Rename → select zone → enter new name → OK" },
+          { src: "assets/color-touch-app_create-schedule-screens.jpg", alt: "Color Touch App creating turn-on and turn-off schedules", caption: "Creating schedules — add a timer → ON or OFF → repeat days → time" },
+          { src: "assets/color-touch-app_music-sync-screen.jpg", alt: "Color Touch App using music sync", caption: "Music Sync — icon at the center of the color wheel; lights react to audio played on the phone" }
         ]
       }
     ]
@@ -3105,7 +3105,7 @@ const DATA = [
         blurb: "24V stake-mounted bollard fixture for gardens and walkways — light head unthreads from the body for replacement.",
         tags: ["Landscape", "LED"],
         links: [
-          { label: "Owner's Manual (PDF)", url: "source-manuals/Landscape Lighting/Bollard Light/45-PAL-GL9-RGB-PLC/BOLLARDLIGHTOWNERSMANUAL-3.pdf" }
+          { label: "Owner's Manual (PDF)", url: "source-manuals/Landscape Lighting/Bollard Light/45-PAL-GL9-RGB-PLC/bollard-light-rgb_owners-manual.pdf" }
         ],
         facts: [
           { label: "Driver", value: "PAL PCR-1Z or PCR-2Z Class 2 LED driver (sold separately) — driver troubleshooting lives on the PCR driver cards" },
@@ -3157,7 +3157,7 @@ const DATA = [
         blurb: "24V stake-mounted path light with a canopy that spreads light downward over walkways.",
         tags: ["Landscape", "LED"],
         links: [
-          { label: "Owner's Manual (PDF)", url: "source-manuals/Landscape Lighting/Path Way Light/45-PAL-GL9-CW-PLS/PATHWAYLIGHTOWNERSMANUAL-2.pdf" }
+          { label: "Owner's Manual (PDF)", url: "source-manuals/Landscape Lighting/Path Way Light/45-PAL-GL9-CW-PLS/path-way-light-cw_owners-manual.pdf" }
         ],
         facts: [
           { label: "Driver", value: "PAL PCR-1Z or PCR-2Z Class 2 LED driver (sold separately)" },
@@ -3213,7 +3213,7 @@ const DATA = [
         blurb: "24V stake-mounted adjustable up-light for trees, walls, and plantings — the stake threads directly onto the light.",
         tags: ["Landscape", "LED"],
         links: [
-          { label: "Owner's Manual (PDF)", url: "source-manuals/Landscape Lighting/Garden Up Light/45-PAL-GL9-CW-UL/GARDENUPLIGHTOWNERSMANUAL-2.pdf" }
+          { label: "Owner's Manual (PDF)", url: "source-manuals/Landscape Lighting/Garden Up Light/45-PAL-GL9-CW-UL/garden-up-light-cw_owners-manual.pdf" }
         ],
         facts: [
           { label: "Driver", value: "PAL PCR-1Z or PCR-2Z Class 2 LED driver (sold separately)" },
@@ -3273,7 +3273,7 @@ const DATA = [
         status: "Active",
         blurb: "Third-party pool automation platform (Poolside Tech) that controls PAL lighting over native DMX512 — not the Pentair/Hayward/Jandy cloning method used elsewhere in this guide.",
         links: [
-          { label: "Poolside Tech Info (PDF)", url: "source-manuals/Automation/Poolside Tech/Poolside Tech PDF.pdf" }
+          { label: "Poolside Tech Info (PDF)", url: "source-manuals/Automation/Poolside Tech/poolside-tech-attendant_info-guide.pdf" }
         ],
         tags: ["Automation", "DMX", "DIP Switch"],
         facts: [
@@ -3323,30 +3323,30 @@ const DATA = [
           "The \"PCR-3DMX (Old Style)\" driver documented here (8 zones, DIP switches 9-1) is the same physical product as the PCR-3DMX-8Z card in the Drivers & Controllers category. The \"64-PCR-3DMX V3\" board is a newer generation not yet fully documented on those cards — confirm which board is installed before applying either scheme."
         ],
         images: [
-          { src: "assets/image_117.jpg", alt: "PAL driver DMX In to Attendant BUS port wiring diagram", caption: "Single-driver wiring: DMX In (SH/−/+) to BUS1-4 (+14V/D+/D-/GND)" },
-          { src: "assets/image_118.jpg", alt: "PCR-2DMX Old Style driver board with Module Config and Other Config DIP banks", caption: "PCR-2DMX (Old Style) — Module Config + Other Config DIP banks" },
-          { src: "assets/image_119.jpg", alt: "PCR-2DMX Old Style DIP switch address table, schema v1 and v2", caption: "PCR-2DMX (Old Style) — DIP settings mapped to Zone 1/2 Red/Green/Blue addresses, both schema versions (v1 and v2)" },
-          { src: "assets/image_120.jpg", alt: "PCR-3DMX Old Style 8-zone driver board with DIP switches 9-1 location", caption: "PCR-3DMX (Old Style, 8 Zone) — DIP switches 9-1 location on the 8-zone terminal board" },
-          { src: "assets/image_121.jpg", alt: "PCR-3DMX Old Style 8-zone DIP switch address table", caption: "PCR-3DMX (Old Style, 8 Zone) — DIP settings mapped to Zone 1-8 Red/Green/Blue addresses" },
-          { src: "assets/image_122.jpg", alt: "PCR-2DMX V3 red driver board with DIP switch location", caption: "PCR-2DMX V3 — DIP switches 1-9 location on the V3 board (silkscreened 42PCR4DMX)" },
-          { src: "assets/image_123.jpg", alt: "PCR-2DMX V3 DIP switch address table", caption: "PCR-2DMX V3 — DIP settings mapped to Zone 1/2 Red/Green/Blue addresses" },
-          { src: "assets/image_124.jpg", alt: "64-PCR-3DMX V3 board diagram with DIP switches, Switch A, and termination shunt outlined", caption: "64-PCR-3DMX V3 — Module Config, Other Config, and Set Option DIP switches; Switch A and DMX termination shunt outlined" },
-          { src: "assets/image_125.jpg", alt: "64-PCR-3DMX V3 3-channel DIP switch address table", caption: "64-PCR-3DMX V3 — 3-channel mode (Red, Green, Blue) DIP settings mapped to Zone 1/2 addresses" },
-          { src: "assets/image_126.jpg", alt: "64-PCR-3DMX V3 4-channel DIP switch address table", caption: "64-PCR-3DMX V3 — 4-channel mode (Red, Green, Blue, White) DIP settings mapped to Zone 1/2 addresses" },
-          { src: "assets/image_127.jpg", alt: "The Attendant mobile app light device configuration screen", caption: "Attendant app — Light device config: Brand, Expected Colors and Shows, Off/On Timing, Port, Address Mapping" },
-          { src: "assets/image_128.jpg", alt: "PAL driver communications board Thru and In terminal blocks with terminator jumper", caption: "Thru (to next driver) and In (from The Attendant) terminal blocks, with the Thru terminator jumper called out" },
-          { src: "assets/image_129.jpg", alt: "Multiple PAL drivers wired in series to The Attendant, DMX Line Terminate jumper diagram", caption: "3 drivers chained via Thru→In, terminator jumper kept only on the last driver in the chain, final driver's DMX In wired to the Attendant's BUS port" }
+          { src: "assets/the-attendant_dmx-in-bus-wiring-diagram.jpg", alt: "PAL driver DMX In to Attendant BUS port wiring diagram", caption: "Single-driver wiring: DMX In (SH/−/+) to BUS1-4 (+14V/D+/D-/GND)" },
+          { src: "assets/the-attendant_pcr-2dmx-old-style-board-diagram.jpg", alt: "PCR-2DMX Old Style driver board with Module Config and Other Config DIP banks", caption: "PCR-2DMX (Old Style) — Module Config + Other Config DIP banks" },
+          { src: "assets/the-attendant_pcr-2dmx-old-style-dip-table.jpg", alt: "PCR-2DMX Old Style DIP switch address table, schema v1 and v2", caption: "PCR-2DMX (Old Style) — DIP settings mapped to Zone 1/2 Red/Green/Blue addresses, both schema versions (v1 and v2)" },
+          { src: "assets/the-attendant_pcr-3dmx-old-style-board-diagram.jpg", alt: "PCR-3DMX Old Style 8-zone driver board with DIP switches 9-1 location", caption: "PCR-3DMX (Old Style, 8 Zone) — DIP switches 9-1 location on the 8-zone terminal board" },
+          { src: "assets/the-attendant_pcr-3dmx-old-style-dip-table.jpg", alt: "PCR-3DMX Old Style 8-zone DIP switch address table", caption: "PCR-3DMX (Old Style, 8 Zone) — DIP settings mapped to Zone 1-8 Red/Green/Blue addresses" },
+          { src: "assets/the-attendant_pcr-2dmx-v3-board-diagram.jpg", alt: "PCR-2DMX V3 red driver board with DIP switch location", caption: "PCR-2DMX V3 — DIP switches 1-9 location on the V3 board (silkscreened 42PCR4DMX)" },
+          { src: "assets/the-attendant_pcr-2dmx-v3-dip-table.jpg", alt: "PCR-2DMX V3 DIP switch address table", caption: "PCR-2DMX V3 — DIP settings mapped to Zone 1/2 Red/Green/Blue addresses" },
+          { src: "assets/the-attendant_pcr-3dmx-v3-board-diagram.jpg", alt: "64-PCR-3DMX V3 board diagram with DIP switches, Switch A, and termination shunt outlined", caption: "64-PCR-3DMX V3 — Module Config, Other Config, and Set Option DIP switches; Switch A and DMX termination shunt outlined" },
+          { src: "assets/the-attendant_pcr-3dmx-v3-3channel-dip-table.jpg", alt: "64-PCR-3DMX V3 3-channel DIP switch address table", caption: "64-PCR-3DMX V3 — 3-channel mode (Red, Green, Blue) DIP settings mapped to Zone 1/2 addresses" },
+          { src: "assets/the-attendant_pcr-3dmx-v3-4channel-dip-table.jpg", alt: "64-PCR-3DMX V3 4-channel DIP switch address table", caption: "64-PCR-3DMX V3 — 4-channel mode (Red, Green, Blue, White) DIP settings mapped to Zone 1/2 addresses" },
+          { src: "assets/the-attendant_app-device-config-screen.jpg", alt: "The Attendant mobile app light device configuration screen", caption: "Attendant app — Light device config: Brand, Expected Colors and Shows, Off/On Timing, Port, Address Mapping" },
+          { src: "assets/the-attendant_thru-in-terminal-blocks-diagram.jpg", alt: "PAL driver communications board Thru and In terminal blocks with terminator jumper", caption: "Thru (to next driver) and In (from The Attendant) terminal blocks, with the Thru terminator jumper called out" },
+          { src: "assets/the-attendant_multi-driver-series-wiring-diagram.jpg", alt: "Multiple PAL drivers wired in series to The Attendant, DMX Line Terminate jumper diagram", caption: "3 drivers chained via Thru→In, terminator jumper kept only on the last driver in the chain, final driver's DMX In wired to the Attendant's BUS port" }
         ]
       },
       {
         name: "Pool Touch 5S / PCR-5CU — 5-Channel Relay & Light Controller",
-        hero: "source-manuals/Automation/Pool Touch 5/pooltouch5.png",
+        hero: "source-manuals/Automation/Pool Touch 5/pool-touch-5_product-photo.png",
         status: "Active",
         blurb: "A 5-channel relay controller, not just a lighting driver — 3 general relay outputs, one 2-speed motor output, one RGB light zone.",
         sku: "42-PCR-5S / 42-PCR-5SW",
         tags: ["Automation"],
         links: [
-          { label: "Touch 5 Instructions (PDF)", url: "source-manuals/Automation/42-PCR-5S and 5SW/42-PCR5S Manual.pdf" }
+          { label: "Touch 5 Instructions (PDF)", url: "source-manuals/Automation/42-PCR-5S and 5SW/pcr-5s-touch5_install-manual.pdf" }
         ],
         facts: [
           { label: "Channels", value: "CH1-3 general-purpose relays, CH4/CH4A 2-speed motor relay, CH5 standard PAL 4-wire RGB light" },
@@ -3389,12 +3389,12 @@ const DATA = [
           "Confirm the actual output voltage on site — this manual's title references 12V DC in one place, but the Important Information section states 24V DC. Treat 24V DC as the more likely reading, but verify before wiring."
         ],
         images: [
-          { src: "assets/image_192.jpg", alt: "PCR-5S / PAL Touch 5 enclosure, 10 conduit knockouts", caption: "Product photo — enclosure with 10 conduit knockouts" }
+          { src: "assets/pcr-5s-touch5_enclosure-photo.jpg", alt: "PCR-5S / PAL Touch 5 enclosure, 10 conduit knockouts", caption: "Product photo — enclosure with 10 conduit knockouts" }
         ]
       },
       {
         name: "Pool Touch 9 / PCR-9CU — 9-Channel Controller",
-        hero: "source-manuals/Automation/Pool Touch 9/pooltouch9.png",
+        hero: "source-manuals/Automation/Pool Touch 9/pool-touch-9_product-photo.png",
         status: "Active",
         blurb: "The larger Pool Touch controller — 9-channel counterpart to the Pool Touch 5S. No install manual on file yet.",
         sku: "PCR-9CU",
@@ -3421,11 +3421,11 @@ const DATA = [
       },
       {
         name: "PCR-2-VCU / PCR-5V — Motorised Valve Control Unit",
-        hero: "source-manuals/Automation/PCR-2-VCU/valvecontrol-2.png",
+        hero: "source-manuals/Automation/PCR-2-VCU/pcr-2-vcu_product-photo.png",
         status: "Active",
         blurb: "Accessory relay box adding motorized pool valve control to the Touch 5/9 ecosystem — not a lighting product.",
         links: [
-          { label: "Installation Guide (PDF)", url: "source-manuals/Automation/PCR-2-VCU/PCR-2-VCU Installation Guide.pdf" }
+          { label: "Installation Guide (PDF)", url: "source-manuals/Automation/PCR-2-VCU/pcr-2-vcu_install-guide.pdf" }
         ],
         sku: "PCR-2-VCU",
         tags: ["Automation"],
@@ -3454,7 +3454,7 @@ const DATA = [
           "PCR-9CU is the Pool Touch 9 — the 9-channel counterpart to the PCR-5CU, documented on its own card in this category."
         ],
         images: [
-          { src: "assets/image_193.jpg", alt: "PCR-2-VCU valve control unit, two angles, Pool Touch branding, nameplate reads PCR-5V", caption: "Two angles, Pool Touch branding; nameplate reads PCR-5V" }
+          { src: "assets/pcr-2-vcu_product-photo.jpg", alt: "PCR-2-VCU valve control unit, two angles, Pool Touch branding, nameplate reads PCR-5V", caption: "Two angles, Pool Touch branding; nameplate reads PCR-5V" }
         ]
       }
     ]
@@ -3590,12 +3590,12 @@ const DATA = [
         blurb: "Reference photos of driver boards, organized by SKU.",
         summary: "64-PCR-3T-500: incoming voltage wiring (no install manual exists for this driver). 64-PCR-3D-120/500 and 64-PCR-3DW-120/500: how to tell by sight whether a Wi-Fi module is fitted. 64-PCR-1Z-SM-65: the legacy black board vs. the current green board.",
         images: [
-          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-1.jpeg", alt: "64-PCR-3T-500 driver board incoming voltage terminal, close-up", caption: "64-PCR-3T-500 — incoming voltage terminal (close-up): black connects to brown, white connects to blue" },
-          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/64-PCR-3T-500-Incoming-Voltage-2.jpeg", alt: "64-PCR-3T-500 driver board full interior view showing incoming voltage wiring", caption: "64-PCR-3T-500 — full board view, same incoming voltage connection" },
-          { src: "source-manuals/Drivers and Controllers/PCR-3DW-500/PCR-3DW-120.jpeg", alt: "PCR-3D-family board with the PAL Color Touch Wi-Fi Module plugged in, plus the Wire Color to DMX Channel table", caption: "64-PCR-3DW-120 / 64-PCR-3DW-500 — with Wi-Fi: PAL Color Touch Wi-Fi Module plugged onto the board (Power On / WiFi Not Connected / WiFi Connected LEDs visible). Also shows the Wire Color → Channel table: Blue 3/6, Grey 2/5, Red 1/4, White +24V" },
-          { src: "source-manuals/Drivers and Controllers/PCR-3D-500/PCR-3D-120.jpeg", alt: "PCR-3D-family board with no Wi-Fi module fitted, plus the Wire Color to DMX Channel table", caption: "64-PCR-3D-120 / 64-PCR-3D-500 — without Wi-Fi: no module fitted at that connector. Same Wire Color → Channel table as the Wi-Fi board: Blue 3/6, Grey 2/5, Red 1/4, White +24V" },
-          { src: "source-manuals/Drivers and Controllers/64-1Z-SM-65/64-1Z-SM-65_legacy.jpeg", alt: "64-1Z-SM-65 older black board, board-marked 42PCR4U24", caption: "64-PCR-1Z-SM-65 — legacy board (black). Same Blue/Grey/Red/White per-zone wiring layout as the current board" },
-          { src: "source-manuals/Drivers and Controllers/64-1Z-SM-65/64-1Z-SM-65_new.jpeg", alt: "64-1Z-SM-65 present-day green board, board-marked 42PCR4DMX", caption: "64-PCR-1Z-SM-65 — current board (green). Same Blue/Grey/Red/White per-zone wiring layout as the legacy board" }
+          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/pcr-3t-500_incoming-voltage-photo-1.jpeg", alt: "64-PCR-3T-500 driver board incoming voltage terminal, close-up", caption: "64-PCR-3T-500 — incoming voltage terminal (close-up): black connects to brown, white connects to blue" },
+          { src: "source-manuals/Drivers and Controllers/64-PCR-3T-500/pcr-3t-500_incoming-voltage-photo-2.jpeg", alt: "64-PCR-3T-500 driver board full interior view showing incoming voltage wiring", caption: "64-PCR-3T-500 — full board view, same incoming voltage connection" },
+          { src: "source-manuals/Drivers and Controllers/PCR-3DW-500/pcr-3dw-500_product-photo.jpeg", alt: "PCR-3D-family board with the PAL Color Touch Wi-Fi Module plugged in, plus the Wire Color to DMX Channel table", caption: "64-PCR-3DW-120 / 64-PCR-3DW-500 — with Wi-Fi: PAL Color Touch Wi-Fi Module plugged onto the board (Power On / WiFi Not Connected / WiFi Connected LEDs visible). Also shows the Wire Color → Channel table: Blue 3/6, Grey 2/5, Red 1/4, White +24V" },
+          { src: "source-manuals/Drivers and Controllers/PCR-3D-500/pcr-3d-500_product-photo.jpeg", alt: "PCR-3D-family board with no Wi-Fi module fitted, plus the Wire Color to DMX Channel table", caption: "64-PCR-3D-120 / 64-PCR-3D-500 — without Wi-Fi: no module fitted at that connector. Same Wire Color → Channel table as the Wi-Fi board: Blue 3/6, Grey 2/5, Red 1/4, White +24V" },
+          { src: "source-manuals/Drivers and Controllers/64-1Z-SM-65/pcr-1z-sm-65_board-photo-legacy.jpeg", alt: "64-1Z-SM-65 older black board, board-marked 42PCR4U24", caption: "64-PCR-1Z-SM-65 — legacy board (black). Same Blue/Grey/Red/White per-zone wiring layout as the current board" },
+          { src: "source-manuals/Drivers and Controllers/64-1Z-SM-65/pcr-1z-sm-65_board-photo-current.jpeg", alt: "64-1Z-SM-65 present-day green board, board-marked 42PCR4DMX", caption: "64-PCR-1Z-SM-65 — current board (green). Same Blue/Grey/Red/White per-zone wiring layout as the legacy board" }
         ]
       },
       {
@@ -3604,7 +3604,7 @@ const DATA = [
         blurb: "Shared triage script, cloning DIP tables, and zone config for the whole PCR-1Z/2Z platform.",
         summary: "Covers 64-PCR-1Z-65/-16, PCR-1ZW-65/-16, PCR-1Z-SM-65/-16, PCR-2Z-65, and PCR-2ZW-65 — one physical platform, 24V DC. The driver reads color and mode commands from a paired PCZ-2 remote (or the Color Touch App on \"W\" models) over its own short-range link; it is not DMX and needs no separate controller. DIP switches can instead clone it to a Jandy, Pentair, Hayward, or Astral automation system in place of the PAL remote. For part numbers and wattage, open the SKU's own card.",
         links: [
-          { label: "PCR-1Z/1Z-SM/2Z Manual (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/PCR-1Z-SM1Z2Z-2.pdf" },
+          { label: "PCR-1Z/1Z-SM/2Z Manual (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/pcr-1z_1z-2z-cloning-reference.pdf" },
           { label: "Video: PCR-1Z-SM Setup", url: "https://youtu.be/WQdC7NVrqiY" },
           { label: "Video: PCR-2Z Setup", url: "https://youtu.be/Xe6EjE5v3hc" },
           { label: "Video: PCR-2Z Wi-Fi Coding", url: "https://youtu.be/wflvMlZTDn4" },
@@ -3652,7 +3652,7 @@ const DATA = [
             detail: "A full reset otherwise means killing power and waiting 15-30 minutes for the internal capacitors to discharge. To skip the wait, with power still on, hold the Manual Operation button and the Code Setting button together for about 10 seconds — this drains the capacitors immediately. This is the go-to move after adjusting DIP switches, since a DIP change only takes effect after a power cycle."
           }
         ],
-        flowImage: { src: "assets/image_66.jpg", alt: "Labeled PCR-1Z/PCR-1Z-SM driver board diagram", caption: "Manual Operation button, Code Setting button, LED indicator, Wi-Fi connector" },
+        flowImage: { src: "assets/pcr-1z-sm_labeled-board-diagram.jpg", alt: "Labeled PCR-1Z/PCR-1Z-SM driver board diagram", caption: "Manual Operation button, Code Setting button, LED indicator, Wi-Fi connector" },
         tables: [
           {
             caption: "Cloning DIP — V2/Automation Boards (SW1–4)",
@@ -3704,22 +3704,22 @@ const DATA = [
           "Pressing Code Setting means a quick press-and-release — like ringing a doorbell — not a held press. Holding it does something different: it's how the LED-3 pairing window is opened, and it's part of the two-button 10-second reset. Don't hold it for a step that just says \"press.\""
         ],
         images: [
-          { src: "assets/image_65.jpg", alt: "PCR-1Z/PCR-1Z-SM single-zone driver and PCR-2Z dual-zone driver enclosures side by side", caption: "PCR-1Z/PCR-1Z-SM (single-zone) and PCR-2Z (dual-zone) enclosures" },
-          { src: "assets/image_70.jpg", alt: "PCZ-2 transmitter labeled remote diagram", caption: "PCZ-2 remote — button layout and pairing procedures" },
-          { src: "assets/image_67.jpg", alt: "PCR-2Z board with Z1/Z2 terminal blocks diagram", caption: "PCR-2Z board — Z1 + Z2 terminal blocks, one zone each" },
-          { src: "assets/image_68.jpg", alt: "PCR-1Z-SM and PCR-1Z/2Z cloning tables with automation brand logos", caption: "Both cloning tables, matched against each brand's actual logo" },
-          { src: "assets/image_69.jpg", alt: "PCR-2Z zone and color temperature DIP switch table", caption: "Switch 3/4 color temperature table" },
-          { src: "assets/image_71.jpg", alt: "Automation dedicated light output relay wiring diagram", caption: "Dedicated output relay wiring — applies to PCR-1Z-SM, PCR-1Z, and PCR-2Z" }
+          { src: "assets/pcr-1z-2z_enclosures-comparison-photo.jpg", alt: "PCR-1Z/PCR-1Z-SM single-zone driver and PCR-2Z dual-zone driver enclosures side by side", caption: "PCR-1Z/PCR-1Z-SM (single-zone) and PCR-2Z (dual-zone) enclosures" },
+          { src: "assets/pcz-2-remote_labeled-diagram.jpg", alt: "PCZ-2 transmitter labeled remote diagram", caption: "PCZ-2 remote — button layout and pairing procedures" },
+          { src: "assets/pcr-2z_terminal-blocks-diagram.jpg", alt: "PCR-2Z board with Z1/Z2 terminal blocks diagram", caption: "PCR-2Z board — Z1 + Z2 terminal blocks, one zone each" },
+          { src: "assets/pcr-1z-2z_cloning-tables-diagram.jpg", alt: "PCR-1Z-SM and PCR-1Z/2Z cloning tables with automation brand logos", caption: "Both cloning tables, matched against each brand's actual logo" },
+          { src: "assets/pcr-2z_zone-color-temp-dip-table.jpg", alt: "PCR-2Z zone and color temperature DIP switch table", caption: "Switch 3/4 color temperature table" },
+          { src: "assets/pcr-1z-2z_relay-wiring-diagram.jpg", alt: "Automation dedicated light output relay wiring diagram", caption: "Dedicated output relay wiring — applies to PCR-1Z-SM, PCR-1Z, and PCR-2Z" }
         ]
       },
       {
         name: "PCR-1Z-65 — Single-Zone Driver",
-        hero: "source-manuals/Drivers and Controllers/PCR-1Z/slimherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-1Z/pcr-1z_product-photo.jpg",
         status: "Active",
         blurb: "Base single-zone driver on the PCR-1Z/2Z platform — remote control, no Wi-Fi.",
         links: [
-          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/PCR-1Z-SM1Z2Z-2.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/PALPCR-1Z.pdf" }
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/pcr-1z_1z-2z-cloning-reference.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/pcr-1z_install-guide.pdf" }
         ],
         sku: "64-PCR-1Z-65",
         tags: ["Driver"],
@@ -3755,16 +3755,16 @@ const DATA = [
           "Same physical platform as PCR-1ZW-65 (Wi-Fi), PCR-1Z-SM-65 (switch mode), PCR-2Z-65 (dual-zone), and PCR-2ZW-65 (dual-zone Wi-Fi). Pairing, cloning, and zone-configuration details live on the PCR-1Z/2Z Cloning, Pairing & Zone Reference card."
         ],
         images: [
-          { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z enclosure (left), PCR-2Z (right) for reference" }
+          { src: "assets/pcr-1z-2z_enclosures-comparison-photo.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z enclosure (left), PCR-2Z (right) for reference" }
         ]
       },
       {
         name: "PCR-1ZW-65 — Single-Zone Driver (Wi-Fi)",
-        hero: "source-manuals/Drivers and Controllers/PCR-1Z/slimherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-1Z/pcr-1z_product-photo.jpg",
         status: "Active",
         blurb: "Wi-Fi version of the PCR-1Z-65 — same driver plus a built-in Wi-Fi module.",
         links: [
-          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/PCR-1Z-SM1Z2Z-2.pdf" }
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z/pcr-1z_1z-2z-cloning-reference.pdf" }
         ],
         sku: "64-PCR-1ZW-65",
         tags: ["Driver", "WiFi"],
@@ -3804,18 +3804,18 @@ const DATA = [
           "Same physical platform as PCR-1Z-65 (no Wi-Fi), PCR-1Z-SM-65 (switch mode), PCR-2Z-65 (dual-zone), and PCR-2ZW-65 (dual-zone Wi-Fi). Pairing, cloning, and zone-configuration details live on the PCR-1Z/2Z Cloning, Pairing & Zone Reference card."
         ],
         images: [
-          { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z-family enclosure (left), PCR-2Z (right) for reference" }
+          { src: "assets/pcr-1z-2z_enclosures-comparison-photo.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z-family enclosure (left), PCR-2Z (right) for reference" }
         ]
       },
       {
         name: "PCR-1Z-SM-65 — Single-Zone Driver (Switch Mode)",
-        hero: "source-manuals/Drivers and Controllers/PCR-1Z-SM/slimherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-1Z-SM/pcr-1z-sm_product-photo.jpg",
         status: "Active",
         blurb: "No remote, no Wi-Fi — color is set with a button on the board itself.",
         links: [
-          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/PCR-1Z-SM1Z2Z-2.pdf" },
-          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/PCR4-Switch-Mode-And-2DMX-Updates-August-September-2025-2.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/PALPCR-1Z-SM.pdf" }
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/pcr-1z-sm_1z-2z-cloning-reference.pdf" },
+          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/pcr-1z-sm_2025-update-bulletin.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/pcr-1z-sm_install-guide.pdf" }
         ],
         sku: "64-PCR-1Z-SM-65",
         tags: ["Driver"],
@@ -3855,16 +3855,16 @@ const DATA = [
           "This SKU has shipped on two board designs — an older black board (legacy) and the current green board — see the comparison photos on the Driver Photos card. A board-color mismatch against an older photo isn't a sign of the wrong product."
         ],
         images: [
-          { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z-family enclosure (left), PCR-2Z (right) for reference" }
+          { src: "assets/pcr-1z-2z_enclosures-comparison-photo.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z-family enclosure (left), PCR-2Z (right) for reference" }
         ]
       },
       {
         name: "PCR-1Z-SM-65-12 — Single-Zone Driver (Switch Mode + Remote)",
-        hero: "source-manuals/Drivers and Controllers/PCR-1Z-SM/slimherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-1Z-SM/pcr-1z-sm_product-photo.jpg",
         status: "Active",
         blurb: "Unlike the base PCR-1Z-SM-65, this variant does support PCZ-2 remote pairing — most often installed as a drop-in replacement for an older driver.",
         links: [
-          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/PCR-1Z-SM1Z2Z-2.pdf" }
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-1Z-SM/pcr-1z-sm_1z-2z-cloning-reference.pdf" }
         ],
         sku: "64-PCR-1Z-SM-65-12",
         tags: ["Driver"],
@@ -3899,12 +3899,12 @@ const DATA = [
       },
       {
         name: "PCR-2Z-65 — Dual-Zone Driver",
-        hero: "source-manuals/Drivers and Controllers/PCR-2Z/medherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-2Z/pcr-2z_product-photo.jpg",
         status: "Active",
         blurb: "One driver, two independently-controlled zones — e.g. pool on one, spa on the other.",
         links: [
-          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2Z/PCR-1Z-SM1Z2Z-2.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2Z/PALPCR-2Z.pdf" }
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2Z/pcr-2z_1z-2z-cloning-reference.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2Z/pcr-2z_install-guide.pdf" }
         ],
         sku: "64-PCR-2Z-65",
         tags: ["Driver"],
@@ -3942,16 +3942,16 @@ const DATA = [
           "Same physical platform as PCR-1Z-65 (single-zone), PCR-1ZW-65 (single-zone Wi-Fi), PCR-1Z-SM-65 (switch mode), and PCR-2ZW-65 (dual-zone Wi-Fi). Pairing, cloning, and zone-configuration details live on the PCR-1Z/2Z Cloning, Pairing & Zone Reference card."
         ],
         images: [
-          { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z enclosure (left) next to the PCR-2Z dual-zone enclosure (right)" }
+          { src: "assets/pcr-1z-2z_enclosures-comparison-photo.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z enclosure (left) next to the PCR-2Z dual-zone enclosure (right)" }
         ]
       },
       {
         name: "PCR-2ZW-65 — Dual-Zone Driver (Wi-Fi)",
-        hero: "source-manuals/Drivers and Controllers/PCR-2Z/medherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-2Z/pcr-2z_product-photo.jpg",
         status: "Active",
         blurb: "Wi-Fi version of the PCR-2Z-65 — same dual-zone driver plus a built-in Wi-Fi module.",
         links: [
-          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2Z/PCR-1Z-SM1Z2Z-2.pdf" }
+          { label: "Manual — PCR-1Z/1Z-SM/2Z (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2Z/pcr-2z_1z-2z-cloning-reference.pdf" }
         ],
         sku: "64-PCR-2ZW-65",
         tags: ["Driver", "WiFi"],
@@ -3991,17 +3991,17 @@ const DATA = [
           "Same physical platform as PCR-1Z-65, PCR-1ZW-65, PCR-1Z-SM-65, and PCR-2Z-65 (no Wi-Fi). Pairing, cloning, and zone-configuration details live on the PCR-1Z/2Z Cloning, Pairing & Zone Reference card."
         ],
         images: [
-          { src: "assets/image_65.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z enclosure (left) next to the PCR-2Z-family dual-zone enclosure (right)" }
+          { src: "assets/pcr-1z-2z_enclosures-comparison-photo.jpg", alt: "PCR-1Z single-zone driver enclosure (left) next to the PCR-2Z dual-zone enclosure for reference", caption: "PCR-1Z enclosure (left) next to the PCR-2Z-family dual-zone enclosure (right)" }
         ]
       },
       {
         name: "PCR-2DMX Driver (2-Zone DMX)",
-        hero: "source-manuals/Drivers and Controllers/PCR-2DMX/medherosingleDMX.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-2DMX/pcr-2dmx_product-photo.jpg",
         status: "Active",
         blurb: "2-zone DMX receiver/driver — sits downstream of a separate DMX controller, not PAL's remote/app ecosystem.",
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2DMX/PCR-2DMX-2.pdf" },
-          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2DMX/PCR4-Switch-Mode-And-2DMX-Updates-August-September-2025.pdf" }
+          { label: "Manual (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2DMX/pcr-2dmx_install-guide.pdf" },
+          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-2DMX/pcr-2dmx_2025-update-bulletin.pdf" }
         ],
         sku: "64-PCR-2DMX",
         tags: ["Driver", "DMX", "DIP Switch"],
@@ -4053,18 +4053,18 @@ const DATA = [
           "The DMX input does not support RDM."
         ],
         images: [
-          { src: "assets/image_73.jpg", alt: "Labeled PCR-2DMX driver board diagram", caption: "Labeled board — Manual Operation button, Code Setting button, DMX In/Thru/Terminate, Z1 + Z2 terminal blocks, cloning DIP table" },
-          { src: "assets/image_74.jpg", alt: "DMX In/Thru/Term jumper diagram", caption: "Shunt on J3 = closed universe (last device); shunt removed = signal passes Thru to the next device" },
-          { src: "assets/image_75.jpg", alt: "PCR-2DMX 3-channel address DIP switch table", caption: "3-channel addresses, dipswitch #7 OFF — start addresses 1 through 379" },
-          { src: "assets/image_76.jpg", alt: "PCR-2DMX 4-channel address DIP switch table", caption: "4-channel addresses, dipswitch #7 ON — start addresses 1 through 505" }
+          { src: "assets/pcr-2dmx_labeled-board-diagram.jpg", alt: "Labeled PCR-2DMX driver board diagram", caption: "Labeled board — Manual Operation button, Code Setting button, DMX In/Thru/Terminate, Z1 + Z2 terminal blocks, cloning DIP table" },
+          { src: "assets/pcr-2dmx_thru-term-jumper-diagram.jpg", alt: "DMX In/Thru/Term jumper diagram", caption: "Shunt on J3 = closed universe (last device); shunt removed = signal passes Thru to the next device" },
+          { src: "assets/pcr-2dmx_3-channel-dip-table.jpg", alt: "PCR-2DMX 3-channel address DIP switch table", caption: "3-channel addresses, dipswitch #7 OFF — start addresses 1 through 379" },
+          { src: "assets/pcr-2dmx_4-channel-dip-table.jpg", alt: "PCR-2DMX 4-channel address DIP switch table", caption: "4-channel addresses, dipswitch #7 ON — start addresses 1 through 505" }
         ]
       },
       {
         name: "PCR-3D Mounting, Cloning & Configuration Reference",
-        hero: "assets/image_77.jpg",
+        hero: "assets/pcr-3d_enclosure-photo.jpg",
         links: [
-          { label: "PCR-3D Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR-3D-Instructions-USA-2.pdf" },
-          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR4-3DAnd3DMX-Updates-August-September-2025-2.pdf" }
+          { label: "PCR-3D Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_instructions.pdf" },
+          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_2025-update-bulletin.pdf" }
         ],
         tags: ["Driver", "Reference", "DIP Switch"],
         blurb: "Shared mounting, cloning, and zone config for the whole PCR-3D high-power platform.",
@@ -4135,22 +4135,22 @@ const DATA = [
           "The Wi-Fi variant has a physical PAL Color Touch Wi-Fi Module (Power On / WiFi Not Connected / WiFi Connected LEDs) plugged onto the board — see the comparison photos on the Driver Photos card. No module means no Wi-Fi, regardless of the SKU label."
         ],
         images: [
-          { src: "assets/image_78.jpg", alt: "PCR-3D dimension diagram", caption: "Dimensions — 11½\" x 4¾\" x 6⅝\" (293 x 119 x 173mm)" },
-          { src: "assets/image_79.jpg", alt: "PCR-3D conduit removal and internal wiring diagram", caption: "Conduit removal, mains wire-nut splice, and Z1/Z2 terminal block wiring" },
-          { src: "assets/image_80.jpg", alt: "PCR-3D cloning settings DIP switch table with board diagram", caption: "Code Setting switches location on board" },
-          { src: "assets/image_81.jpg", alt: "PCR-3D zone and color temperature DIP switch table with board diagram", caption: "Other Config switches location on board" },
-          { src: "assets/image_83.jpg", alt: "Automation dedicated light output relay wiring diagram", caption: "Dedicated output relay wiring" },
-          { src: "assets/image_82.jpg", alt: "PCR-3D fan filter maintenance diagram", caption: "Unclip the bottom cover to access the fan filter" }
+          { src: "assets/pcr-3d_dimension-diagram.jpg", alt: "PCR-3D dimension diagram", caption: "Dimensions — 11½\" x 4¾\" x 6⅝\" (293 x 119 x 173mm)" },
+          { src: "assets/pcr-3d_conduit-wiring-diagram.jpg", alt: "PCR-3D conduit removal and internal wiring diagram", caption: "Conduit removal, mains wire-nut splice, and Z1/Z2 terminal block wiring" },
+          { src: "assets/pcr-3d_cloning-dip-table-diagram.jpg", alt: "PCR-3D cloning settings DIP switch table with board diagram", caption: "Code Setting switches location on board" },
+          { src: "assets/pcr-3d_zone-color-temp-dip-table.jpg", alt: "PCR-3D zone and color temperature DIP switch table with board diagram", caption: "Other Config switches location on board" },
+          { src: "assets/pcr-3d_relay-wiring-diagram.jpg", alt: "Automation dedicated light output relay wiring diagram", caption: "Dedicated output relay wiring" },
+          { src: "assets/pcr-3d_fan-filter-maintenance-diagram.jpg", alt: "PCR-3D fan filter maintenance diagram", caption: "Unclip the bottom cover to access the fan filter" }
         ]
       },
       {
         name: "PCR-3D-120 — High-Power Driver (120W, Remote)",
-        hero: "source-manuals/Drivers and Controllers/PCR-3D/maxherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_product-photo.jpg",
         status: "Active",
         blurb: "120W tier of the PCR-3D high-power platform — remote only, no Wi-Fi.",
         links: [
-          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR-3D-Instructions-USA-2.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PALPCR-3D.pdf" }
+          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_instructions.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_install-guide.pdf" }
         ],
         sku: "64-PCR-3D-120",
         tags: ["Driver"],
@@ -4185,16 +4185,16 @@ const DATA = [
           "Same physical platform as PCR-3DW-120 (Wi-Fi), PCR-3D-500, and PCR-3DW-500. Mounting/wiring diagrams, the Cloning DIP switch table, and fan-filter maintenance live on the PCR-3D Mounting, Cloning & Configuration Reference card."
         ],
         images: [
-          { src: "assets/image_77.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
+          { src: "assets/pcr-3d_enclosure-photo.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
         ]
       },
       {
         name: "PCR-3DW-120 — High-Power Driver (120W, Wi-Fi)",
-        hero: "source-manuals/Drivers and Controllers/PCR-3D/maxherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_product-photo.jpg",
         status: "Active",
         blurb: "Wi-Fi version of the PCR-3D-120 — same base driver plus a built-in Wi-Fi module.",
         links: [
-          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR-3D-Instructions-USA-2.pdf" }
+          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_instructions.pdf" }
         ],
         sku: "64-PCR-3DW-120",
         tags: ["Driver", "WiFi"],
@@ -4228,16 +4228,16 @@ const DATA = [
           "Same physical platform as PCR-3D-120 (no Wi-Fi), PCR-3D-500, and PCR-3DW-500. Mounting/wiring diagrams, the Cloning DIP switch table, and fan-filter maintenance live on the PCR-3D Mounting, Cloning & Configuration Reference card."
         ],
         images: [
-          { src: "assets/image_77.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
+          { src: "assets/pcr-3d_enclosure-photo.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
         ]
       },
       {
         name: "PCR-3D-500 — High-Power Driver (500W, Remote)",
-        hero: "source-manuals/Drivers and Controllers/PCR-3D/maxherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_product-photo.jpg",
         status: "Active",
         blurb: "500W tier of the PCR-3D high-power platform — for the largest 4-wire RGB light runs.",
         links: [
-          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR-3D-Instructions-USA-2.pdf" }
+          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_instructions.pdf" }
         ],
         sku: "64-PCR-3D-500",
         tags: ["Driver"],
@@ -4272,16 +4272,16 @@ const DATA = [
           "Same physical platform as PCR-3DW-500 (Wi-Fi), PCR-3D-120, and PCR-3DW-120. Mounting/wiring diagrams, the Cloning DIP switch table, and fan-filter maintenance live on the PCR-3D Mounting, Cloning & Configuration Reference card."
         ],
         images: [
-          { src: "assets/image_77.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
+          { src: "assets/pcr-3d_enclosure-photo.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
         ]
       },
       {
         name: "PCR-3DW-500 — High-Power Driver (500W, Wi-Fi)",
-        hero: "source-manuals/Drivers and Controllers/PCR-3D/maxherosingle.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_product-photo.jpg",
         status: "Active",
         blurb: "Wi-Fi version of the PCR-3D-500 — the driver spec'd for a full-length Perimeter Strip Kit run.",
         links: [
-          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/PCR-3D-Instructions-USA-2.pdf" }
+          { label: "Instructions (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3D/pcr-3d_instructions.pdf" }
         ],
         sku: "64-PCR-3DW-500",
         tags: ["Driver", "WiFi"],
@@ -4315,17 +4315,17 @@ const DATA = [
           "Same physical platform as PCR-3D-500 (no Wi-Fi), PCR-3D-120, and PCR-3DW-120. Mounting/wiring diagrams, the Cloning DIP switch table, and fan-filter maintenance live on the PCR-3D Mounting, Cloning & Configuration Reference card."
         ],
         images: [
-          { src: "assets/image_77.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
+          { src: "assets/pcr-3d_enclosure-photo.jpg", alt: "PCR-3D driver enclosure", caption: "PCR-3D-family enclosure" }
         ]
       },
       {
         name: "PCR-3DMX-8Z (8-Zone DMX Driver)",
-        hero: "source-manuals/Drivers and Controllers/PCR-3DMX/maxherosingle-DMX.jpg",
+        hero: "source-manuals/Drivers and Controllers/PCR-3DMX/pcr-3dmx_product-photo.jpg",
         status: "Active",
         blurb: "8-zone DMX driver for large installs — scaled-up PCR-2DMX architecture, 24 total channels.",
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3DMX/PCR-3DMX-8Z-2.pdf" },
-          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3DMX/PCR4-3DAnd3DMX-Updates-August-September-2025-2.pdf" }
+          { label: "Manual (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3DMX/pcr-3dmx-8z_install-guide.pdf" },
+          { label: "Aug–Sep 2025 Updates (PDF)", url: "source-manuals/Drivers and Controllers/PCR-3DMX/pcr-3dmx_2025-update-bulletin.pdf" }
         ],
         sku: "64-PCR-3DMX-8Z",
         tags: ["Driver", "DMX", "DIP Switch"],
@@ -4395,19 +4395,19 @@ const DATA = [
           "Two \"starting channel\" columns appear side by side in the manual's driver-chaining table. For drivers 1-4 they agree (1, 25, 49, 73). From driver 5 onward they diverge by 3 channels (e.g. driver 5: 97 vs 100) — the printed dipswitch diagram matches the higher column. Set the dipswitches per that diagram and verify the live starting channel against the DMX controller rather than trusting either printed number."
         ],
         images: [
-          { src: "assets/image_84.jpg", alt: "PCR-3DMX-8Z dimension and knockout diagram", caption: "11⅝\" x 4⅝\" x 6⅞\" (293 x 119 x 175mm) — 6 conduit knockouts" },
-          { src: "assets/image_85.jpg", alt: "Labeled PCR-3DMX-8Z driver board diagram", caption: "Labeled board — DMX In/Thru/Shunt-Termination, DIP switches 9-1, DMX connection LED, Zone 1-8 terminals, JST input power clip" },
-          { src: "assets/image_86.jpg", alt: "PCR-3DMX-8Z starting channel DIP switch table and zone channel allocations", caption: "Full starting-channel DIP table (drivers 1-22) and 8-zone channel allocations" }
+          { src: "assets/pcr-3dmx-8z_dimension-knockout-diagram.jpg", alt: "PCR-3DMX-8Z dimension and knockout diagram", caption: "11⅝\" x 4⅝\" x 6⅞\" (293 x 119 x 175mm) — 6 conduit knockouts" },
+          { src: "assets/pcr-3dmx-8z_labeled-board-diagram.jpg", alt: "Labeled PCR-3DMX-8Z driver board diagram", caption: "Labeled board — DMX In/Thru/Shunt-Termination, DIP switches 9-1, DMX connection LED, Zone 1-8 terminals, JST input power clip" },
+          { src: "assets/pcr-3dmx-8z_channel-dip-table.jpg", alt: "PCR-3DMX-8Z starting channel DIP switch table and zone channel allocations", caption: "Full starting-channel DIP table (drivers 1-22) and 8-zone channel allocations" }
         ]
       },
       {
         name: "PCR-2D Driver (Color Touch Series 2)",
-        hero: "source-manuals/Drivers and Controllers/Color Touch Series 2/pcr-2d-web.png",
+        hero: "source-manuals/Drivers and Controllers/Color Touch Series 2/pcr-2d_product-photo.png",
         status: "Active — Legacy",
         blurb: "Color Touch remote-control driver for 4-wire RGB lights, the EvenGlow driver referenced on the Evenglow cards.",
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 2/180359_202061914119.pdf" },
-          { label: "Sell Sheet (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 2/PALPCR-2D-24.pdf" }
+          { label: "Manual (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 2/pcr-2d_install-maintenance-guide.pdf" },
+          { label: "Sell Sheet (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 2/pcr-2d_install-guide.pdf" }
         ],
         sku: "42-PCR-2D",
         tags: ["Driver", "Legacy", "DIP Switch"],
@@ -4474,16 +4474,16 @@ const DATA = [
           "See the Evenglow (Niche) and Evenglow (Nicheless) cards for PCT-1 remote coding videos, cross-referenced there rather than duplicated here."
         ],
         images: [
-          { src: "assets/image_88.jpg", alt: "PCR-2D driver enclosure with Color Touch label", caption: "Product photo" }
+          { src: "assets/pcr-2d-42-pcr-2d_enclosure-photo.jpg", alt: "PCR-2D driver enclosure with Color Touch label", caption: "Product photo" }
         ]
       },
       {
         name: "PCR-300 Driver (LED Optics Series 3)",
-        hero: "source-manuals/Drivers and Controllers/LED Optics Series 3/pcr-300-24-web.png",
+        hero: "source-manuals/Drivers and Controllers/LED Optics Series 3/pcr-300_product-photo.png",
         status: "Active — Legacy",
         blurb: "Color Touch driver sized for LED Optic strip runs, not the standard 4-wire RGB light heads.",
         links: [
-          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/LED Optics Series 3/PALPCR-300.pdf" }
+          { label: "Product Page (PDF)", url: "source-manuals/Drivers and Controllers/LED Optics Series 3/pcr-300_install-guide.pdf" }
         ],
         sku: "42-PCR-300",
         tags: ["Driver", "Legacy"],
@@ -4506,17 +4506,17 @@ const DATA = [
           }
         ],
         images: [
-          { src: "assets/image_89.jpg", alt: "PCR-300-24 driver enclosure with LED Optics label", caption: "Product photo" }
+          { src: "assets/pcr-300-42-pcr-300_enclosure-photo.jpg", alt: "PCR-300-24 driver enclosure with LED Optics label", caption: "Product photo" }
         ]
       },
       {
         name: "PCR-4 Driver (Color Touch Series 4)",
-        hero: "source-manuals/Drivers and Controllers/Color Touch Series 4/PCR-4-Flipped-Driver-web.png",
+        hero: "source-manuals/Drivers and Controllers/Color Touch Series 4/pcr-4_product-photo.png",
         links: [
-          { label: "Install & Instructions (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/PCR-4 Install and Instructions.pdf" },
-          { label: "Install & Maintenance (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/PCR-4 Install and Maintenance.pdf" },
-          { label: "Cloning Guide (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/PCR-4 Cloning.pdf" },
-          { label: "PCR-4 & Touch 5 WiFi (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/PCR-4 and Touch 5 WiFi.pdf" }
+          { label: "Install & Instructions (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/pcr-4_install-instructions.pdf" },
+          { label: "Install & Maintenance (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/pcr-4_install-maintenance-guide.pdf" },
+          { label: "Cloning Guide (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/pcr-4_cloning-reference.pdf" },
+          { label: "PCR-4 & Touch 5 WiFi (PDF)", url: "source-manuals/Drivers and Controllers/Color Touch Series 4/pcr-4-touch5_wifi-guide.pdf" }
         ],
         sku: "PCR-4",
         tags: ["Driver", "Legacy", "DIP Switch"],
@@ -4572,12 +4572,12 @@ const DATA = [
           "A Wi-Fi module plugs into the board's Wi-Fi connector. See the Color Touch App card for app-side pairing and the Touch-5-specific workflow that applies when that module variant is fitted."
         ],
         images: [
-          { src: "assets/image_90.jpg", alt: "PCR-4 driver enclosure with Color Touch EvenGlow label", caption: "Product photo" }
+          { src: "assets/pcr-4_enclosure-photo.jpg", alt: "PCR-4 driver enclosure with Color Touch EvenGlow label", caption: "Product photo" }
         ]
       },
       {
         name: "Commander Series 2 (PC-2D)",
-        hero: "source-manuals/Drivers and Controllers/Commander Series 2/pc-2d-web.png",
+        hero: "source-manuals/Drivers and Controllers/Commander Series 2/commander-pc-2d_product-photo.png",
         sku: "PC-2D",
         tags: ["Driver", "Legacy"],
         status: "Active — Legacy",
@@ -4592,12 +4592,12 @@ const DATA = [
           "Spec source is the enclosure label only — no install or spec manual is on file for this SKU."
         ],
         images: [
-          { src: "assets/image_91.jpg", alt: "PAL Commander PC-2D driver enclosure", caption: "Product photo — enclosure label is the only spec source on file" }
+          { src: "assets/commander-pc-2d_enclosure-photo.jpg", alt: "PAL Commander PC-2D driver enclosure", caption: "Product photo — enclosure label is the only spec source on file" }
         ]
       },
       {
         name: "LED Optics Series 2 (PCR-200)",
-        hero: "source-manuals/Drivers and Controllers/LED Optics Series 2/ledoptics2.png",
+        hero: "source-manuals/Drivers and Controllers/LED Optics Series 2/pcr-200_product-photo.png",
         sku: "PCR-200",
         tags: ["Driver", "Legacy"],
         status: "Active — Legacy",
@@ -4611,12 +4611,12 @@ const DATA = [
           "Spec source is the enclosure label only — no install or spec manual is on file for this SKU."
         ],
         images: [
-          { src: "assets/image_92.jpg", alt: "PAL LED Optics PCR-200 driver enclosure", caption: "Product photo — enclosure label is the only spec source on file" }
+          { src: "assets/pcr-200_enclosure-photo.jpg", alt: "PAL LED Optics PCR-200 driver enclosure", caption: "Product photo — enclosure label is the only spec source on file" }
         ]
       },
       {
         name: "Power Supply Series 2 (PC-2T)",
-        hero: "source-manuals/Drivers and Controllers/Power Supply Series 2/pc-2t-web.png",
+        hero: "source-manuals/Drivers and Controllers/Power Supply Series 2/pc-2t_product-photo.png",
         sku: "PC-2T",
         tags: ["Driver", "Legacy"],
         status: "Active — Legacy",
@@ -4633,7 +4633,7 @@ const DATA = [
           "Spec source is the enclosure label only — no install or spec manual is on file for this SKU."
         ],
         images: [
-          { src: "assets/image_93.jpg", alt: "PAL PC-2T transformer enclosure", caption: "Product photo — enclosure label is the only spec source on file" }
+          { src: "assets/pc-2t_enclosure-photo.jpg", alt: "PAL PC-2T transformer enclosure", caption: "Product photo — enclosure label is the only spec source on file" }
         ]
       }
     ]
@@ -4692,12 +4692,12 @@ const DATA = [
       },
       {
         name: "PCZ-2 — Handheld Remote",
-        hero: "assets/image_174.jpg",
+        hero: "assets/pcz-2-remote_product-photo.jpg",
         status: "Active",
         blurb: "Touch-wheel remote for the Color Touch (PCR-1Z/2Z) driver platform.",
         links: [
-          { label: "Driver Manual (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PCZ-2/PCR-1Z-SM1Z2Z-2.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PCZ-2/Remote Handset for Color Touch Series 2Z Controllers - PAL Lighting.pdf" }
+          { label: "Driver Manual (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PCZ-2/pcz-2-remote_1z-2z-cloning-reference.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PCZ-2/pcz-2-remote_handset-guide-color-touch-2z.pdf" }
         ],
         sku: "64-PCZ-2",
         tags: ["Remote"],
@@ -4731,7 +4731,7 @@ const DATA = [
             detail: "Open the PCR-1Z/2Z Cloning, Pairing & Zone Reference card (Drivers & Controllers category)."
           }
         ],
-        flowImage: { src: "assets/image_70.jpg", alt: "PCZ-2 button layout with Matching and Clearing Code procedures", caption: "Button layout and pairing procedures" },
+        flowImage: { src: "assets/pcz-2-remote_labeled-diagram.jpg", alt: "PCZ-2 button layout with Matching and Clearing Code procedures", caption: "Button layout and pairing procedures" },
         tables: [
           {
             caption: "Controls",
@@ -4773,7 +4773,7 @@ const DATA = [
       },
       {
         name: "Sonar SR2 — Handheld Remote",
-        hero: "assets/image_62.jpg",
+        hero: "assets/sonar-remote_pairing-cloning-unpairing-diagram.jpg",
         status: "Active",
         blurb: "Rounded 4-channel Sonar remote for the Aqualumin Replacement light.",
         sku: "64-PAL-SR2",
@@ -4819,11 +4819,11 @@ const DATA = [
       },
       {
         name: "PCT-1 — Handheld Remote",
-        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/42-PCT-1T.png",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/pct-1t_product-photo.png",
         links: [
-          { label: "Manual (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/42-PCT-1T manual.pdf" },
-          { label: "Cloning Guide (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/42-PCT-1T Cloning.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/Remote Handset for Color Touch Series 1 : 2 : 3 : 4 Controllers - PAL Lighting.pdf" }
+          { label: "Manual (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/pct-1t_manual.pdf" },
+          { label: "Cloning Guide (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/pct-1t_cloning-reference.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-1T/pct-1t_handset-guide-color-touch-1-2-3-4.pdf" }
         ],
         sku: "42-PCT-1T",
         tags: ["Remote", "Legacy"],
@@ -4855,7 +4855,7 @@ const DATA = [
             detail: "If the box is a newer PCR-1Z/2Z board rather than the black-box PCR-4/PCR-2D, this is the wrong card — open the PCZ-2 card instead."
           }
         ],
-        flowImage: { src: "assets/image_02.jpg", alt: "PCT-1 transmitter shown between the PCR-4 and PCR-2D drivers it pairs with", caption: "PCT-1 with the PCR-4 and PCR-2D drivers it pairs to" },
+        flowImage: { src: "assets/evenglow-pcr4-pcr2d_drivers-cloning-dip-table.jpg", alt: "PCT-1 transmitter shown between the PCR-4 and PCR-2D drivers it pairs with", caption: "PCT-1 with the PCR-4 and PCR-2D drivers it pairs to" },
         tables: [
           {
             caption: "Modes",
@@ -4885,9 +4885,9 @@ const DATA = [
       },
       {
         name: "PCT-3 — Handheld Remote (Commander Touch)",
-        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-3T/42-PCT-3T.png",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-3T/pct-3t-commander-touch_product-photo.png",
         links: [
-          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-3T/Remote Handset for Commander Series 2 Controllers - PAL Lighting.pdf" }
+          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-3T/pct-3t_handset-guide-commander-series-2.pdf" }
         ],
         sku: "42-PCT-3T",
         tags: ["Remote", "Legacy"],
@@ -4926,9 +4926,9 @@ const DATA = [
       },
       {
         name: "PCT-5 — Handheld Remote (Touch-5)",
-        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-5T/42-PCT-5T.png",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-5T/pct-5t_product-photo.png",
         links: [
-          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-5T/Remote Handset for Pool Touch - 5 Automation System - PAL Lighting.pdf" }
+          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/42-PCT-5T/pct-5t_handset-guide-pool-touch-5.pdf" }
         ],
         sku: "42-PCT-5T",
         tags: ["Remote", "Legacy"],
@@ -4978,10 +4978,10 @@ const DATA = [
       },
       {
         name: "Sonar SR — Handheld Remote",
-        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PAL-SR/64-PAL-SR.png",
+        hero: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PAL-SR/sonar-sr-remote_product-photo.png",
         links: [
-          { label: "Remote Guide (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PAL-SR/SonarRemote.pdf" },
-          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PAL-SR/Remote Handset for PAL Sonar Lighting Systems - PAL Lighting.pdf" }
+          { label: "Remote Guide (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PAL-SR/sonar-sr-remote_manual.pdf" },
+          { label: "Product Page (PDF)", url: "source-manuals/WiFi, Color Touch App, Remotes/Remotes/64-PAL-SR/sonar-sr-remote_handset-guide.pdf" }
         ],
         sku: "64-PAL-SR",
         tags: ["Remote", "Sonar", "Legacy"],
@@ -5013,7 +5013,7 @@ const DATA = [
             detail: "Press the linked channel's button 5 times."
           }
         ],
-        flowImage: { src: "assets/image_95.jpg", alt: "Wand-style Sonar remote — color wheel, warm/cool white slider, 8 channel buttons, 5 cloning channels including Astral", caption: "Channel buttons, color wheel, and warm/cool white slider" },
+        flowImage: { src: "assets/sonar-sr-remote_labeled-diagram.jpg", alt: "Wand-style Sonar remote — color wheel, warm/cool white slider, 8 channel buttons, 5 cloning channels including Astral", caption: "Channel buttons, color wheel, and warm/cool white slider" },
         tables: [
           {
             caption: "Common Call Scenarios",
@@ -5061,6 +5061,14 @@ const DATA = [
     if (className) node.className = className;
     if (text !== undefined) node.textContent = text;
     return node;
+  }
+
+  /* Local file:// links opened with rel="noopener" fail to navigate in Safari
+     when the parent page is itself file:// (the new tab stays on about:blank).
+     Only set noopener/noreferrer on genuine external http(s) links, where the
+     security benefit is real; local PDFs/images need the opener kept. */
+  function isExternalUrl(url) {
+    return /^(https?:)?\/\//i.test(url) || /^mailto:/i.test(url);
   }
 
   /* Wrap search matches in <mark> safely */
@@ -5215,7 +5223,7 @@ const DATA = [
       /* encodeURI so local paths with spaces/commas (source-manuals/…) work */
       a.href = encodeURI(link.url);
       a.target = "_blank";
-      a.rel = "noopener noreferrer";
+      if (isExternalUrl(link.url)) a.rel = "noopener noreferrer";
       a.appendChild(document.createTextNode("\u{1F517} "));
       a.appendChild(document.createTextNode(link.label));
       row.appendChild(a);
@@ -5299,11 +5307,11 @@ const DATA = [
     images.forEach(imgData => {
       const fig = el("figure", "diagram");
       const link = el("a");
-      link.href = imgData.src;
+      link.href = encodeURI(imgData.src);
       link.target = "_blank";
-      link.rel = "noopener noreferrer";
+      if (isExternalUrl(imgData.src)) link.rel = "noopener noreferrer";
       const img = document.createElement("img");
-      img.src = imgData.src;
+      img.src = encodeURI(imgData.src);
       img.alt = imgData.alt || imgData.caption || "";
       img.loading = "lazy";
       img.addEventListener("error", () => {
@@ -5344,7 +5352,7 @@ const DATA = [
     const link = el("a");
     link.href = encodeURI(imgData.src);
     link.target = "_blank";
-    link.rel = "noopener noreferrer";
+    if (isExternalUrl(imgData.src)) link.rel = "noopener noreferrer";
     const img = document.createElement("img");
     img.src = encodeURI(imgData.src);
     img.alt = imgData.alt || imgData.caption || "";
@@ -5506,37 +5514,33 @@ const DATA = [
     if (categoryName.includes("water")) {
       // WaterBlade, Bubblers, WaterSphere
       if (productName.includes("blade")) {
-        // WaterBlade images are in nested SKU folders - try all common variants
-        const skuVariants = ["64-EFWB", "64-EFWBL", "64-EFWB-RN", "64-EFWBL-RN"];
-        skuVariants.forEach(skuVar => {
-          candidates.push("source-manuals/Water Features/Waterblade/" + skuVar + "/" + skuVar + ".jpg");
-          candidates.push("source-manuals/Water Features/Waterblade/" + skuVar + "/" + skuVar + ".png");
-        });
-        // Also try top-level if they exist
-        candidates.push("source-manuals/Water Features/Waterblade/waterblade.jpg");
-        candidates.push("source-manuals/Water Features/Waterblade/waterblade.png");
+        // WaterBlade images are in nested SKU folders
+        candidates.push("source-manuals/Water Features/Waterblade/64-EFWB/waterblade-64-efwb_product-photo.jpg");
+        candidates.push("source-manuals/Water Features/Waterblade/64-EFWBL/waterblade-64-efwbl_product-photo.jpg");
+        candidates.push("source-manuals/Water Features/Waterblade/64-EFWB-RN/waterblade-64-efwb-rn_product-photo.jpg");
+        candidates.push("source-manuals/Water Features/Waterblade/64-EFWBL-RN/waterblade-64-efwbl-rn_product-photo.jpg");
       } else if (productName.includes("bubbler")) {
         // Bubbler image is SKU-based
-        candidates.push("source-manuals/Water Features/Bubblers/64-EGB.png");
+        candidates.push("source-manuals/Water Features/Bubblers/bubbler-64-egb_product-photo.png");
         candidates.push("source-manuals/Water Features/Bubblers/64-EGB.jpg");
         if (sku) candidates.push("source-manuals/Water Features/Bubblers/" + sku + ".png");
       } else if (productName.includes("sphere")) {
         // WaterSphere images
-        candidates.push("source-manuals/Water Features/WaterSphere/WATERSPHERE.png");
+        candidates.push("source-manuals/Water Features/WaterSphere/watersphere_product-photo.png");
         candidates.push("source-manuals/Water Features/WaterSphere/WATERSPHERE.jpg");
         if (sku) candidates.push("source-manuals/Water Features/WaterSphere/" + sku + ".png");
       }
     } else if (categoryName.includes("landscape")) {
       // Bollard, Path Way, Garden Up - images have "-black" suffix
       if (productName.includes("bollard")) {
-        candidates.push("source-manuals/Landscape Lighting/Bollard Light/bollard-black.png");
+        candidates.push("source-manuals/Landscape Lighting/Bollard Light/bollard-light_product-photo.png");
         candidates.push("source-manuals/Landscape Lighting/Bollard Light/bollard.png");
       } else if (productName.includes("path") || productName.includes("pathway")) {
-        candidates.push("source-manuals/Landscape Lighting/Path Way Light/pathwaylight-black.png");
+        candidates.push("source-manuals/Landscape Lighting/Path Way Light/path-way-light_product-photo.png");
         candidates.push("source-manuals/Landscape Lighting/Path Way Light/pathway-black.png");
         candidates.push("source-manuals/Landscape Lighting/Path Way Light/pathwaylight.png");
       } else if (productName.includes("garden")) {
-        candidates.push("source-manuals/Landscape Lighting/Garden Up Light/gardenlight-black.png");
+        candidates.push("source-manuals/Landscape Lighting/Garden Up Light/garden-up-light_product-photo.png");
         candidates.push("source-manuals/Landscape Lighting/Garden Up Light/garden-black.png");
         candidates.push("source-manuals/Landscape Lighting/Garden Up Light/gardenlight.png");
       }
